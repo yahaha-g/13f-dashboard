@@ -1,9 +1,0 @@
-{
-  "updated_at_utc": "demo",
-  "managers": [
-    { "slug": "berkshire", "name": "Berkshire Hathaway", "latest_quarter": "DEMO", "filing_date": "DEMO" },
-    { "slug": "bridgewater", "name": "Bridgewater Associates", "latest_quarter": "DEMO", "filing_date": "DEMO" },
-    { "slug": "himalaya", "name": "Himalaya Capital (Li Lu)", "latest_quarter": "DEMO", "filing_date": "DEMO" },
-    { "slug": "hh", "name": "H&H International (Duan)", "latest_quarter": "DEMO", "filing_date": "DEMO" }
-  ]
-}
