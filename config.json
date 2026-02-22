@@ -1,0 +1,8 @@
+{
+  "managers": [
+    { "slug": "berkshire", "name": "Berkshire Hathaway", "cik": "0001067983" },
+    { "slug": "bridgewater", "name": "Bridgewater Associates", "cik": "0001350694" },
+    { "slug": "himalaya", "name": "Himalaya Capital (Li Lu)", "cik": "0001709323" },
+    { "slug": "hh", "name": "H&H International (Duan)", "cik": "0001759760" }
+  ]
+}
