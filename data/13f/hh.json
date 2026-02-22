@@ -1,0 +1,1 @@
+{"name":"H&H International (Duan)","latest":{"quarter":"DEMO","filing_date":"DEMO","infotable_url":"#"},"stats":{"holdings":1,"top1":"AAPL","changes":{"new":0,"add":0,"trim":0,"exit":1}},"holdings":[{"issuer":"AAPL","value_usd_k":1,"weight":1,"shares":1}],"diffs":[{"change":"EXIT","issuer":"Tencent","value_delta_k":-1,"shares_delta":-1}]}
