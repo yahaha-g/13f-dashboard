@@ -1,0 +1,36 @@
+name: Update 13F data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"  # 每天 UTC 02:00（新加坡 10:00）
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run fetcher
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: |
+          python scripts/fetch_13f.py
+
+      - name: Commit data if changed
+        run: |
+          git status
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/13f
+          git commit -m "Update 13F data" || echo "No changes"
+          git push
