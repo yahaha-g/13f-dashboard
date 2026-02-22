@@ -1,0 +1,13 @@
+{
+  "name": "Berkshire Hathaway",
+  "latest": { "quarter": "DEMO", "filing_date": "DEMO", "infotable_url": "#" },
+  "stats": { "holdings": 2, "top1": "Apple", "changes": { "new": 1, "add": 0, "trim": 0, "exit": 0 } },
+  "holdings": [
+    { "issuer": "Apple Inc", "value_usd_k": 100000, "weight": 0.7, "shares": 1000 },
+    { "issuer": "Coca-Cola", "value_usd_k": 40000, "weight": 0.3, "shares": 2000 }
+  ],
+  "diffs": [
+    { "change": "NEW", "issuer": "Apple Inc", "value_delta_k": 100000, "shares_delta": 1000 },
+    { "change": "EXIT", "issuer": "Bank of America", "value_delta_k": -20000, "shares_delta": -500 }
+  ]
+}
