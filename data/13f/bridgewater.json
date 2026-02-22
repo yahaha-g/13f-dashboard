@@ -1,0 +1,1 @@
+{"name":"Bridgewater Associates","latest":{"quarter":"DEMO","filing_date":"DEMO","infotable_url":"#"},"stats":{"holdings":1,"top1":"SPY","changes":{"new":0,"add":1,"trim":0,"exit":0}},"holdings":[{"issuer":"SPY","value_usd_k":1,"weight":1,"shares":1}],"diffs":[{"change":"ADD","issuer":"SPY","value_delta_k":1,"shares_delta":1}]}
