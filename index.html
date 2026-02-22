@@ -119,9 +119,9 @@
   }
 
   init().catch(err=>{
-    console.error(err);
-    $("subtitle").textContent = "加载失败：请确认 public/data/13f/index.json 存在且可访问。";
-  });
+  console.error(err);
+  $("subtitle").textContent = "加载失败：" + (err && err.message ? err.message : String(err));
+});
 </script>
 </body>
 </html>
