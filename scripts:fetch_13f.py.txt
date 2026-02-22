@@ -1,0 +1,32 @@
+import json,os,urllib.request,time
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/"public/data/13f"
+OUT.mkdir(parents=True,exist_ok=True)
+
+cfg=json.load(open(ROOT/"config.json"))
+
+ua=os.environ.get("SEC_USER_AGENT","demo demo@mail")
+
+def get(url):
+    req=urllib.request.Request(url,headers={"User-Agent":ua})
+    return json.loads(urllib.request.urlopen(req).read().decode())
+
+index={"updated_at_utc":time.ctime(),"managers":[]}
+
+for m in cfg["managers"]:
+    cik=m["cik"].zfill(10)
+    sub=get(f"https://data.sec.gov/submissions/CIK{cik}.json")
+    filing=sub["filings"]["recent"]["filingDate"][0]
+
+    data={
+        "name":m["name"],
+        "holdings":[{"issuer":"demo","value_usd_k":1}],
+        "diffs":[{"change":"NEW","issuer":"demo"}]
+    }
+
+    json.dump(data,open(OUT/f"{m['slug']}.json","w"))
+    index["managers"].append({"name":m["name"],"slug":m["slug"],"latest_quarter":filing})
+
+json.dump(index,open(OUT/"index.json","w"))

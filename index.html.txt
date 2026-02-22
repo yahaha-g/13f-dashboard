@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>13F Dashboard</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:#fafafa}
+header{padding:16px 20px;background:#fff;border-bottom:1px solid #e6e6e6}
+main{max-width:1100px;margin:0 auto;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:14px}
+.btn{margin-top:10px;padding:6px 10px;border:1px solid #e6e6e6;border-radius:10px;background:#fff;cursor:pointer}
+.hidden{display:none}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e6e6e6}
+th,td{padding:8px;border-bottom:1px solid #e6e6e6;font-size:13px}
+input{padding:8px;border-radius:10px;border:1px solid #e6e6e6;width:100%}
+</style>
+</head>
+
+<body>
+<header>
+<h2>13F Dashboard</h2>
+<div id="subtitle">loading...</div>
+</header>
+
+<main>
+<section id="home">
+<div class="grid" id="cards"></div>
+</section>
+
+<section id="detail" class="hidden">
+<a href="#" id="back">← back</a>
+<h2 id="title"></h2>
+<input id="search" placeholder="search issuer"/>
+
+<h3>Top holdings</h3>
+<table><tbody id="holdings"></tbody></table>
+
+<h3>Changes</h3>
+<table><tbody id="diffs"></tbody></table>
+</section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id)
+
+async function j(p){const r=await fetch(p);return r.json()}
+
+function showHome(){
+$("home").classList.remove("hidden")
+$("detail").classList.add("hidden")
+}
+
+async function showDetail(slug){
+const d=await j(`/data/13f/${slug}.json`)
+$("home").classList.add("hidden")
+$("detail").classList.remove("hidden")
+$("title").textContent=d.name
+
+$("holdings").innerHTML=d.holdings.slice(0,30).map(x=>
+`<tr><td>${x.issuer}</td><td>${x.value_usd_k}</td></tr>`).join("")
+
+$("diffs").innerHTML=d.diffs.slice(0,50).map(x=>
+`<tr><td>${x.change}</td><td>${x.issuer}</td></tr>`).join("")
+}
+
+async function init(){
+$("back").onclick=e=>{e.preventDefault();showHome()}
+const idx=await j("/data/13f/index.json")
+$("subtitle").textContent="updated "+idx.updated_at_utc
+$("cards").innerHTML=idx.managers.map(m=>
+`<div class="card">
+<b>${m.name}</b>
+<div>${m.latest_quarter}</div>
+<button class="btn" data-slug="${m.slug}">view</button>
+</div>`).join("")
+document.querySelectorAll("button").forEach(b=>b.onclick=()=>showDetail(b.dataset.slug))
+}
+init()
+</script>
+
+</body>
+</html>
