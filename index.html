@@ -5,242 +5,120 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>13F Dashboard</title>
   <style>
-    :root { --border:#e6e6e6; --muted:#666; --bg:#fafafa; }
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 0; background: var(--bg); }
-    header { padding: 18px 22px; background: white; border-bottom: 1px solid var(--border); position: sticky; top:0; }
-    h1 { margin: 0; font-size: 18px; }
-    .sub { margin-top: 6px; color: var(--muted); font-size: 12px; }
-    main { padding: 18px 22px 40px; max-width: 1100px; margin: 0 auto; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
-    .card { background: white; border: 1px solid var(--border); border-radius: 14px; padding: 14px; box-shadow: 0 1px 0 rgba(0,0,0,.02); }
-    .card h2 { margin: 0 0 6px; font-size: 16px; }
-    .meta { color: var(--muted); font-size: 12px; display:flex; justify-content: space-between; gap: 8px; }
-    .kpis { margin-top: 10px; display:grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .kpi { border: 1px solid var(--border); border-radius: 12px; padding: 10px; }
-    .kpi .label { color: var(--muted); font-size: 12px; }
-    .kpi .value { margin-top: 4px; font-size: 16px; }
-    .btn { margin-top: 12px; display:inline-block; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--border); background: #fff; cursor:pointer; font-size: 13px; }
-    .row { display:flex; gap: 10px; align-items:center; flex-wrap: wrap; }
-    .pill { font-size: 12px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 999px; background: #fff; }
-    .hidden { display: none; }
-
-    /* detail */
-    .back { cursor:pointer; color: #111; text-decoration: underline; font-size: 13px; }
-    .section { margin-top: 14px; }
-    .section h3 { margin: 0 0 8px; font-size: 14px; color:#111; }
-    input { padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); width: min(520px, 100%); }
-    table { width: 100%; border-collapse: collapse; background: #fff; border:1px solid var(--border); border-radius: 14px; overflow: hidden; }
-    th, td { padding: 10px 10px; border-bottom: 1px solid var(--border); font-size: 13px; text-align:left; }
-    th { background: #fcfcfc; color:#111; font-weight:600; }
-    tr:last-child td { border-bottom: none; }
-    .chg { font-weight: 700; }
-    .NEW { }
-    .EXIT { }
-    .ADD { }
-    .TRIM { }
-    .SAME { color: var(--muted); font-weight: 600; }
-    .muted { color: var(--muted); }
-    .right { text-align:right; }
-    .small { font-size: 12px; color: var(--muted); }
-    a { color: inherit; }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;background:#fafafa;}
+    header{padding:16px 20px;background:#fff;border-bottom:1px solid #e6e6e6;position:sticky;top:0}
+    main{max-width:1100px;margin:0 auto;padding:16px 20px 40px}
+    .muted{color:#666;font-size:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .card{background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:14px}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-block;margin-top:10px;padding:8px 10px;border:1px solid #e6e6e6;border-radius:10px;background:#fff;cursor:pointer}
+    .hidden{display:none}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e6e6e6;border-radius:14px;overflow:hidden}
+    th,td{padding:10px;border-bottom:1px solid #e6e6e6;font-size:13px;text-align:left}
+    th{background:#fcfcfc}
+    tr:last-child td{border-bottom:none}
+    input{padding:10px 12px;border-radius:12px;border:1px solid #e6e6e6;width:min(520px,100%)}
+    a{color:inherit}
   </style>
 </head>
 <body>
 <header>
-  <h1>13F Dashboard</h1>
-  <div class="sub" id="subtitle">加载中…</div>
+  <div class="row" style="justify-content:space-between">
+    <div>
+      <div style="font-size:18px;font-weight:700">13F Dashboard</div>
+      <div class="muted" id="subtitle">加载中…（先跑一次 GitHub Actions 生成数据）</div>
+    </div>
+  </div>
 </header>
 
 <main>
-  <!-- HOME -->
   <section id="home">
     <div class="grid" id="cards"></div>
-    <div class="small" style="margin-top:10px;">
-      数据来源：SEC EDGAR · 13F 为季度披露（非实时持仓）
-    </div>
+    <div class="muted" style="margin-top:10px">数据来源：SEC EDGAR · 13F 为季度披露（非实时持仓）</div>
   </section>
 
-  <!-- DETAIL -->
   <section id="detail" class="hidden">
     <div class="row">
-      <span class="back" id="backBtn">← 返回</span>
-      <span class="pill" id="detailQuarter"></span>
-      <span class="pill" id="detailFilingDate"></span>
-      <span class="pill"><a id="detailSource" href="#" target="_blank" rel="noreferrer">SEC 文件</a></span>
+      <a href="#" id="back">← 返回</a>
+      <span class="muted" id="dq"></span>
+      <span class="muted" id="dd"></span>
+      <a class="muted" id="src" target="_blank" rel="noreferrer">SEC 文件</a>
     </div>
 
-    <div style="margin-top:10px;">
-      <h2 id="detailTitle" style="margin:0;font-size:18px;"></h2>
-      <div class="small" id="detailStats"></div>
+    <h2 id="title" style="margin:12px 0 4px"></h2>
+    <div class="muted" id="stats"></div>
+
+    <div style="margin-top:12px">
+      <input id="search" placeholder="搜索公司名（例如 Apple）" />
     </div>
 
-    <div class="section">
-      <h3>搜索（公司名）</h3>
-      <input id="search" placeholder="例如：Apple / Bank / Coca" />
-    </div>
+    <h3 style="margin:14px 0 8px">Top Holdings</h3>
+    <table>
+      <thead><tr><th>Issuer</th><th>Value ($K)</th><th>Weight</th><th>Shares</th></tr></thead>
+      <tbody id="holdings"></tbody>
+    </table>
 
-    <div class="section">
-      <h3>Top Holdings</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Issuer</th>
-            <th class="right">Value ($K)</th>
-            <th class="right">Weight</th>
-            <th class="right">Shares</th>
-          </tr>
-        </thead>
-        <tbody id="topHoldings"></tbody>
-      </table>
-    </div>
-
-    <div class="section">
-      <h3>Position Changes（vs 上一期 13F）</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Change</th>
-            <th>Issuer</th>
-            <th class="right">Δ Value ($K)</th>
-            <th class="right">Δ Weight</th>
-            <th class="right">Δ Shares</th>
-          </tr>
-        </thead>
-        <tbody id="diffs"></tbody>
-      </table>
-      <div class="small" style="margin-top:8px;">说明：变动按 CUSIP 对齐；权重基于 13F 披露市值（通常以千美元为单位）。</div>
-    </div>
+    <h3 style="margin:14px 0 8px">Changes（vs 上一期 13F）</h3>
+    <table>
+      <thead><tr><th>Change</th><th>Issuer</th><th>Δ Value ($K)</th><th>Δ Shares</th></tr></thead>
+      <tbody id="diffs"></tbody>
+    </table>
   </section>
 </main>
 
 <script>
   const $ = (id) => document.getElementById(id);
-
   const fmtInt = (n) => (n ?? 0).toLocaleString();
-  const fmtPct = (x) => (x == null ? "—" : (x * 100).toFixed(2) + "%");
-  const fmtPctSigned = (x) => (x == null ? "—" : (x * 100 >= 0 ? "+" : "") + (x * 100).toFixed(2) + "%");
-  const fmtSignedInt = (n) => (n == null ? "—" : (n >= 0 ? "+" : "") + fmtInt(n));
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+  async function j(path){ const r=await fetch(path,{cache:"no-store"}); if(!r.ok) throw new Error(path); return r.json(); }
 
-  async function fetchJson(path) {
-    const r = await fetch(path, { cache: "no-store" });
-    if (!r.ok) throw new Error("Failed to load " + path);
-    return await r.json();
-  }
+  function showHome(){ $("detail").classList.add("hidden"); $("home").classList.remove("hidden"); location.hash=""; }
+  async function showDetail(slug){
+    const d = await j(`/data/13f/${slug}.json`);
+    $("home").classList.add("hidden"); $("detail").classList.remove("hidden");
+    $("title").textContent = d.name;
+    $("dq").textContent = d.latest?.quarter ?? "";
+    $("dd").textContent = d.latest?.filing_date ? ("Filed: " + d.latest.filing_date) : "";
+    $("src").href = d.latest?.infotable_url ?? "#";
+    const c = d.stats?.changes || {};
+    $("stats").textContent = `Holdings ${d.stats?.holdings ?? 0} · NEW ${c.new??0} · ADD ${c.add??0} · TRIM ${c.trim??0} · EXIT ${c.exit??0}`;
 
-  function showHome() {
-    $("detail").classList.add("hidden");
-    $("home").classList.remove("hidden");
-    history.replaceState({}, "", location.pathname);
-  }
+    const holdings = d.holdings || [];
+    const diffs = d.diffs || [];
 
-  async function showDetail(slug) {
-    const data = await fetchJson(`/data/13f/${slug}.json`);
-    $("home").classList.add("hidden");
-    $("detail").classList.remove("hidden");
-
-    $("detailTitle").textContent = data.name;
-    $("detailQuarter").textContent = data.latest?.quarter ?? "—";
-    $("detailFilingDate").textContent = "Filed: " + (data.latest?.filing_date ?? "—");
-    $("detailSource").href = data.latest?.infotable_url ?? "#";
-
-    const c = data.stats?.changes || {};
-    $("detailStats").textContent =
-      `Holdings: ${data.stats?.holdings ?? 0} · Top1: ${data.stats?.top1 ?? "—"} · ` +
-      `NEW ${c.new ?? 0} · ADD ${c.add ?? 0} · TRIM ${c.trim ?? 0} · EXIT ${c.exit ?? 0}`;
-
-    const holdings = data.holdings || [];
-    const diffs = data.diffs || [];
-
-    const render = () => {
+    const render = ()=>{
       const q = $("search").value.trim().toLowerCase();
-      const filteredHoldings = q ? holdings.filter(h => (h.issuer || "").toLowerCase().includes(q)) : holdings;
-      const filteredDiffs = q ? diffs.filter(d => (d.issuer || "").toLowerCase().includes(q)) : diffs;
-
-      $("topHoldings").innerHTML = filteredHoldings.slice(0, 50).map(h => `
-        <tr>
-          <td>${escapeHtml(h.issuer || "")}</td>
-          <td class="right">${fmtInt(h.value_usd_k || 0)}</td>
-          <td class="right">${fmtPct(h.weight || 0)}</td>
-          <td class="right">${fmtInt(h.shares || 0)}</td>
-        </tr>
-      `).join("");
-
-      $("diffs").innerHTML = filteredDiffs.slice(0, 120).map(d => `
-        <tr>
-          <td class="chg ${d.change}">${d.change}</td>
-          <td>${escapeHtml(d.issuer || "")}</td>
-          <td class="right">${fmtSignedInt(d.value_delta_k || 0)}</td>
-          <td class="right">${fmtPctSigned((d.cur_weight || 0) - (d.prev_weight || 0))}</td>
-          <td class="right">${fmtSignedInt(d.shares_delta || 0)}</td>
-        </tr>
-      `).join("");
+      const H = q ? holdings.filter(x => (x.issuer||"").toLowerCase().includes(q)) : holdings;
+      const D = q ? diffs.filter(x => (x.issuer||"").toLowerCase().includes(q)) : diffs;
+      $("holdings").innerHTML = H.slice(0,50).map(h=>`<tr><td>${esc(h.issuer)}</td><td>${fmtInt(h.value_usd_k)}</td><td>${((h.weight||0)*100).toFixed(2)}%</td><td>${fmtInt(h.shares)}</td></tr>`).join("");
+      $("diffs").innerHTML = D.slice(0,120).map(x=>`<tr><td><b>${esc(x.change)}</b></td><td>${esc(x.issuer)}</td><td>${(x.value_delta_k>=0?"+":"") + fmtInt(x.value_delta_k)}</td><td>${(x.shares_delta>=0?"+":"") + fmtInt(x.shares_delta)}</td></tr>`).join("");
     };
-
-    $("search").value = "";
-    $("search").oninput = render;
-    render();
-
-    history.replaceState({}, "", `#${slug}`);
+    $("search").value=""; $("search").oninput = render; render();
   }
 
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
-  }
-
-  async function init() {
-    const idx = await fetchJson("/data/13f/index.json");
-    const updated = idx.updated_at_utc ? new Date(idx.updated_at_utc).toISOString().replace("T"," ").replace("Z"," UTC") : "—";
-    $("subtitle").textContent = `Last updated: ${updated}`;
-
-    const cards = idx.managers || [];
-    $("cards").innerHTML = cards.map(m => {
-      const c = m.changes || {};
-      return `
-        <div class="card">
-          <h2>${escapeHtml(m.name || m.slug)}</h2>
-          <div class="meta">
-            <span>${escapeHtml(m.latest_quarter || "—")}</span>
-            <span>${escapeHtml(m.filing_date || "")}</span>
-          </div>
-          <div class="kpis">
-            <div class="kpi">
-              <div class="label">Holdings</div>
-              <div class="value">${fmtInt(m.holdings || 0)}</div>
-            </div>
-            <div class="kpi">
-              <div class="label">Top1</div>
-              <div class="value">${escapeHtml(m.top1 || "—")}</div>
-            </div>
-            <div class="kpi">
-              <div class="label">NEW / EXIT</div>
-              <div class="value">${fmtInt(c.new || 0)} / ${fmtInt(c.exit || 0)}</div>
-            </div>
-            <div class="kpi">
-              <div class="label">ADD / TRIM</div>
-              <div class="value">${fmtInt(c.add || 0)} / ${fmtInt(c.trim || 0)}</div>
-            </div>
-          </div>
-          <button class="btn" data-slug="${escapeHtml(m.slug)}">View</button>
-        </div>
-      `;
+  async function init(){
+    $("back").onclick = (e)=>{e.preventDefault(); showHome();};
+    const idx = await j("/data/13f/index.json");
+    $("subtitle").textContent = "Last updated: " + (idx.updated_at_utc ?? "—");
+    $("cards").innerHTML = (idx.managers||[]).map(m=>{
+      const c = m.changes||{};
+      return `<div class="card">
+        <div style="font-weight:700">${esc(m.name||m.slug)}</div>
+        <div class="muted">${esc(m.latest_quarter||"—")} · ${esc(m.filing_date||"")}</div>
+        <div style="margin-top:8px" class="muted">Holdings ${fmtInt(m.holdings||0)} · Top1 ${esc(m.top1||"—")}</div>
+        <div style="margin-top:6px" class="muted">NEW ${c.new||0} / EXIT ${c.exit||0} · ADD ${c.add||0} / TRIM ${c.trim||0}</div>
+        <button class="btn" data-slug="${esc(m.slug)}">View</button>
+      </div>`;
     }).join("");
+    document.querySelectorAll("button[data-slug]").forEach(b=>b.onclick=()=>{ location.hash=b.dataset.slug; showDetail(b.dataset.slug); });
 
-    document.querySelectorAll("button[data-slug]").forEach(btn => {
-      btn.addEventListener("click", () => showDetail(btn.getAttribute("data-slug")));
-    });
-
-    // hash routing
-    if (location.hash && location.hash.length > 1) {
-      const slug = location.hash.slice(1);
-      await showDetail(slug);
-    }
-
-    $("backBtn").onclick = showHome;
+    if(location.hash?.length>1) await showDetail(location.hash.slice(1));
   }
 
-  init().catch(err => {
-    $("subtitle").textContent = "加载失败：请先跑一次 GitHub Actions 生成数据。";
+  init().catch(err=>{
     console.error(err);
+    $("subtitle").textContent = "加载失败：请先跑一次 GitHub Actions 生成数据（或检查 Actions 日志）。";
   });
 </script>
 </body>
