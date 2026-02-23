@@ -1,0 +1,36 @@
+name: Update 13F Data
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "30 1 * * *" # 每天 UTC 01:30（新加坡/中国=09:30）
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-13f
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run updater
+        run: |
+          bash scripts/update-13f.sh
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update 13f data"
+            git push
+          fi
