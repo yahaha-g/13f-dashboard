@@ -1,1 +1,7301 @@
-{"name":"Bridgewater Associates","latest":{"quarter":"DEMO","filing_date":"DEMO","infotable_url":"#"},"stats":{"holdings":1,"top1":"SPY","changes":{"new":0,"add":1,"trim":0,"exit":0}},"holdings":[{"issuer":"SPY","value_usd_k":1,"weight":1,"shares":1}],"diffs":[{"change":"ADD","issuer":"SPY","value_delta_k":1,"shares_delta":1}]}
+{
+  "name": "Bridgewater Associates, LP",
+  "latest": {
+    "quarter": "2025Q4",
+    "filing_date": "2026-02-13",
+    "infotable_url": "https://www.sec.gov/Archives/edgar/data/1350694/000135069426000001/infotable.xml"
+  },
+  "stats": {
+    "holdings": 1040,
+    "top1": "SPDR S&P 500 ETF TR",
+    "changes": {
+      "new": 0,
+      "add": 0,
+      "trim": 0,
+      "exit": 0
+    }
+  },
+  "holdings": [
+    {
+      "issuer": "SPDR S&P 500 ETF TR",
+      "value_usd_k": 3038235233,
+      "weight": 0.110797,
+      "shares": 4455413,
+      "cusip": "78462F103"
+    },
+    {
+      "issuer": "ISHARES TR",
+      "value_usd_k": 2866877329,
+      "weight": 0.104548,
+      "shares": 4185589,
+      "cusip": "464287200"
+    },
+    {
+      "issuer": "NVIDIA CORPORATION",
+      "value_usd_k": 720860733,
+      "weight": 0.026288,
+      "shares": 3865205,
+      "cusip": "67066G104"
+    },
+    {
+      "issuer": "LAM RESEARCH CORP",
+      "value_usd_k": 520671530,
+      "weight": 0.018988,
+      "shares": 3041661,
+      "cusip": "512807306"
+    },
+    {
+      "issuer": "SALESFORCE INC",
+      "value_usd_k": 511823604,
+      "weight": 0.018665,
+      "shares": 1932066,
+      "cusip": "79466L302"
+    },
+    {
+      "issuer": "ALPHABET INC",
+      "value_usd_k": 497928538,
+      "weight": 0.018158,
+      "shares": 1590826,
+      "cusip": "02079K305"
+    },
+    {
+      "issuer": "MICROSOFT CORP",
+      "value_usd_k": 475926089,
+      "weight": 0.017356,
+      "shares": 984091,
+      "cusip": "594918104"
+    },
+    {
+      "issuer": "AMAZON COM INC",
+      "value_usd_k": 449695988,
+      "weight": 0.016399,
+      "shares": 1948254,
+      "cusip": "023135106"
+    },
+    {
+      "issuer": "ADOBE INC",
+      "value_usd_k": 446256499,
+      "weight": 0.016274,
+      "shares": 1275055,
+      "cusip": "00724F101"
+    },
+    {
+      "issuer": "GE VERNOVA INC",
+      "value_usd_k": 435275659,
+      "weight": 0.015873,
+      "shares": 665997,
+      "cusip": "36828A101"
+    },
+    {
+      "issuer": "BOOKING HOLDINGS INC",
+      "value_usd_k": 431254014,
+      "weight": 0.015727,
+      "shares": 80528,
+      "cusip": "09857L108"
+    },
+    {
+      "issuer": "BROADCOM INC",
+      "value_usd_k": 403462614,
+      "weight": 0.014713,
+      "shares": 1165740,
+      "cusip": "11135F101"
+    },
+    {
+      "issuer": "ORACLE CORP",
+      "value_usd_k": 365160182,
+      "weight": 0.013317,
+      "shares": 1873481,
+      "cusip": "68389X105"
+    },
+    {
+      "issuer": "ADVANCED MICRO DEVICES INC",
+      "value_usd_k": 354761822,
+      "weight": 0.012937,
+      "shares": 1656527,
+      "cusip": "007903107"
+    },
+    {
+      "issuer": "JOHNSON & JOHNSON",
+      "value_usd_k": 271923608,
+      "weight": 0.009916,
+      "shares": 1313958,
+      "cusip": "478160104"
+    },
+    {
+      "issuer": "MICRON TECHNOLOGY INC",
+      "value_usd_k": 253912152,
+      "weight": 0.00926,
+      "shares": 889640,
+      "cusip": "595112103"
+    },
+    {
+      "issuer": "MASTERCARD INCORPORATED",
+      "value_usd_k": 233608092,
+      "weight": 0.008519,
+      "shares": 409207,
+      "cusip": "57636Q104"
+    },
+    {
+      "issuer": "NEWMONT CORP",
+      "value_usd_k": 230544564,
+      "weight": 0.008407,
+      "shares": 2308909,
+      "cusip": "651639106"
+    },
+    {
+      "issuer": "WORKDAY INC",
+      "value_usd_k": 207287829,
+      "weight": 0.007559,
+      "shares": 965117,
+      "cusip": "98138H101"
+    },
+    {
+      "issuer": "SERVICENOW INC",
+      "value_usd_k": 205103793,
+      "weight": 0.00748,
+      "shares": 1338885,
+      "cusip": "81762P102"
+    },
+    {
+      "issuer": "ISHARES INC",
+      "value_usd_k": 201474645,
+      "weight": 0.007347,
+      "shares": 2072358,
+      "cusip": "464286772"
+    },
+    {
+      "issuer": "SEA LTD",
+      "value_usd_k": 195599126,
+      "weight": 0.007133,
+      "shares": 1533269,
+      "cusip": "81141R100"
+    },
+    {
+      "issuer": "PAYPAL HLDGS INC",
+      "value_usd_k": 194365176,
+      "weight": 0.007088,
+      "shares": 3329311,
+      "cusip": "70450Y103"
+    },
+    {
+      "issuer": "ALTRIA GROUP INC",
+      "value_usd_k": 188937463,
+      "weight": 0.00689,
+      "shares": 3276751,
+      "cusip": "02209S103"
+    },
+    {
+      "issuer": "VISA INC",
+      "value_usd_k": 188154863,
+      "weight": 0.006862,
+      "shares": 536497,
+      "cusip": "92826C839"
+    },
+    {
+      "issuer": "REDDIT INC",
+      "value_usd_k": 176497864,
+      "weight": 0.006436,
+      "shares": 767816,
+      "cusip": "75734B100"
+    },
+    {
+      "issuer": "EXPEDIA GROUP INC",
+      "value_usd_k": 176440652,
+      "weight": 0.006434,
+      "shares": 622783,
+      "cusip": "30212P303"
+    },
+    {
+      "issuer": "ARISTA NETWORKS INC",
+      "value_usd_k": 174196785,
+      "weight": 0.006353,
+      "shares": 1329442,
+      "cusip": "040413205"
+    },
+    {
+      "issuer": "BRITISH AMERN TOB PLC",
+      "value_usd_k": 167146656,
+      "weight": 0.006095,
+      "shares": 2952078,
+      "cusip": "110448107"
+    },
+    {
+      "issuer": "HCA HEALTHCARE INC",
+      "value_usd_k": 153740266,
+      "weight": 0.005607,
+      "shares": 329307,
+      "cusip": "40412C101"
+    },
+    {
+      "issuer": "META PLATFORMS INC",
+      "value_usd_k": 147662793,
+      "weight": 0.005385,
+      "shares": 223701,
+      "cusip": "30303M102"
+    },
+    {
+      "issuer": "VANGUARD INTL EQUITY INDEX F",
+      "value_usd_k": 140052111,
+      "weight": 0.005107,
+      "shares": 2605136,
+      "cusip": "922042858"
+    },
+    {
+      "issuer": "ISHARES TR",
+      "value_usd_k": 130965588,
+      "weight": 0.004776,
+      "shares": 1375400,
+      "cusip": "464288588"
+    },
+    {
+      "issuer": "APPLIED MATLS INC",
+      "value_usd_k": 122732513,
+      "weight": 0.004476,
+      "shares": 477577,
+      "cusip": "038222105"
+    },
+    {
+      "issuer": "PINTEREST INC",
+      "value_usd_k": 111790586,
+      "weight": 0.004077,
+      "shares": 4317906,
+      "cusip": "72352L106"
+    },
+    {
+      "issuer": "ISHARES TR",
+      "value_usd_k": 110123886,
+      "weight": 0.004016,
+      "shares": 999400,
+      "cusip": "464287242"
+    },
+    {
+      "issuer": "BARRICK MNG CORP",
+      "value_usd_k": 108291092,
+      "weight": 0.003949,
+      "shares": 2486509,
+      "cusip": "06849F108"
+    },
+    {
+      "issuer": "AMPHENOL CORP NEW",
+      "value_usd_k": 107890911,
+      "weight": 0.003935,
+      "shares": 798364,
+      "cusip": "032095101"
+    },
+    {
+      "issuer": "WELLS FARGO CO NEW",
+      "value_usd_k": 106391528,
+      "weight": 0.00388,
+      "shares": 1141540,
+      "cusip": "949746101"
+    },
+    {
+      "issuer": "UBER TECHNOLOGIES INC",
+      "value_usd_k": 105329174,
+      "weight": 0.003841,
+      "shares": 1289061,
+      "cusip": "90353T100"
+    },
+    {
+      "issuer": "COMCAST CORP NEW",
+      "value_usd_k": 104914259,
+      "weight": 0.003826,
+      "shares": 3510012,
+      "cusip": "20030N101"
+    },
+    {
+      "issuer": "CELESTICA INC",
+      "value_usd_k": 101031812,
+      "weight": 0.003684,
+      "shares": 341774,
+      "cusip": "15101Q207"
+    },
+    {
+      "issuer": "TE CONNECTIVITY PLC",
+      "value_usd_k": 100286636,
+      "weight": 0.003657,
+      "shares": 440801,
+      "cusip": "G87052109"
+    },
+    {
+      "issuer": "TALEN ENERGY CORP",
+      "value_usd_k": 99424061,
+      "weight": 0.003626,
+      "shares": 265244,
+      "cusip": "87422Q109"
+    },
+    {
+      "issuer": "KLA CORP",
+      "value_usd_k": 95222174,
+      "weight": 0.003473,
+      "shares": 78367,
+      "cusip": "482480100"
+    },
+    {
+      "issuer": "THE CIGNA GROUP",
+      "value_usd_k": 94803524,
+      "weight": 0.003457,
+      "shares": 344452,
+      "cusip": "125523100"
+    },
+    {
+      "issuer": "MANULIFE FINL CORP",
+      "value_usd_k": 93010584,
+      "weight": 0.003392,
+      "shares": 2558071,
+      "cusip": "56501R106"
+    },
+    {
+      "issuer": "ASML HOLDING N V",
+      "value_usd_k": 92103178,
+      "weight": 0.003359,
+      "shares": 86089,
+      "cusip": "N07059210"
+    },
+    {
+      "issuer": "BLOCK INC",
+      "value_usd_k": 86579659,
+      "weight": 0.003157,
+      "shares": 1330153,
+      "cusip": "852234103"
+    },
+    {
+      "issuer": "ISHARES INC",
+      "value_usd_k": 85478767,
+      "weight": 0.003117,
+      "shares": 1271627,
+      "cusip": "46434G103"
+    },
+    {
+      "issuer": "MARVELL TECHNOLOGY INC",
+      "value_usd_k": 83894126,
+      "weight": 0.003059,
+      "shares": 987222,
+      "cusip": "573874104"
+    },
+    {
+      "issuer": "CITIGROUP INC",
+      "value_usd_k": 83587964,
+      "weight": 0.003048,
+      "shares": 716325,
+      "cusip": "172967424"
+    },
+    {
+      "issuer": "CVS HEALTH CORP",
+      "value_usd_k": 82324255,
+      "weight": 0.003002,
+      "shares": 1037352,
+      "cusip": "126650100"
+    },
+    {
+      "issuer": "METLIFE INC",
+      "value_usd_k": 80289321,
+      "weight": 0.002928,
+      "shares": 1017093,
+      "cusip": "59156R108"
+    },
+    {
+      "issuer": "ELI LILLY & CO",
+      "value_usd_k": 78765447,
+      "weight": 0.002872,
+      "shares": 73292,
+      "cusip": "532457108"
+    },
+    {
+      "issuer": "NXP SEMICONDUCTORS N V",
+      "value_usd_k": 78702917,
+      "weight": 0.00287,
+      "shares": 362586,
+      "cusip": "N6596X109"
+    },
+    {
+      "issuer": "APPLE INC",
+      "value_usd_k": 78695586,
+      "weight": 0.00287,
+      "shares": 289471,
+      "cusip": "037833100"
+    },
+    {
+      "issuer": "VALE S A",
+      "value_usd_k": 78499196,
+      "weight": 0.002863,
+      "shares": 6024497,
+      "cusip": "91912E105"
+    },
+    {
+      "issuer": "SEAGATE TECHNOLOGY HLDNGS PL",
+      "value_usd_k": 77102866,
+      "weight": 0.002812,
+      "shares": 279977,
+      "cusip": "G7997R103"
+    },
+    {
+      "issuer": "HEWLETT PACKARD ENTERPRISE C",
+      "value_usd_k": 76366089,
+      "weight": 0.002785,
+      "shares": 3179271,
+      "cusip": "42824C109"
+    },
+    {
+      "issuer": "GLOBAL PMTS INC",
+      "value_usd_k": 74155392,
+      "weight": 0.002704,
+      "shares": 958080,
+      "cusip": "37940X102"
+    },
+    {
+      "issuer": "SHELL PLC",
+      "value_usd_k": 73742838,
+      "weight": 0.002689,
+      "shares": 1003577,
+      "cusip": "780259305"
+    },
+    {
+      "issuer": "GODADDY INC",
+      "value_usd_k": 70467017,
+      "weight": 0.00257,
+      "shares": 567916,
+      "cusip": "380237107"
+    },
+    {
+      "issuer": "HARTFORD INSURANCE GROUP INC",
+      "value_usd_k": 70277449,
+      "weight": 0.002563,
+      "shares": 509996,
+      "cusip": "416515104"
+    },
+    {
+      "issuer": "ANGLOGOLD ASHANTI PLC",
+      "value_usd_k": 70177594,
+      "weight": 0.002559,
+      "shares": 822908,
+      "cusip": "G0378L100"
+    },
+    {
+      "issuer": "VERTIV HOLDINGS CO",
+      "value_usd_k": 69761344,
+      "weight": 0.002544,
+      "shares": 430599,
+      "cusip": "92537N108"
+    },
+    {
+      "issuer": "GSK PLC",
+      "value_usd_k": 69466386,
+      "weight": 0.002533,
+      "shares": 1416525,
+      "cusip": "37733W204"
+    },
+    {
+      "issuer": "MATCH GROUP INC NEW",
+      "value_usd_k": 69174770,
+      "weight": 0.002523,
+      "shares": 2142297,
+      "cusip": "57667L107"
+    },
+    {
+      "issuer": "OMNICOM GROUP INC",
+      "value_usd_k": 65822232,
+      "weight": 0.0024,
+      "shares": 815136,
+      "cusip": "681919106"
+    },
+    {
+      "issuer": "COMFORT SYS USA INC",
+      "value_usd_k": 63649445,
+      "weight": 0.002321,
+      "shares": 68199,
+      "cusip": "199908104"
+    },
+    {
+      "issuer": "MONSTER BEVERAGE CORP NEW",
+      "value_usd_k": 63135215,
+      "weight": 0.002302,
+      "shares": 823467,
+      "cusip": "61174X109"
+    },
+    {
+      "issuer": "ATLASSIAN CORPORATION",
+      "value_usd_k": 62458922,
+      "weight": 0.002278,
+      "shares": 385216,
+      "cusip": "049468101"
+    },
+    {
+      "issuer": "NRG ENERGY INC",
+      "value_usd_k": 60649898,
+      "weight": 0.002212,
+      "shares": 380871,
+      "cusip": "629377508"
+    },
+    {
+      "issuer": "DECKERS OUTDOOR CORP",
+      "value_usd_k": 60140004,
+      "weight": 0.002193,
+      "shares": 580110,
+      "cusip": "243537107"
+    },
+    {
+      "issuer": "ALLSTATE CORP",
+      "value_usd_k": 58035550,
+      "weight": 0.002116,
+      "shares": 278816,
+      "cusip": "020002101"
+    },
+    {
+      "issuer": "GRAB HOLDINGS LIMITED",
+      "value_usd_k": 57555124,
+      "weight": 0.002099,
+      "shares": 11534093,
+      "cusip": "G4124C109"
+    },
+    {
+      "issuer": "RYANAIR HOLDINGS PLC",
+      "value_usd_k": 57393144,
+      "weight": 0.002093,
+      "shares": 795029,
+      "cusip": "783513203"
+    },
+    {
+      "issuer": "REGENERON PHARMACEUTICALS",
+      "value_usd_k": 56149683,
+      "weight": 0.002048,
+      "shares": 72745,
+      "cusip": "75886F107"
+    },
+    {
+      "issuer": "BANK AMERICA CORP",
+      "value_usd_k": 55571615,
+      "weight": 0.002027,
+      "shares": 1010393,
+      "cusip": "060505104"
+    },
+    {
+      "issuer": "DYNATRACE INC",
+      "value_usd_k": 55312588,
+      "weight": 0.002017,
+      "shares": 1276248,
+      "cusip": "268150109"
+    },
+    {
+      "issuer": "MCKESSON CORP",
+      "value_usd_k": 55298210,
+      "weight": 0.002017,
+      "shares": 67413,
+      "cusip": "58155Q103"
+    },
+    {
+      "issuer": "AUTODESK INC",
+      "value_usd_k": 54524746,
+      "weight": 0.001988,
+      "shares": 184199,
+      "cusip": "052769106"
+    },
+    {
+      "issuer": "GE AEROSPACE",
+      "value_usd_k": 52513878,
+      "weight": 0.001915,
+      "shares": 170483,
+      "cusip": "369604301"
+    },
+    {
+      "issuer": "VISTRA CORP",
+      "value_usd_k": 49987939,
+      "weight": 0.001823,
+      "shares": 309849,
+      "cusip": "92840M102"
+    },
+    {
+      "issuer": "CITIZENS FINL GROUP INC",
+      "value_usd_k": 49876474,
+      "weight": 0.001819,
+      "shares": 853903,
+      "cusip": "174610105"
+    },
+    {
+      "issuer": "EMCOR GROUP INC",
+      "value_usd_k": 49813165,
+      "weight": 0.001817,
+      "shares": 81422,
+      "cusip": "29084Q100"
+    },
+    {
+      "issuer": "CIENA CORP",
+      "value_usd_k": 49730818,
+      "weight": 0.001814,
+      "shares": 212643,
+      "cusip": "171779309"
+    },
+    {
+      "issuer": "ZIONS BANCORPORATION N A",
+      "value_usd_k": 49017591,
+      "weight": 0.001788,
+      "shares": 837335,
+      "cusip": "989701107"
+    },
+    {
+      "issuer": "OVINTIV INC",
+      "value_usd_k": 48580512,
+      "weight": 0.001772,
+      "shares": 1239615,
+      "cusip": "69047Q102"
+    },
+    {
+      "issuer": "UNIVERSAL HLTH SVCS INC",
+      "value_usd_k": 47967016,
+      "weight": 0.001749,
+      "shares": 220012,
+      "cusip": "913903100"
+    },
+    {
+      "issuer": "CARPENTER TECHNOLOGY CORP",
+      "value_usd_k": 47595307,
+      "weight": 0.001736,
+      "shares": 151173,
+      "cusip": "144285103"
+    },
+    {
+      "issuer": "WEBSTER FINL CORP",
+      "value_usd_k": 47461229,
+      "weight": 0.001731,
+      "shares": 754071,
+      "cusip": "947890109"
+    },
+    {
+      "issuer": "T-MOBILE US INC",
+      "value_usd_k": 46624278,
+      "weight": 0.0017,
+      "shares": 229631,
+      "cusip": "872590104"
+    },
+    {
+      "issuer": "CREDO TECHNOLOGY GROUP HOLDI",
+      "value_usd_k": 46204662,
+      "weight": 0.001685,
+      "shares": 321111,
+      "cusip": "G25457105"
+    },
+    {
+      "issuer": "DOCUSIGN INC",
+      "value_usd_k": 44929840,
+      "weight": 0.001638,
+      "shares": 656869,
+      "cusip": "256163106"
+    },
+    {
+      "issuer": "PRUDENTIAL FINL INC",
+      "value_usd_k": 44801959,
+      "weight": 0.001634,
+      "shares": 396899,
+      "cusip": "744320102"
+    },
+    {
+      "issuer": "AIRBNB INC",
+      "value_usd_k": 44618764,
+      "weight": 0.001627,
+      "shares": 328756,
+      "cusip": "009066101"
+    },
+    {
+      "issuer": "CARDINAL HEALTH INC",
+      "value_usd_k": 44525480,
+      "weight": 0.001624,
+      "shares": 216669,
+      "cusip": "14149Y108"
+    },
+    {
+      "issuer": "FIRST CTZNS BANCSHARES INC D",
+      "value_usd_k": 44082537,
+      "weight": 0.001608,
+      "shares": 20540,
+      "cusip": "31946M103"
+    },
+    {
+      "issuer": "TRUIST FINL CORP",
+      "value_usd_k": 43794046,
+      "weight": 0.001597,
+      "shares": 889942,
+      "cusip": "89832Q109"
+    },
+    {
+      "issuer": "DEVON ENERGY CORP NEW",
+      "value_usd_k": 42889371,
+      "weight": 0.001564,
+      "shares": 1170881,
+      "cusip": "25179M103"
+    },
+    {
+      "issuer": "GOLD FIELDS LTD",
+      "value_usd_k": 42656650,
+      "weight": 0.001556,
+      "shares": 977019,
+      "cusip": "38059T106"
+    },
+    {
+      "issuer": "LPL FINL HLDGS INC",
+      "value_usd_k": 42251068,
+      "weight": 0.001541,
+      "shares": 118294,
+      "cusip": "50212V100"
+    },
+    {
+      "issuer": "TOLL BROTHERS INC",
+      "value_usd_k": 41957008,
+      "weight": 0.00153,
+      "shares": 310287,
+      "cusip": "889478103"
+    },
+    {
+      "issuer": "PRINCIPAL FINANCIAL GROUP IN",
+      "value_usd_k": 41942708,
+      "weight": 0.00153,
+      "shares": 475487,
+      "cusip": "74251V102"
+    },
+    {
+      "issuer": "STATE STR CORP",
+      "value_usd_k": 41771632,
+      "weight": 0.001523,
+      "shares": 323786,
+      "cusip": "857477103"
+    },
+    {
+      "issuer": "MAPLEBEAR INC",
+      "value_usd_k": 41274548,
+      "weight": 0.001505,
+      "shares": 917620,
+      "cusip": "565394103"
+    },
+    {
+      "issuer": "TAPESTRY INC",
+      "value_usd_k": 41196626,
+      "weight": 0.001502,
+      "shares": 322428,
+      "cusip": "876030107"
+    },
+    {
+      "issuer": "S&P GLOBAL INC",
+      "value_usd_k": 40832047,
+      "weight": 0.001489,
+      "shares": 78134,
+      "cusip": "78409V104"
+    },
+    {
+      "issuer": "BORGWARNER INC",
+      "value_usd_k": 40629881,
+      "weight": 0.001482,
+      "shares": 901684,
+      "cusip": "099724106"
+    },
+    {
+      "issuer": "BANK NEW YORK MELLON CORP",
+      "value_usd_k": 40595280,
+      "weight": 0.00148,
+      "shares": 349688,
+      "cusip": "064058100"
+    },
+    {
+      "issuer": "EXELIXIS INC",
+      "value_usd_k": 40573957,
+      "weight": 0.00148,
+      "shares": 925712,
+      "cusip": "30161Q104"
+    },
+    {
+      "issuer": "TOAST INC",
+      "value_usd_k": 40021617,
+      "weight": 0.001459,
+      "shares": 1127052,
+      "cusip": "888787108"
+    },
+    {
+      "issuer": "ASTERA LABS INC",
+      "value_usd_k": 40014571,
+      "weight": 0.001459,
+      "shares": 240530,
+      "cusip": "04626A103"
+    },
+    {
+      "issuer": "POPULAR INC",
+      "value_usd_k": 39000038,
+      "weight": 0.001422,
+      "shares": 313203,
+      "cusip": "733174700"
+    },
+    {
+      "issuer": "TERADYNE INC",
+      "value_usd_k": 38665739,
+      "weight": 0.00141,
+      "shares": 199761,
+      "cusip": "880770102"
+    },
+    {
+      "issuer": "CAPITAL ONE FINL CORP",
+      "value_usd_k": 38238107,
+      "weight": 0.001394,
+      "shares": 157774,
+      "cusip": "14040H105"
+    },
+    {
+      "issuer": "HALOZYME THERAPEUTICS INC",
+      "value_usd_k": 37794132,
+      "weight": 0.001378,
+      "shares": 561577,
+      "cusip": "40637H109"
+    },
+    {
+      "issuer": "QUALCOMM INC",
+      "value_usd_k": 37646737,
+      "weight": 0.001373,
+      "shares": 220092,
+      "cusip": "747525103"
+    },
+    {
+      "issuer": "VERISIGN INC",
+      "value_usd_k": 37075871,
+      "weight": 0.001352,
+      "shares": 152607,
+      "cusip": "92343E102"
+    },
+    {
+      "issuer": "EVERCORE INC",
+      "value_usd_k": 36891606,
+      "weight": 0.001345,
+      "shares": 108425,
+      "cusip": "29977A105"
+    },
+    {
+      "issuer": "ARCH CAP GROUP LTD",
+      "value_usd_k": 36739470,
+      "weight": 0.00134,
+      "shares": 383022,
+      "cusip": "G0450A105"
+    },
+    {
+      "issuer": "AMERIPRISE FINL INC",
+      "value_usd_k": 36533762,
+      "weight": 0.001332,
+      "shares": 74507,
+      "cusip": "03076C106"
+    },
+    {
+      "issuer": "UIPATH INC",
+      "value_usd_k": 36461358,
+      "weight": 0.00133,
+      "shares": 2224610,
+      "cusip": "90364P105"
+    },
+    {
+      "issuer": "GILEAD SCIENCES INC",
+      "value_usd_k": 35889912,
+      "weight": 0.001309,
+      "shares": 292406,
+      "cusip": "375558103"
+    },
+    {
+      "issuer": "ARM HOLDINGS PLC",
+      "value_usd_k": 35670039,
+      "weight": 0.001301,
+      "shares": 326320,
+      "cusip": "042068205"
+    },
+    {
+      "issuer": "CISCO SYS INC",
+      "value_usd_k": 35608427,
+      "weight": 0.001299,
+      "shares": 462267,
+      "cusip": "17275R102"
+    },
+    {
+      "issuer": "CATERPILLAR INC",
+      "value_usd_k": 35607881,
+      "weight": 0.001299,
+      "shares": 62157,
+      "cusip": "149123101"
+    },
+    {
+      "issuer": "MONDAY COM LTD",
+      "value_usd_k": 35294286,
+      "weight": 0.001287,
+      "shares": 239186,
+      "cusip": "M7S64H106"
+    },
+    {
+      "issuer": "TECHNIPFMC PLC",
+      "value_usd_k": 35109715,
+      "weight": 0.00128,
+      "shares": 787920,
+      "cusip": "G87110105"
+    },
+    {
+      "issuer": "ALNYLAM PHARMACEUTICALS INC",
+      "value_usd_k": 34045600,
+      "weight": 0.001242,
+      "shares": 85617,
+      "cusip": "02043Q107"
+    },
+    {
+      "issuer": "AMERICAN INTL GROUP INC",
+      "value_usd_k": 34019727,
+      "weight": 0.001241,
+      "shares": 397659,
+      "cusip": "026874784"
+    },
+    {
+      "issuer": "MERCADOLIBRE INC",
+      "value_usd_k": 33811368,
+      "weight": 0.001233,
+      "shares": 16786,
+      "cusip": "58733R102"
+    },
+    {
+      "issuer": "SCHWAB CHARLES CORP",
+      "value_usd_k": 32974996,
+      "weight": 0.001203,
+      "shares": 330047,
+      "cusip": "808513105"
+    },
+    {
+      "issuer": "RENAISSANCERE HLDGS LTD",
+      "value_usd_k": 32825992,
+      "weight": 0.001197,
+      "shares": 116752,
+      "cusip": "G7496G103"
+    },
+    {
+      "issuer": "MERCK & CO INC",
+      "value_usd_k": 32653862,
+      "weight": 0.001191,
+      "shares": 310221,
+      "cusip": "58933Y105"
+    },
+    {
+      "issuer": "INCYTE CORP",
+      "value_usd_k": 32454834,
+      "weight": 0.001184,
+      "shares": 328590,
+      "cusip": "45337C102"
+    },
+    {
+      "issuer": "DT MIDSTREAM INC",
+      "value_usd_k": 32330954,
+      "weight": 0.001179,
+      "shares": 270145,
+      "cusip": "23345M107"
+    },
+    {
+      "issuer": "F N B CORP",
+      "value_usd_k": 31955830,
+      "weight": 0.001165,
+      "shares": 1868762,
+      "cusip": "302520101"
+    },
+    {
+      "issuer": "MARATHON PETE CORP",
+      "value_usd_k": 31802784,
+      "weight": 0.00116,
+      "shares": 195553,
+      "cusip": "56585A102"
+    },
+    {
+      "issuer": "JABIL INC",
+      "value_usd_k": 31665593,
+      "weight": 0.001155,
+      "shares": 138872,
+      "cusip": "466313103"
+    },
+    {
+      "issuer": "UNITED THERAPEUTICS CORP DEL",
+      "value_usd_k": 31473914,
+      "weight": 0.001148,
+      "shares": 64595,
+      "cusip": "91307C102"
+    },
+    {
+      "issuer": "INTERACTIVE BROKERS GROUP IN",
+      "value_usd_k": 31443731,
+      "weight": 0.001147,
+      "shares": 488940,
+      "cusip": "45841N107"
+    },
+    {
+      "issuer": "M & T BK CORP",
+      "value_usd_k": 31198372,
+      "weight": 0.001138,
+      "shares": 154846,
+      "cusip": "55261F104"
+    },
+    {
+      "issuer": "CORPAY INC",
+      "value_usd_k": 30290711,
+      "weight": 0.001105,
+      "shares": 100657,
+      "cusip": "219948106"
+    },
+    {
+      "issuer": "COTERRA ENERGY INC",
+      "value_usd_k": 30244365,
+      "weight": 0.001103,
+      "shares": 1149102,
+      "cusip": "127097103"
+    },
+    {
+      "issuer": "GENTEX CORP",
+      "value_usd_k": 30225799,
+      "weight": 0.001102,
+      "shares": 1298917,
+      "cusip": "371901109"
+    },
+    {
+      "issuer": "WALMART INC",
+      "value_usd_k": 29925952,
+      "weight": 0.001091,
+      "shares": 268611,
+      "cusip": "931142103"
+    },
+    {
+      "issuer": "ISHARES TR",
+      "value_usd_k": 29798027,
+      "weight": 0.001087,
+      "shares": 281938,
+      "cusip": "464287515"
+    },
+    {
+      "issuer": "APTIV PLC",
+      "value_usd_k": 29454287,
+      "weight": 0.001074,
+      "shares": 387098,
+      "cusip": "G3265R107"
+    },
+    {
+      "issuer": "US BANCORP DEL",
+      "value_usd_k": 29217695,
+      "weight": 0.001065,
+      "shares": 547558,
+      "cusip": "902973304"
+    },
+    {
+      "issuer": "SEI INVTS CO",
+      "value_usd_k": 28368832,
+      "weight": 0.001035,
+      "shares": 345877,
+      "cusip": "784117103"
+    },
+    {
+      "issuer": "KEYCORP",
+      "value_usd_k": 27748953,
+      "weight": 0.001012,
+      "shares": 1344426,
+      "cusip": "493267108"
+    },
+    {
+      "issuer": "OWENS CORNING NEW",
+      "value_usd_k": 27593089,
+      "weight": 0.001006,
+      "shares": 246565,
+      "cusip": "690742101"
+    },
+    {
+      "issuer": "MEDTRONIC PLC",
+      "value_usd_k": 27125999,
+      "weight": 0.000989,
+      "shares": 282386,
+      "cusip": "G5960L103"
+    },
+    {
+      "issuer": "VODAFONE GROUP PLC NEW",
+      "value_usd_k": 26943895,
+      "weight": 0.000983,
+      "shares": 2039659,
+      "cusip": "92857W308"
+    },
+    {
+      "issuer": "PROCTER AND GAMBLE CO",
+      "value_usd_k": 26562652,
+      "weight": 0.000969,
+      "shares": 185351,
+      "cusip": "742718109"
+    },
+    {
+      "issuer": "HUBSPOT INC",
+      "value_usd_k": 26340931,
+      "weight": 0.000961,
+      "shares": 65639,
+      "cusip": "443573100"
+    },
+    {
+      "issuer": "COSTCO WHSL CORP NEW",
+      "value_usd_k": 26165120,
+      "weight": 0.000954,
+      "shares": 30342,
+      "cusip": "22160K105"
+    },
+    {
+      "issuer": "EQUITABLE HLDGS INC",
+      "value_usd_k": 26028384,
+      "weight": 0.000949,
+      "shares": 546241,
+      "cusip": "29452E101"
+    },
+    {
+      "issuer": "BROOKFIELD CORP",
+      "value_usd_k": 25979228,
+      "weight": 0.000947,
+      "shares": 565075,
+      "cusip": "11271J107"
+    },
+    {
+      "issuer": "CURTISS WRIGHT CORP",
+      "value_usd_k": 25798885,
+      "weight": 0.000941,
+      "shares": 46799,
+      "cusip": "231561101"
+    },
+    {
+      "issuer": "CHECK POINT SOFTWARE TECH LT",
+      "value_usd_k": 25694679,
+      "weight": 0.000937,
+      "shares": 138471,
+      "cusip": "M22465104"
+    },
+    {
+      "issuer": "SLB LIMITED",
+      "value_usd_k": 25618612,
+      "weight": 0.000934,
+      "shares": 667499,
+      "cusip": "806857108"
+    },
+    {
+      "issuer": "CSX CORP",
+      "value_usd_k": 25047554,
+      "weight": 0.000913,
+      "shares": 690967,
+      "cusip": "126408103"
+    },
+    {
+      "issuer": "GLOBUS MED INC",
+      "value_usd_k": 24817868,
+      "weight": 0.000905,
+      "shares": 284250,
+      "cusip": "379577208"
+    },
+    {
+      "issuer": "EVEREST GROUP LTD",
+      "value_usd_k": 24461366,
+      "weight": 0.000892,
+      "shares": 72083,
+      "cusip": "G3223R108"
+    },
+    {
+      "issuer": "OGE ENERGY CORP",
+      "value_usd_k": 24398652,
+      "weight": 0.00089,
+      "shares": 571397,
+      "cusip": "670837103"
+    },
+    {
+      "issuer": "HARMONY GOLD MINING CO LTD",
+      "value_usd_k": 24376943,
+      "weight": 0.000889,
+      "shares": 1224972,
+      "cusip": "413216300"
+    },
+    {
+      "issuer": "ETSY INC",
+      "value_usd_k": 24361057,
+      "weight": 0.000888,
+      "shares": 439413,
+      "cusip": "29786A106"
+    },
+    {
+      "issuer": "GITLAB INC",
+      "value_usd_k": 24179378,
+      "weight": 0.000882,
+      "shares": 644268,
+      "cusip": "37637K108"
+    },
+    {
+      "issuer": "GULFPORT ENERGY CORP",
+      "value_usd_k": 23746218,
+      "weight": 0.000866,
+      "shares": 114170,
+      "cusip": "402635502"
+    },
+    {
+      "issuer": "TEVA PHARMACEUTICAL INDS LTD",
+      "value_usd_k": 23535243,
+      "weight": 0.000858,
+      "shares": 754093,
+      "cusip": "881624209"
+    },
+    {
+      "issuer": "SENTINELONE INC",
+      "value_usd_k": 23431665,
+      "weight": 0.000854,
+      "shares": 1562111,
+      "cusip": "81730H109"
+    },
+    {
+      "issuer": "ROKU INC",
+      "value_usd_k": 23112493,
+      "weight": 0.000843,
+      "shares": 213038,
+      "cusip": "77543R102"
+    },
+    {
+      "issuer": "ZOETIS INC",
+      "value_usd_k": 22969573,
+      "weight": 0.000838,
+      "shares": 182559,
+      "cusip": "98978V103"
+    },
+    {
+      "issuer": "VANGUARD INDEX FDS",
+      "value_usd_k": 22896516,
+      "weight": 0.000835,
+      "shares": 36510,
+      "cusip": "922908363"
+    },
+    {
+      "issuer": "SMUCKER J M CO",
+      "value_usd_k": 22786404,
+      "weight": 0.000831,
+      "shares": 232966,
+      "cusip": "832696405"
+    },
+    {
+      "issuer": "AGNICO EAGLE MINES LTD",
+      "value_usd_k": 22765336,
+      "weight": 0.00083,
+      "shares": 134285,
+      "cusip": "008474108"
+    },
+    {
+      "issuer": "FORD MTR CO",
+      "value_usd_k": 22610641,
+      "weight": 0.000825,
+      "shares": 1723372,
+      "cusip": "345370860"
+    },
+    {
+      "issuer": "ABERCROMBIE & FITCH CO",
+      "value_usd_k": 22424747,
+      "weight": 0.000818,
+      "shares": 178158,
+      "cusip": "002896207"
+    },
+    {
+      "issuer": "GEN DIGITAL INC",
+      "value_usd_k": 22238429,
+      "weight": 0.000811,
+      "shares": 817890,
+      "cusip": "668771108"
+    },
+    {
+      "issuer": "FIRST HORIZON CORPORATION",
+      "value_usd_k": 22192871,
+      "weight": 0.000809,
+      "shares": 928572,
+      "cusip": "320517105"
+    },
+    {
+      "issuer": "NEXTPOWER INC",
+      "value_usd_k": 22189792,
+      "weight": 0.000809,
+      "shares": 254733,
+      "cusip": "65290E101"
+    },
+    {
+      "issuer": "REGIONS FINANCIAL CORP NEW",
+      "value_usd_k": 22132570,
+      "weight": 0.000807,
+      "shares": 816700,
+      "cusip": "7591EP100"
+    },
+    {
+      "issuer": "BRISTOL-MYERS SQUIBB CO",
+      "value_usd_k": 22055634,
+      "weight": 0.000804,
+      "shares": 408892,
+      "cusip": "110122108"
+    },
+    {
+      "issuer": "ASSOCIATED BANC CORP",
+      "value_usd_k": 21742651,
+      "weight": 0.000793,
+      "shares": 844047,
+      "cusip": "045487105"
+    },
+    {
+      "issuer": "LOCKHEED MARTIN CORP",
+      "value_usd_k": 21724522,
+      "weight": 0.000792,
+      "shares": 44916,
+      "cusip": "539830109"
+    },
+    {
+      "issuer": "CANADIAN PACIFIC KANSAS CITY",
+      "value_usd_k": 21688821,
+      "weight": 0.000791,
+      "shares": 294565,
+      "cusip": "13646K108"
+    },
+    {
+      "issuer": "FLAGSTAR BANK NATIONAL ASSOC",
+      "value_usd_k": 21452025,
+      "weight": 0.000782,
+      "shares": 1703894,
+      "cusip": "649445400"
+    },
+    {
+      "issuer": "NUTANIX INC",
+      "value_usd_k": 21384101,
+      "weight": 0.00078,
+      "shares": 413699,
+      "cusip": "67059N108"
+    },
+    {
+      "issuer": "NEUROCRINE BIOSCIENCES INC",
+      "value_usd_k": 21273082,
+      "weight": 0.000776,
+      "shares": 149990,
+      "cusip": "64125C109"
+    },
+    {
+      "issuer": "HF SINCLAIR CORP",
+      "value_usd_k": 21260160,
+      "weight": 0.000775,
+      "shares": 461375,
+      "cusip": "403949100"
+    },
+    {
+      "issuer": "FORTINET INC",
+      "value_usd_k": 21232963,
+      "weight": 0.000774,
+      "shares": 267384,
+      "cusip": "34959E109"
+    },
+    {
+      "issuer": "EOG RES INC",
+      "value_usd_k": 21076137,
+      "weight": 0.000769,
+      "shares": 200706,
+      "cusip": "26875P101"
+    },
+    {
+      "issuer": "GENPACT LIMITED",
+      "value_usd_k": 21058391,
+      "weight": 0.000768,
+      "shares": 450158,
+      "cusip": "G3922B107"
+    },
+    {
+      "issuer": "AUTOLIV INC",
+      "value_usd_k": 21021889,
+      "weight": 0.000767,
+      "shares": 177101,
+      "cusip": "052800109"
+    },
+    {
+      "issuer": "ELASTIC N V",
+      "value_usd_k": 20787718,
+      "weight": 0.000758,
+      "shares": 275553,
+      "cusip": "N14506104"
+    },
+    {
+      "issuer": "SUNCOR ENERGY INC NEW",
+      "value_usd_k": 20775820,
+      "weight": 0.000758,
+      "shares": 467473,
+      "cusip": "867224107"
+    },
+    {
+      "issuer": "REINSURANCE GRP OF AMERICA I",
+      "value_usd_k": 20697172,
+      "weight": 0.000755,
+      "shares": 101726,
+      "cusip": "759351604"
+    },
+    {
+      "issuer": "VEEVA SYS INC",
+      "value_usd_k": 20484924,
+      "weight": 0.000747,
+      "shares": 91766,
+      "cusip": "922475108"
+    },
+    {
+      "issuer": "COMERICA INC",
+      "value_usd_k": 20470972,
+      "weight": 0.000747,
+      "shares": 235488,
+      "cusip": "200340107"
+    },
+    {
+      "issuer": "SANMINA CORPORATION",
+      "value_usd_k": 20336136,
+      "weight": 0.000742,
+      "shares": 135511,
+      "cusip": "801056102"
+    },
+    {
+      "issuer": "WOODWARD INC",
+      "value_usd_k": 20077676,
+      "weight": 0.000732,
+      "shares": 66412,
+      "cusip": "980745103"
+    },
+    {
+      "issuer": "AMDOCS LTD",
+      "value_usd_k": 20062689,
+      "weight": 0.000732,
+      "shares": 249195,
+      "cusip": "G02602103"
+    },
+    {
+      "issuer": "COCA COLA CO",
+      "value_usd_k": 20001880,
+      "weight": 0.000729,
+      "shares": 286109,
+      "cusip": "191216100"
+    },
+    {
+      "issuer": "BLOCK H & R INC",
+      "value_usd_k": 19857445,
+      "weight": 0.000724,
+      "shares": 455655,
+      "cusip": "093671105"
+    },
+    {
+      "issuer": "EQUINIX INC",
+      "value_usd_k": 19852738,
+      "weight": 0.000724,
+      "shares": 25912,
+      "cusip": "29444U700"
+    },
+    {
+      "issuer": "NETAPP INC",
+      "value_usd_k": 19758962,
+      "weight": 0.000721,
+      "shares": 184508,
+      "cusip": "64110D104"
+    },
+    {
+      "issuer": "INTUIT",
+      "value_usd_k": 19750052,
+      "weight": 0.00072,
+      "shares": 29815,
+      "cusip": "461202103"
+    },
+    {
+      "issuer": "SYNCHRONY FINANCIAL",
+      "value_usd_k": 19701744,
+      "weight": 0.000718,
+      "shares": 236147,
+      "cusip": "87165B103"
+    },
+    {
+      "issuer": "DELL TECHNOLOGIES INC",
+      "value_usd_k": 19679072,
+      "weight": 0.000718,
+      "shares": 156332,
+      "cusip": "24703L202"
+    },
+    {
+      "issuer": "OTIS WORLDWIDE CORP",
+      "value_usd_k": 19670609,
+      "weight": 0.000717,
+      "shares": 225193,
+      "cusip": "68902V107"
+    },
+    {
+      "issuer": "ZOOMINFO TECHNOLOGIES INC",
+      "value_usd_k": 19538655,
+      "weight": 0.000713,
+      "shares": 1921205,
+      "cusip": "98980F104"
+    },
+    {
+      "issuer": "CULLEN FROST BANKERS INC",
+      "value_usd_k": 19436692,
+      "weight": 0.000709,
+      "shares": 153492,
+      "cusip": "229899109"
+    },
+    {
+      "issuer": "COREBRIDGE FINL INC",
+      "value_usd_k": 19420248,
+      "weight": 0.000708,
+      "shares": 643694,
+      "cusip": "21871X109"
+    },
+    {
+      "issuer": "MEDPACE HLDGS INC",
+      "value_usd_k": 19265718,
+      "weight": 0.000703,
+      "shares": 34302,
+      "cusip": "58506Q109"
+    },
+    {
+      "issuer": "MANHATTAN ASSOCIATES INC",
+      "value_usd_k": 19222852,
+      "weight": 0.000701,
+      "shares": 110916,
+      "cusip": "562750109"
+    },
+    {
+      "issuer": "SUN LIFE FINANCIAL INC.",
+      "value_usd_k": 19162005,
+      "weight": 0.000699,
+      "shares": 306563,
+      "cusip": "866796105"
+    },
+    {
+      "issuer": "OKTA INC",
+      "value_usd_k": 18766411,
+      "weight": 0.000684,
+      "shares": 217028,
+      "cusip": "679295105"
+    },
+    {
+      "issuer": "UNUM GROUP",
+      "value_usd_k": 18709585,
+      "weight": 0.000682,
+      "shares": 241414,
+      "cusip": "91529Y106"
+    },
+    {
+      "issuer": "CADENCE BANK",
+      "value_usd_k": 18709085,
+      "weight": 0.000682,
+      "shares": 436720,
+      "cusip": "12740C103"
+    },
+    {
+      "issuer": "CANADIAN NATL RY CO",
+      "value_usd_k": 18571432,
+      "weight": 0.000677,
+      "shares": 187527,
+      "cusip": "136375102"
+    },
+    {
+      "issuer": "SHARKNINJA INC",
+      "value_usd_k": 18500763,
+      "weight": 0.000675,
+      "shares": 165333,
+      "cusip": "G8068L108"
+    },
+    {
+      "issuer": "FIVE BELOW INC",
+      "value_usd_k": 18466438,
+      "weight": 0.000673,
+      "shares": 98038,
+      "cusip": "33829M101"
+    },
+    {
+      "issuer": "US FOODS HLDG CORP",
+      "value_usd_k": 18113104,
+      "weight": 0.000661,
+      "shares": 240482,
+      "cusip": "912008109"
+    },
+    {
+      "issuer": "CROCS INC",
+      "value_usd_k": 18064219,
+      "weight": 0.000659,
+      "shares": 211228,
+      "cusip": "227046109"
+    },
+    {
+      "issuer": "BOYD GAMING CORP",
+      "value_usd_k": 18064146,
+      "weight": 0.000659,
+      "shares": 211921,
+      "cusip": "103304101"
+    },
+    {
+      "issuer": "TWILIO INC",
+      "value_usd_k": 17745436,
+      "weight": 0.000647,
+      "shares": 124757,
+      "cusip": "90138F102"
+    },
+    {
+      "issuer": "VIATRIS INC",
+      "value_usd_k": 17738972,
+      "weight": 0.000647,
+      "shares": 1424817,
+      "cusip": "92556V106"
+    },
+    {
+      "issuer": "GLOBAL X FDS",
+      "value_usd_k": 17726370,
+      "weight": 0.000646,
+      "shares": 414846,
+      "cusip": "37954Y871"
+    },
+    {
+      "issuer": "CHUBB LIMITED",
+      "value_usd_k": 17660686,
+      "weight": 0.000644,
+      "shares": 56583,
+      "cusip": "H1467J104"
+    },
+    {
+      "issuer": "BP PLC",
+      "value_usd_k": 17264248,
+      "weight": 0.00063,
+      "shares": 497099,
+      "cusip": "055622104"
+    },
+    {
+      "issuer": "COGNIZANT TECHNOLOGY SOLUTIO",
+      "value_usd_k": 17239100,
+      "weight": 0.000629,
+      "shares": 207700,
+      "cusip": "192446102"
+    },
+    {
+      "issuer": "VALLEY NATL BANCORP",
+      "value_usd_k": 17122868,
+      "weight": 0.000624,
+      "shares": 1465999,
+      "cusip": "919794107"
+    },
+    {
+      "issuer": "DOORDASH INC",
+      "value_usd_k": 16948404,
+      "weight": 0.000618,
+      "shares": 74834,
+      "cusip": "25809K105"
+    },
+    {
+      "issuer": "COMMSCOPE HLDG CO INC",
+      "value_usd_k": 16903759,
+      "weight": 0.000616,
+      "shares": 932364,
+      "cusip": "20337X109"
+    },
+    {
+      "issuer": "DROPBOX INC",
+      "value_usd_k": 16687006,
+      "weight": 0.000609,
+      "shares": 600252,
+      "cusip": "26210C104"
+    },
+    {
+      "issuer": "NEW YORK TIMES CO",
+      "value_usd_k": 16666631,
+      "weight": 0.000608,
+      "shares": 240084,
+      "cusip": "650111107"
+    },
+    {
+      "issuer": "PRIMERICA INC",
+      "value_usd_k": 16466833,
+      "weight": 0.000601,
+      "shares": 63736,
+      "cusip": "74164M108"
+    },
+    {
+      "issuer": "BAKER HUGHES COMPANY",
+      "value_usd_k": 16385155,
+      "weight": 0.000598,
+      "shares": 359797,
+      "cusip": "05722G100"
+    },
+    {
+      "issuer": "EURONET WORLDWIDE INC",
+      "value_usd_k": 16299946,
+      "weight": 0.000594,
+      "shares": 214163,
+      "cusip": "298736109"
+    },
+    {
+      "issuer": "INSULET CORP",
+      "value_usd_k": 16299459,
+      "weight": 0.000594,
+      "shares": 57344,
+      "cusip": "45784P101"
+    },
+    {
+      "issuer": "OPEN TEXT CORP",
+      "value_usd_k": 16208580,
+      "weight": 0.000591,
+      "shares": 497045,
+      "cusip": "683715106"
+    },
+    {
+      "issuer": "TD SYNNEX CORPORATION",
+      "value_usd_k": 16130946,
+      "weight": 0.000588,
+      "shares": 107375,
+      "cusip": "87162W100"
+    },
+    {
+      "issuer": "ALLISON TRANSMISSION HLDGS I",
+      "value_usd_k": 16022999,
+      "weight": 0.000584,
+      "shares": 163667,
+      "cusip": "01973R101"
+    },
+    {
+      "issuer": "MACYS INC",
+      "value_usd_k": 15886143,
+      "weight": 0.000579,
+      "shares": 720460,
+      "cusip": "55616P104"
+    },
+    {
+      "issuer": "CUMMINS INC",
+      "value_usd_k": 15713182,
+      "weight": 0.000573,
+      "shares": 30783,
+      "cusip": "231021106"
+    },
+    {
+      "issuer": "ROBINHOOD MKTS INC",
+      "value_usd_k": 15665368,
+      "weight": 0.000571,
+      "shares": 138509,
+      "cusip": "770700102"
+    },
+    {
+      "issuer": "PINNACLE WEST CAP CORP",
+      "value_usd_k": 15437614,
+      "weight": 0.000563,
+      "shares": 174043,
+      "cusip": "723484101"
+    },
+    {
+      "issuer": "ABBOTT LABS",
+      "value_usd_k": 15372331,
+      "weight": 0.000561,
+      "shares": 122694,
+      "cusip": "002824100"
+    },
+    {
+      "issuer": "ZILLOW GROUP INC",
+      "value_usd_k": 15200712,
+      "weight": 0.000554,
+      "shares": 222819,
+      "cusip": "98954M200"
+    },
+    {
+      "issuer": "CONSTELLATION ENERGY CORP",
+      "value_usd_k": 15168354,
+      "weight": 0.000553,
+      "shares": 42937,
+      "cusip": "21037T109"
+    },
+    {
+      "issuer": "PVH CORPORATION",
+      "value_usd_k": 15165487,
+      "weight": 0.000553,
+      "shares": 226283,
+      "cusip": "693656100"
+    },
+    {
+      "issuer": "AMERICAN TOWER CORP NEW",
+      "value_usd_k": 15148355,
+      "weight": 0.000552,
+      "shares": 86281,
+      "cusip": "03027X100"
+    },
+    {
+      "issuer": "ISHARES INC",
+      "value_usd_k": 15140632,
+      "weight": 0.000552,
+      "shares": 218385,
+      "cusip": "464286822"
+    },
+    {
+      "issuer": "INDEPENDENT BK CORP MASS",
+      "value_usd_k": 15110971,
+      "weight": 0.000551,
+      "shares": 206773,
+      "cusip": "453836108"
+    },
+    {
+      "issuer": "FEDERATED HERMES INC",
+      "value_usd_k": 14921596,
+      "weight": 0.000544,
+      "shares": 286568,
+      "cusip": "314211103"
+    },
+    {
+      "issuer": "WILLIS TOWERS WATSON PLC LTD",
+      "value_usd_k": 14724237,
+      "weight": 0.000537,
+      "shares": 44809,
+      "cusip": "G96629103"
+    },
+    {
+      "issuer": "ONTO INNOVATION INC",
+      "value_usd_k": 14702449,
+      "weight": 0.000536,
+      "shares": 93136,
+      "cusip": "683344105"
+    },
+    {
+      "issuer": "MCDONALDS CORP",
+      "value_usd_k": 14640288,
+      "weight": 0.000534,
+      "shares": 47902,
+      "cusip": "580135101"
+    },
+    {
+      "issuer": "WEATHERFORD INTL PLC",
+      "value_usd_k": 14633368,
+      "weight": 0.000534,
+      "shares": 186984,
+      "cusip": "G48833118"
+    },
+    {
+      "issuer": "KINROSS GOLD CORP",
+      "value_usd_k": 14599872,
+      "weight": 0.000532,
+      "shares": 517661,
+      "cusip": "496902404"
+    },
+    {
+      "issuer": "ADT INC DEL",
+      "value_usd_k": 14556900,
+      "weight": 0.000531,
+      "shares": 1803829,
+      "cusip": "00090Q103"
+    },
+    {
+      "issuer": "TRAVEL PLUS LEISURE CO",
+      "value_usd_k": 14485945,
+      "weight": 0.000528,
+      "shares": 205387,
+      "cusip": "894164102"
+    },
+    {
+      "issuer": "KROGER CO",
+      "value_usd_k": 14299173,
+      "weight": 0.000521,
+      "shares": 228860,
+      "cusip": "501044101"
+    },
+    {
+      "issuer": "RAMBUS INC DEL",
+      "value_usd_k": 14178259,
+      "weight": 0.000517,
+      "shares": 154296,
+      "cusip": "750917106"
+    },
+    {
+      "issuer": "RINGCENTRAL INC",
+      "value_usd_k": 14069152,
+      "weight": 0.000513,
+      "shares": 487159,
+      "cusip": "76680R206"
+    },
+    {
+      "issuer": "VALERO ENERGY CORP",
+      "value_usd_k": 14056265,
+      "weight": 0.000513,
+      "shares": 86346,
+      "cusip": "91913Y100"
+    },
+    {
+      "issuer": "TG THERAPEUTICS INC",
+      "value_usd_k": 14006378,
+      "weight": 0.000511,
+      "shares": 469855,
+      "cusip": "88322Q108"
+    },
+    {
+      "issuer": "CHENIERE ENERGY INC",
+      "value_usd_k": 13955258,
+      "weight": 0.000509,
+      "shares": 71790,
+      "cusip": "16411R208"
+    },
+    {
+      "issuer": "OLD REP INTL CORP",
+      "value_usd_k": 13871867,
+      "weight": 0.000506,
+      "shares": 303941,
+      "cusip": "680223104"
+    },
+    {
+      "issuer": "GENERAL DYNAMICS CORP",
+      "value_usd_k": 13809120,
+      "weight": 0.000504,
+      "shares": 41018,
+      "cusip": "369550108"
+    },
+    {
+      "issuer": "ALASKA AIR GROUP INC",
+      "value_usd_k": 13724908,
+      "weight": 0.000501,
+      "shares": 272861,
+      "cusip": "011659109"
+    },
+    {
+      "issuer": "SPOTIFY TECHNOLOGY S A",
+      "value_usd_k": 13669913,
+      "weight": 0.000499,
+      "shares": 23540,
+      "cusip": "L8681T102"
+    },
+    {
+      "issuer": "BIOMARIN PHARMACEUTICAL INC",
+      "value_usd_k": 13666582,
+      "weight": 0.000498,
+      "shares": 229961,
+      "cusip": "09061G101"
+    },
+    {
+      "issuer": "SPROUTS FMRS MKT INC",
+      "value_usd_k": 13629466,
+      "weight": 0.000497,
+      "shares": 171074,
+      "cusip": "85208M102"
+    },
+    {
+      "issuer": "DIAGEO PLC",
+      "value_usd_k": 13610214,
+      "weight": 0.000496,
+      "shares": 157763,
+      "cusip": "25243Q205"
+    },
+    {
+      "issuer": "FLEX LTD",
+      "value_usd_k": 13592506,
+      "weight": 0.000496,
+      "shares": 224967,
+      "cusip": "Y2573F102"
+    },
+    {
+      "issuer": "STERLING INFRASTRUCTURE INC",
+      "value_usd_k": 13459727,
+      "weight": 0.000491,
+      "shares": 43953,
+      "cusip": "859241101"
+    },
+    {
+      "issuer": "AUTOMATIC DATA PROCESSING IN",
+      "value_usd_k": 13407085,
+      "weight": 0.000489,
+      "shares": 52121,
+      "cusip": "053015103"
+    },
+    {
+      "issuer": "ARROW ELECTRS INC",
+      "value_usd_k": 13368580,
+      "weight": 0.000488,
+      "shares": 121334,
+      "cusip": "042735100"
+    },
+    {
+      "issuer": "HOWMET AEROSPACE INC",
+      "value_usd_k": 13362999,
+      "weight": 0.000487,
+      "shares": 65179,
+      "cusip": "443201108"
+    },
+    {
+      "issuer": "SMITH A O CORP",
+      "value_usd_k": 13295276,
+      "weight": 0.000485,
+      "shares": 198793,
+      "cusip": "831865209"
+    },
+    {
+      "issuer": "AXIS CAP HLDGS LTD",
+      "value_usd_k": 13253244,
+      "weight": 0.000483,
+      "shares": 123758,
+      "cusip": "G0692U109"
+    },
+    {
+      "issuer": "CNA FINL CORP",
+      "value_usd_k": 13253006,
+      "weight": 0.000483,
+      "shares": 277608,
+      "cusip": "126117100"
+    },
+    {
+      "issuer": "FIRST BANCORP P R",
+      "value_usd_k": 13236229,
+      "weight": 0.000483,
+      "shares": 638506,
+      "cusip": "318672706"
+    },
+    {
+      "issuer": "VIKING HOLDINGS LTD",
+      "value_usd_k": 13212064,
+      "weight": 0.000482,
+      "shares": 185017,
+      "cusip": "G93A5A101"
+    },
+    {
+      "issuer": "EASTERN BANKSHARES INC",
+      "value_usd_k": 13161877,
+      "weight": 0.00048,
+      "shares": 714155,
+      "cusip": "27627N105"
+    },
+    {
+      "issuer": "CADENCE DESIGN SYSTEM INC",
+      "value_usd_k": 13048965,
+      "weight": 0.000476,
+      "shares": 41746,
+      "cusip": "127387108"
+    },
+    {
+      "issuer": "SSR MINING IN",
+      "value_usd_k": 12953076,
+      "weight": 0.000472,
+      "shares": 590925,
+      "cusip": "784730103"
+    },
+    {
+      "issuer": "ASSURANT INC",
+      "value_usd_k": 12943520,
+      "weight": 0.000472,
+      "shares": 53741,
+      "cusip": "04621X108"
+    },
+    {
+      "issuer": "TARGA RES CORP",
+      "value_usd_k": 12938801,
+      "weight": 0.000472,
+      "shares": 70129,
+      "cusip": "87612G101"
+    },
+    {
+      "issuer": "UNION PAC CORP",
+      "value_usd_k": 12609022,
+      "weight": 0.00046,
+      "shares": 54509,
+      "cusip": "907818108"
+    },
+    {
+      "issuer": "NVENT ELECTRIC PLC",
+      "value_usd_k": 12590032,
+      "weight": 0.000459,
+      "shares": 123468,
+      "cusip": "G6700G107"
+    },
+    {
+      "issuer": "TEXTRON INC",
+      "value_usd_k": 12559366,
+      "weight": 0.000458,
+      "shares": 144079,
+      "cusip": "883203101"
+    },
+    {
+      "issuer": "PRIMORIS SVCS CORP",
+      "value_usd_k": 12511077,
+      "weight": 0.000456,
+      "shares": 100782,
+      "cusip": "74164F103"
+    },
+    {
+      "issuer": "HILTON WORLDWIDE HLDGS INC",
+      "value_usd_k": 12463778,
+      "weight": 0.000455,
+      "shares": 43390,
+      "cusip": "43300A203"
+    },
+    {
+      "issuer": "VERTEX PHARMACEUTICALS INC",
+      "value_usd_k": 12461960,
+      "weight": 0.000454,
+      "shares": 27488,
+      "cusip": "92532F100"
+    },
+    {
+      "issuer": "WESTERN DIGITAL CORP",
+      "value_usd_k": 12461840,
+      "weight": 0.000454,
+      "shares": 72339,
+      "cusip": "958102105"
+    },
+    {
+      "issuer": "GARTNER INC",
+      "value_usd_k": 12405617,
+      "weight": 0.000452,
+      "shares": 49174,
+      "cusip": "366651107"
+    },
+    {
+      "issuer": "AMEREN CORP",
+      "value_usd_k": 12351783,
+      "weight": 0.00045,
+      "shares": 123691,
+      "cusip": "023608102"
+    },
+    {
+      "issuer": "PULTE GROUP INC",
+      "value_usd_k": 12350879,
+      "weight": 0.00045,
+      "shares": 105329,
+      "cusip": "745867101"
+    },
+    {
+      "issuer": "GENERAL MTRS CO",
+      "value_usd_k": 12289648,
+      "weight": 0.000448,
+      "shares": 151127,
+      "cusip": "37045V100"
+    },
+    {
+      "issuer": "PEPSICO INC",
+      "value_usd_k": 12051948,
+      "weight": 0.00044,
+      "shares": 83974,
+      "cusip": "713448108"
+    },
+    {
+      "issuer": "ALLEGION PLC",
+      "value_usd_k": 11953601,
+      "weight": 0.000436,
+      "shares": 75076,
+      "cusip": "G0176J109"
+    },
+    {
+      "issuer": "JACKSON FINANCIAL INC",
+      "value_usd_k": 11917284,
+      "weight": 0.000435,
+      "shares": 111742,
+      "cusip": "46817M107"
+    },
+    {
+      "issuer": "BANKUNITED INC",
+      "value_usd_k": 11916815,
+      "weight": 0.000435,
+      "shares": 267373,
+      "cusip": "06652K103"
+    },
+    {
+      "issuer": "AMERICAN EXPRESS CO",
+      "value_usd_k": 11869846,
+      "weight": 0.000433,
+      "shares": 32085,
+      "cusip": "025816109"
+    },
+    {
+      "issuer": "WARNER BROS DISCOVERY INC",
+      "value_usd_k": 11858969,
+      "weight": 0.000432,
+      "shares": 411484,
+      "cusip": "934423104"
+    },
+    {
+      "issuer": "VOYA FINANCIAL INC",
+      "value_usd_k": 11849348,
+      "weight": 0.000432,
+      "shares": 159073,
+      "cusip": "929089100"
+    },
+    {
+      "issuer": "KIRBY CORP",
+      "value_usd_k": 11797964,
+      "weight": 0.00043,
+      "shares": 107079,
+      "cusip": "497266106"
+    },
+    {
+      "issuer": "FIRST SOLAR INC",
+      "value_usd_k": 11741505,
+      "weight": 0.000428,
+      "shares": 44947,
+      "cusip": "336433107"
+    },
+    {
+      "issuer": "NOV INC",
+      "value_usd_k": 11715763,
+      "weight": 0.000427,
+      "shares": 749569,
+      "cusip": "62955J103"
+    },
+    {
+      "issuer": "SENSATA TECHNOLOGIES HLDG PL",
+      "value_usd_k": 11635887,
+      "weight": 0.000424,
+      "shares": 349531,
+      "cusip": "G8060N102"
+    },
+    {
+      "issuer": "CELSIUS HLDGS INC",
+      "value_usd_k": 11627337,
+      "weight": 0.000424,
+      "shares": 254205,
+      "cusip": "15118V207"
+    },
+    {
+      "issuer": "SONOCO PRODS CO",
+      "value_usd_k": 11623383,
+      "weight": 0.000424,
+      "shares": 266347,
+      "cusip": "835495102"
+    },
+    {
+      "issuer": "STAR BULK CARRIERS CORP.",
+      "value_usd_k": 11622065,
+      "weight": 0.000424,
+      "shares": 604686,
+      "cusip": "Y8162K204"
+    },
+    {
+      "issuer": "PROSPERITY BANCSHARES INC",
+      "value_usd_k": 11601910,
+      "weight": 0.000423,
+      "shares": 167876,
+      "cusip": "743606105"
+    },
+    {
+      "issuer": "STRYKER CORPORATION",
+      "value_usd_k": 11598159,
+      "weight": 0.000423,
+      "shares": 32999,
+      "cusip": "863667101"
+    },
+    {
+      "issuer": "MIRION TECHNOLOGIES INC",
+      "value_usd_k": 11474114,
+      "weight": 0.000418,
+      "shares": 489928,
+      "cusip": "60471A101"
+    },
+    {
+      "issuer": "FERGUSON ENTERPRISES INC",
+      "value_usd_k": 11450974,
+      "weight": 0.000418,
+      "shares": 51435,
+      "cusip": "31488V107"
+    },
+    {
+      "issuer": "CNO FINL GROUP INC",
+      "value_usd_k": 11361447,
+      "weight": 0.000414,
+      "shares": 267517,
+      "cusip": "12621E103"
+    },
+    {
+      "issuer": "COEUR MNG INC",
+      "value_usd_k": 11309319,
+      "weight": 0.000412,
+      "shares": 634286,
+      "cusip": "192108504"
+    },
+    {
+      "issuer": "ONEMAIN HLDGS INC",
+      "value_usd_k": 11248223,
+      "weight": 0.00041,
+      "shares": 166517,
+      "cusip": "68268W103"
+    },
+    {
+      "issuer": "CARNIVAL CORP",
+      "value_usd_k": 11220885,
+      "weight": 0.000409,
+      "shares": 367416,
+      "cusip": "143658300"
+    },
+    {
+      "issuer": "MADRIGAL PHARMACEUTICALS INC",
+      "value_usd_k": 11191410,
+      "weight": 0.000408,
+      "shares": 19218,
+      "cusip": "558868105"
+    },
+    {
+      "issuer": "CELANESE CORP DEL",
+      "value_usd_k": 11132409,
+      "weight": 0.000406,
+      "shares": 263302,
+      "cusip": "150870103"
+    },
+    {
+      "issuer": "LANTHEUS HLDGS INC",
+      "value_usd_k": 11094284,
+      "weight": 0.000405,
+      "shares": 166706,
+      "cusip": "516544103"
+    },
+    {
+      "issuer": "FRESHWORKS INC",
+      "value_usd_k": 11080003,
+      "weight": 0.000404,
+      "shares": 904490,
+      "cusip": "358054104"
+    },
+    {
+      "issuer": "RALPH LAUREN CORP",
+      "value_usd_k": 11074712,
+      "weight": 0.000404,
+      "shares": 31319,
+      "cusip": "751212101"
+    },
+    {
+      "issuer": "ASSURED GUARANTY LTD",
+      "value_usd_k": 10977171,
+      "weight": 0.0004,
+      "shares": 122145,
+      "cusip": "G0585R106"
+    },
+    {
+      "issuer": "LINCOLN NATL CORP IND",
+      "value_usd_k": 10878724,
+      "weight": 0.000397,
+      "shares": 244301,
+      "cusip": "534187109"
+    },
+    {
+      "issuer": "ALAMOS GOLD INC NEW",
+      "value_usd_k": 10851975,
+      "weight": 0.000396,
+      "shares": 281285,
+      "cusip": "011532108"
+    },
+    {
+      "issuer": "NASDAQ INC",
+      "value_usd_k": 10841651,
+      "weight": 0.000395,
+      "shares": 111620,
+      "cusip": "631103108"
+    },
+    {
+      "issuer": "YELP INC",
+      "value_usd_k": 10810695,
+      "weight": 0.000394,
+      "shares": 355732,
+      "cusip": "985817105"
+    },
+    {
+      "issuer": "UPWORK INC",
+      "value_usd_k": 10724067,
+      "weight": 0.000391,
+      "shares": 541073,
+      "cusip": "91688F104"
+    },
+    {
+      "issuer": "HONEYWELL INTL INC",
+      "value_usd_k": 10694053,
+      "weight": 0.00039,
+      "shares": 54816,
+      "cusip": "438516106"
+    },
+    {
+      "issuer": "KOHLS CORP",
+      "value_usd_k": 10667899,
+      "weight": 0.000389,
+      "shares": 522680,
+      "cusip": "500255104"
+    },
+    {
+      "issuer": "CENTURY ALUM CO",
+      "value_usd_k": 10649046,
+      "weight": 0.000388,
+      "shares": 271798,
+      "cusip": "156431108"
+    },
+    {
+      "issuer": "LITTELFUSE INC",
+      "value_usd_k": 10638574,
+      "weight": 0.000388,
+      "shares": 42063,
+      "cusip": "537008104"
+    },
+    {
+      "issuer": "GRACO INC",
+      "value_usd_k": 10636017,
+      "weight": 0.000388,
+      "shares": 129755,
+      "cusip": "384109104"
+    },
+    {
+      "issuer": "KODIAK GAS SVCS INC",
+      "value_usd_k": 10592989,
+      "weight": 0.000386,
+      "shares": 283235,
+      "cusip": "50012A108"
+    },
+    {
+      "issuer": "HALLIBURTON CO",
+      "value_usd_k": 10573507,
+      "weight": 0.000386,
+      "shares": 374151,
+      "cusip": "406216101"
+    },
+    {
+      "issuer": "MUELLER INDS INC",
+      "value_usd_k": 10527160,
+      "weight": 0.000384,
+      "shares": 91700,
+      "cusip": "624756102"
+    },
+    {
+      "issuer": "TEXAS CAP BANCSHARES INC",
+      "value_usd_k": 10468506,
+      "weight": 0.000382,
+      "shares": 115623,
+      "cusip": "88224Q107"
+    },
+    {
+      "issuer": "IREN LIMITED",
+      "value_usd_k": 10450506,
+      "weight": 0.000381,
+      "shares": 276688,
+      "cusip": "Q4982L109"
+    },
+    {
+      "issuer": "SCIENCE APPLICATIONS INTL CO",
+      "value_usd_k": 10377744,
+      "weight": 0.000378,
+      "shares": 103097,
+      "cusip": "808625107"
+    },
+    {
+      "issuer": "SUN CTRY AIRLS HLDGS INC",
+      "value_usd_k": 10269668,
+      "weight": 0.000375,
+      "shares": 713667,
+      "cusip": "866683105"
+    },
+    {
+      "issuer": "SMITH & NEPHEW PLC",
+      "value_usd_k": 10246924,
+      "weight": 0.000374,
+      "shares": 312311,
+      "cusip": "83175M205"
+    },
+    {
+      "issuer": "RAYMOND JAMES FINL INC",
+      "value_usd_k": 10216575,
+      "weight": 0.000373,
+      "shares": 63619,
+      "cusip": "754730109"
+    },
+    {
+      "issuer": "PTC INC",
+      "value_usd_k": 10138499,
+      "weight": 0.00037,
+      "shares": 58197,
+      "cusip": "69370C100"
+    },
+    {
+      "issuer": "ZOOM COMMUNICATIONS INC",
+      "value_usd_k": 10079362,
+      "weight": 0.000368,
+      "shares": 116808,
+      "cusip": "98980L101"
+    },
+    {
+      "issuer": "BANK OZK LITTLE ROCK ARK",
+      "value_usd_k": 10046994,
+      "weight": 0.000366,
+      "shares": 218318,
+      "cusip": "06417N103"
+    },
+    {
+      "issuer": "ZEBRA TECHNOLOGIES CORPORATI",
+      "value_usd_k": 10030166,
+      "weight": 0.000366,
+      "shares": 41307,
+      "cusip": "989207105"
+    },
+    {
+      "issuer": "PAR PAC HOLDINGS INC",
+      "value_usd_k": 9986964,
+      "weight": 0.000364,
+      "shares": 284205,
+      "cusip": "69888T207"
+    },
+    {
+      "issuer": "ANTERO RESOURCES CORP",
+      "value_usd_k": 9984751,
+      "weight": 0.000364,
+      "shares": 289749,
+      "cusip": "03674X106"
+    },
+    {
+      "issuer": "SCORPIO TANKERS INC",
+      "value_usd_k": 9972948,
+      "weight": 0.000364,
+      "shares": 196202,
+      "cusip": "Y7542C130"
+    },
+    {
+      "issuer": "DEXCOM INC",
+      "value_usd_k": 9906652,
+      "weight": 0.000361,
+      "shares": 149264,
+      "cusip": "252131107"
+    },
+    {
+      "issuer": "APPFOLIO INC",
+      "value_usd_k": 9872735,
+      "weight": 0.00036,
+      "shares": 42436,
+      "cusip": "03783C100"
+    },
+    {
+      "issuer": "PUBLIC SVC ENTERPRISE GRP IN",
+      "value_usd_k": 9841729,
+      "weight": 0.000359,
+      "shares": 122562,
+      "cusip": "744573106"
+    },
+    {
+      "issuer": "EBAY INC.",
+      "value_usd_k": 9813905,
+      "weight": 0.000358,
+      "shares": 112674,
+      "cusip": "278642103"
+    },
+    {
+      "issuer": "LEAR CORP",
+      "value_usd_k": 9809302,
+      "weight": 0.000358,
+      "shares": 85596,
+      "cusip": "521865204"
+    },
+    {
+      "issuer": "CORCEPT THERAPEUTICS INC",
+      "value_usd_k": 9709200,
+      "weight": 0.000354,
+      "shares": 279000,
+      "cusip": "218352102"
+    },
+    {
+      "issuer": "CAL MAINE FOODS INC",
+      "value_usd_k": 9692899,
+      "weight": 0.000353,
+      "shares": 121816,
+      "cusip": "128030202"
+    },
+    {
+      "issuer": "ALKERMES PLC",
+      "value_usd_k": 9637767,
+      "weight": 0.000351,
+      "shares": 344452,
+      "cusip": "G01767105"
+    },
+    {
+      "issuer": "DOLLAR GEN CORP NEW",
+      "value_usd_k": 9604316,
+      "weight": 0.00035,
+      "shares": 72338,
+      "cusip": "256677105"
+    },
+    {
+      "issuer": "V F CORP",
+      "value_usd_k": 9534886,
+      "weight": 0.000348,
+      "shares": 527372,
+      "cusip": "918204108"
+    },
+    {
+      "issuer": "HENRY JACK & ASSOC INC",
+      "value_usd_k": 9448267,
+      "weight": 0.000345,
+      "shares": 51777,
+      "cusip": "426281101"
+    },
+    {
+      "issuer": "KEYSIGHT TECHNOLOGIES INC",
+      "value_usd_k": 9432893,
+      "weight": 0.000344,
+      "shares": 46424,
+      "cusip": "49338L103"
+    },
+    {
+      "issuer": "TORONTO DOMINION BK ONT",
+      "value_usd_k": 9408669,
+      "weight": 0.000343,
+      "shares": 99698,
+      "cusip": "891160509"
+    },
+    {
+      "issuer": "GLOBE LIFE INC",
+      "value_usd_k": 9386284,
+      "weight": 0.000342,
+      "shares": 67112,
+      "cusip": "37959E102"
+    },
+    {
+      "issuer": "TRANE TECHNOLOGIES PLC",
+      "value_usd_k": 9344303,
+      "weight": 0.000341,
+      "shares": 24009,
+      "cusip": "G8994E103"
+    },
+    {
+      "issuer": "NATIONAL FUEL GAS CO",
+      "value_usd_k": 9291123,
+      "weight": 0.000339,
+      "shares": 116052,
+      "cusip": "636180101"
+    },
+    {
+      "issuer": "CHIPOTLE MEXICAN GRILL INC",
+      "value_usd_k": 9275419,
+      "weight": 0.000338,
+      "shares": 250687,
+      "cusip": "169656105"
+    },
+    {
+      "issuer": "FIVE9 INC",
+      "value_usd_k": 9179311,
+      "weight": 0.000335,
+      "shares": 457821,
+      "cusip": "338307101"
+    },
+    {
+      "issuer": "FAIR ISAAC CORP",
+      "value_usd_k": 9149635,
+      "weight": 0.000334,
+      "shares": 5412,
+      "cusip": "303250104"
+    },
+    {
+      "issuer": "REMITLY GLOBAL INC",
+      "value_usd_k": 9123401,
+      "weight": 0.000333,
+      "shares": 661116,
+      "cusip": "75960P104"
+    },
+    {
+      "issuer": "NATWEST GROUP PLC",
+      "value_usd_k": 9119022,
+      "weight": 0.000333,
+      "shares": 521087,
+      "cusip": "639057207"
+    },
+    {
+      "issuer": "CARLISLE COS INC",
+      "value_usd_k": 9100337,
+      "weight": 0.000332,
+      "shares": 28451,
+      "cusip": "142339100"
+    },
+    {
+      "issuer": "RPM INTL INC",
+      "value_usd_k": 9088352,
+      "weight": 0.000331,
+      "shares": 87388,
+      "cusip": "749685103"
+    },
+    {
+      "issuer": "COHERENT CORP",
+      "value_usd_k": 9040054,
+      "weight": 0.00033,
+      "shares": 48979,
+      "cusip": "19247G107"
+    },
+    {
+      "issuer": "IES HLDGS INC",
+      "value_usd_k": 9000367,
+      "weight": 0.000328,
+      "shares": 23136,
+      "cusip": "44951W106"
+    },
+    {
+      "issuer": "WESTERN UN CO",
+      "value_usd_k": 8948372,
+      "weight": 0.000326,
+      "shares": 961157,
+      "cusip": "959802109"
+    },
+    {
+      "issuer": "BOSTON SCIENTIFIC CORP",
+      "value_usd_k": 8938586,
+      "weight": 0.000326,
+      "shares": 93745,
+      "cusip": "101137107"
+    },
+    {
+      "issuer": "ADVANCED DRAIN SYS INC DEL",
+      "value_usd_k": 8819423,
+      "weight": 0.000322,
+      "shares": 60895,
+      "cusip": "00790R104"
+    },
+    {
+      "issuer": "ZIFF DAVIS INC",
+      "value_usd_k": 8770136,
+      "weight": 0.00032,
+      "shares": 249506,
+      "cusip": "48123V102"
+    },
+    {
+      "issuer": "PEGASYSTEMS INC",
+      "value_usd_k": 8768389,
+      "weight": 0.00032,
+      "shares": 146825,
+      "cusip": "705573103"
+    },
+    {
+      "issuer": "FIDELITY NATL INFORMATION SV",
+      "value_usd_k": 8737230,
+      "weight": 0.000319,
+      "shares": 131466,
+      "cusip": "31620M106"
+    },
+    {
+      "issuer": "VICTORIAS SECRET AND CO",
+      "value_usd_k": 8726354,
+      "weight": 0.000318,
+      "shares": 161092,
+      "cusip": "926400102"
+    },
+    {
+      "issuer": "OSHKOSH CORP",
+      "value_usd_k": 8695606,
+      "weight": 0.000317,
+      "shares": 69216,
+      "cusip": "688239201"
+    },
+    {
+      "issuer": "AXSOME THERAPEUTICS INC",
+      "value_usd_k": 8665172,
+      "weight": 0.000316,
+      "shares": 47444,
+      "cusip": "05464T104"
+    },
+    {
+      "issuer": "AMERICAN EAGLE OUTFITTERS IN",
+      "value_usd_k": 8633380,
+      "weight": 0.000315,
+      "shares": 327394,
+      "cusip": "02553E106"
+    },
+    {
+      "issuer": "WEX INC",
+      "value_usd_k": 8621324,
+      "weight": 0.000314,
+      "shares": 57869,
+      "cusip": "96208T104"
+    },
+    {
+      "issuer": "AMERICAN FINL GROUP INC OHIO",
+      "value_usd_k": 8620818,
+      "weight": 0.000314,
+      "shares": 63073,
+      "cusip": "025932104"
+    },
+    {
+      "issuer": "LINCOLN ELEC HLDGS INC",
+      "value_usd_k": 8619611,
+      "weight": 0.000314,
+      "shares": 35969,
+      "cusip": "533900106"
+    },
+    {
+      "issuer": "WAYFAIR INC",
+      "value_usd_k": 8581741,
+      "weight": 0.000313,
+      "shares": 85467,
+      "cusip": "94419L101"
+    },
+    {
+      "issuer": "HARMONY BIOSCIENCES HLDGS IN",
+      "value_usd_k": 8550994,
+      "weight": 0.000312,
+      "shares": 228514,
+      "cusip": "413197104"
+    },
+    {
+      "issuer": "CENCORA INC",
+      "value_usd_k": 8506572,
+      "weight": 0.00031,
+      "shares": 25186,
+      "cusip": "03073E105"
+    },
+    {
+      "issuer": "ENPHASE ENERGY INC",
+      "value_usd_k": 8455976,
+      "weight": 0.000308,
+      "shares": 263837,
+      "cusip": "29355A107"
+    },
+    {
+      "issuer": "CONFLUENT INC",
+      "value_usd_k": 8422052,
+      "weight": 0.000307,
+      "shares": 278507,
+      "cusip": "20717M103"
+    },
+    {
+      "issuer": "STRIDE INC",
+      "value_usd_k": 8375256,
+      "weight": 0.000305,
+      "shares": 128989,
+      "cusip": "86333M108"
+    },
+    {
+      "issuer": "ADIENT PLC",
+      "value_usd_k": 8229298,
+      "weight": 0.0003,
+      "shares": 429280,
+      "cusip": "G0084W101"
+    },
+    {
+      "issuer": "AMER SPORTS INC",
+      "value_usd_k": 8188166,
+      "weight": 0.000299,
+      "shares": 219228,
+      "cusip": "G0260P102"
+    },
+    {
+      "issuer": "FLOWSERVE CORP",
+      "value_usd_k": 8082492,
+      "weight": 0.000295,
+      "shares": 116496,
+      "cusip": "34354P105"
+    },
+    {
+      "issuer": "CLOUDFLARE INC",
+      "value_usd_k": 8062844,
+      "weight": 0.000294,
+      "shares": 40897,
+      "cusip": "18915M107"
+    },
+    {
+      "issuer": "TORO CO",
+      "value_usd_k": 8041720,
+      "weight": 0.000293,
+      "shares": 102156,
+      "cusip": "891092108"
+    },
+    {
+      "issuer": "NORTHWESTERN ENERGY GROUP IN",
+      "value_usd_k": 7988826,
+      "weight": 0.000291,
+      "shares": 123781,
+      "cusip": "668074305"
+    },
+    {
+      "issuer": "BRINKER INTL INC",
+      "value_usd_k": 7980143,
+      "weight": 0.000291,
+      "shares": 55603,
+      "cusip": "109641100"
+    },
+    {
+      "issuer": "PROCORE TECHNOLOGIES INC",
+      "value_usd_k": 7957756,
+      "weight": 0.00029,
+      "shares": 109400,
+      "cusip": "74275K108"
+    },
+    {
+      "issuer": "KRATOS DEFENSE & SEC SOLUTIO",
+      "value_usd_k": 7933961,
+      "weight": 0.000289,
+      "shares": 104518,
+      "cusip": "50077B207"
+    },
+    {
+      "issuer": "RESMED INC",
+      "value_usd_k": 7930404,
+      "weight": 0.000289,
+      "shares": 32924,
+      "cusip": "761152107"
+    },
+    {
+      "issuer": "EVERGY INC",
+      "value_usd_k": 7888289,
+      "weight": 0.000288,
+      "shares": 108819,
+      "cusip": "30034W106"
+    },
+    {
+      "issuer": "VULCAN MATLS CO",
+      "value_usd_k": 7774812,
+      "weight": 0.000284,
+      "shares": 27259,
+      "cusip": "929160109"
+    },
+    {
+      "issuer": "OREILLY AUTOMOTIVE INC",
+      "value_usd_k": 7738348,
+      "weight": 0.000282,
+      "shares": 84841,
+      "cusip": "67103H107"
+    },
+    {
+      "issuer": "EDISON INTL",
+      "value_usd_k": 7698705,
+      "weight": 0.000281,
+      "shares": 128269,
+      "cusip": "281020107"
+    },
+    {
+      "issuer": "INGREDION INC",
+      "value_usd_k": 7675309,
+      "weight": 0.00028,
+      "shares": 69611,
+      "cusip": "457187102"
+    },
+    {
+      "issuer": "LUMENTUM HLDGS INC",
+      "value_usd_k": 7655614,
+      "weight": 0.000279,
+      "shares": 20770,
+      "cusip": "55024U109"
+    },
+    {
+      "issuer": "INTERCONTINENTAL EXCHANGE IN",
+      "value_usd_k": 7620380,
+      "weight": 0.000278,
+      "shares": 47051,
+      "cusip": "45866F104"
+    },
+    {
+      "issuer": "ACADEMY SPORTS & OUTDOORS IN",
+      "value_usd_k": 7465773,
+      "weight": 0.000272,
+      "shares": 149435,
+      "cusip": "00402L107"
+    },
+    {
+      "issuer": "HARLEY DAVIDSON INC",
+      "value_usd_k": 7461761,
+      "weight": 0.000272,
+      "shares": 364166,
+      "cusip": "412822108"
+    },
+    {
+      "issuer": "PHILLIPS 66",
+      "value_usd_k": 7421994,
+      "weight": 0.000271,
+      "shares": 57517,
+      "cusip": "718546104"
+    },
+    {
+      "issuer": "TRANSDIGM GROUP INC",
+      "value_usd_k": 7393966,
+      "weight": 0.00027,
+      "shares": 5560,
+      "cusip": "893641100"
+    },
+    {
+      "issuer": "PURE STORAGE INC",
+      "value_usd_k": 7388925,
+      "weight": 0.000269,
+      "shares": 110266,
+      "cusip": "74624M102"
+    },
+    {
+      "issuer": "CROWN HLDGS INC",
+      "value_usd_k": 7385111,
+      "weight": 0.000269,
+      "shares": 71721,
+      "cusip": "228368106"
+    },
+    {
+      "issuer": "GROUP 1 AUTOMOTIVE INC",
+      "value_usd_k": 7376341,
+      "weight": 0.000269,
+      "shares": 18755,
+      "cusip": "398905109"
+    },
+    {
+      "issuer": "LENNOX INTL INC",
+      "value_usd_k": 7374989,
+      "weight": 0.000269,
+      "shares": 15188,
+      "cusip": "526107107"
+    },
+    {
+      "issuer": "SMITHFIELD FOODS INC",
+      "value_usd_k": 7312986,
+      "weight": 0.000267,
+      "shares": 327496,
+      "cusip": "832248207"
+    },
+    {
+      "issuer": "IRIDIUM COMMUNICATIONS INC",
+      "value_usd_k": 7296784,
+      "weight": 0.000266,
+      "shares": 419838,
+      "cusip": "46269C102"
+    },
+    {
+      "issuer": "DANAHER CORPORATION",
+      "value_usd_k": 7260885,
+      "weight": 0.000265,
+      "shares": 31718,
+      "cusip": "235851102"
+    },
+    {
+      "issuer": "BOX INC",
+      "value_usd_k": 7221650,
+      "weight": 0.000263,
+      "shares": 241446,
+      "cusip": "10316T104"
+    },
+    {
+      "issuer": "ALLY FINL INC",
+      "value_usd_k": 7221264,
+      "weight": 0.000263,
+      "shares": 159445,
+      "cusip": "02005N100"
+    },
+    {
+      "issuer": "LEIDOS HOLDINGS INC",
+      "value_usd_k": 7209325,
+      "weight": 0.000263,
+      "shares": 39963,
+      "cusip": "525327102"
+    },
+    {
+      "issuer": "IDACORP INC",
+      "value_usd_k": 7191392,
+      "weight": 0.000262,
+      "shares": 56822,
+      "cusip": "451107106"
+    },
+    {
+      "issuer": "CRH PLC",
+      "value_usd_k": 7177248,
+      "weight": 0.000262,
+      "shares": 57510,
+      "cusip": "G25508105"
+    },
+    {
+      "issuer": "TRAVELERS COMPANIES INC",
+      "value_usd_k": 7156650,
+      "weight": 0.000261,
+      "shares": 24673,
+      "cusip": "89417E109"
+    },
+    {
+      "issuer": "TJX COS INC NEW",
+      "value_usd_k": 7123817,
+      "weight": 0.00026,
+      "shares": 46376,
+      "cusip": "872540109"
+    },
+    {
+      "issuer": "GLOBANT S A",
+      "value_usd_k": 7076172,
+      "weight": 0.000258,
+      "shares": 108248,
+      "cusip": "L44385109"
+    },
+    {
+      "issuer": "TRINET GROUP INC",
+      "value_usd_k": 7052790,
+      "weight": 0.000257,
+      "shares": 119276,
+      "cusip": "896288107"
+    },
+    {
+      "issuer": "APPLIED INDL TECHNOLOGIES IN",
+      "value_usd_k": 7015213,
+      "weight": 0.000256,
+      "shares": 27321,
+      "cusip": "03820C105"
+    },
+    {
+      "issuer": "ALBERTSONS COS INC",
+      "value_usd_k": 6946673,
+      "weight": 0.000253,
+      "shares": 404582,
+      "cusip": "013091103"
+    },
+    {
+      "issuer": "ENERSYS",
+      "value_usd_k": 6908110,
+      "weight": 0.000252,
+      "shares": 47074,
+      "cusip": "29275Y102"
+    },
+    {
+      "issuer": "FIRST INTST BANCSYSTEM INC",
+      "value_usd_k": 6899102,
+      "weight": 0.000252,
+      "shares": 199396,
+      "cusip": "32055Y201"
+    },
+    {
+      "issuer": "STARBUCKS CORP",
+      "value_usd_k": 6886862,
+      "weight": 0.000251,
+      "shares": 81782,
+      "cusip": "855244109"
+    },
+    {
+      "issuer": "URANIUM ENERGY CORP",
+      "value_usd_k": 6839084,
+      "weight": 0.000249,
+      "shares": 585538,
+      "cusip": "916896103"
+    },
+    {
+      "issuer": "HUNTINGTON INGALLS INDS INC",
+      "value_usd_k": 6804801,
+      "weight": 0.000248,
+      "shares": 20010,
+      "cusip": "446413106"
+    },
+    {
+      "issuer": "HECLA MNG CO",
+      "value_usd_k": 6785162,
+      "weight": 0.000247,
+      "shares": 353578,
+      "cusip": "422704106"
+    },
+    {
+      "issuer": "PAGSEGURO DIGITAL LTD",
+      "value_usd_k": 6674910,
+      "weight": 0.000243,
+      "shares": 692418,
+      "cusip": "G68707101"
+    },
+    {
+      "issuer": "APPLOVIN CORP",
+      "value_usd_k": 6648582,
+      "weight": 0.000242,
+      "shares": 9867,
+      "cusip": "03831W108"
+    },
+    {
+      "issuer": "CHARTER COMMUNICATIONS INC N",
+      "value_usd_k": 6642216,
+      "weight": 0.000242,
+      "shares": 31819,
+      "cusip": "16119P108"
+    },
+    {
+      "issuer": "INSPIRE MED SYS INC",
+      "value_usd_k": 6615381,
+      "weight": 0.000241,
+      "shares": 71727,
+      "cusip": "457730109"
+    },
+    {
+      "issuer": "HEICO CORP NEW",
+      "value_usd_k": 6601236,
+      "weight": 0.000241,
+      "shares": 20400,
+      "cusip": "422806109"
+    },
+    {
+      "issuer": "LIVE NATION ENTERTAINMENT IN",
+      "value_usd_k": 6570105,
+      "weight": 0.00024,
+      "shares": 46106,
+      "cusip": "538034109"
+    },
+    {
+      "issuer": "EDWARDS LIFESCIENCES CORP",
+      "value_usd_k": 6543960,
+      "weight": 0.000239,
+      "shares": 76762,
+      "cusip": "28176E108"
+    },
+    {
+      "issuer": "TERADATA CORP DEL",
+      "value_usd_k": 6533307,
+      "weight": 0.000238,
+      "shares": 214629,
+      "cusip": "88076W103"
+    },
+    {
+      "issuer": "ORGANON & CO",
+      "value_usd_k": 6519143,
+      "weight": 0.000238,
+      "shares": 909225,
+      "cusip": "68622V106"
+    },
+    {
+      "issuer": "TAYLOR MORRISON HOME CORP",
+      "value_usd_k": 6518145,
+      "weight": 0.000238,
+      "shares": 110721,
+      "cusip": "87724P106"
+    },
+    {
+      "issuer": "EASTMAN CHEM CO",
+      "value_usd_k": 6515192,
+      "weight": 0.000238,
+      "shares": 102071,
+      "cusip": "277432100"
+    },
+    {
+      "issuer": "ITT INC",
+      "value_usd_k": 6443467,
+      "weight": 0.000235,
+      "shares": 37136,
+      "cusip": "45073V108"
+    },
+    {
+      "issuer": "PAYCOM SOFTWARE INC",
+      "value_usd_k": 6421411,
+      "weight": 0.000234,
+      "shares": 40295,
+      "cusip": "70432V102"
+    },
+    {
+      "issuer": "TRANSUNION",
+      "value_usd_k": 6401581,
+      "weight": 0.000233,
+      "shares": 74654,
+      "cusip": "89400J107"
+    },
+    {
+      "issuer": "STIFEL FINL CORP",
+      "value_usd_k": 6385218,
+      "weight": 0.000233,
+      "shares": 50992,
+      "cusip": "860630102"
+    },
+    {
+      "issuer": "FASTENAL CO",
+      "value_usd_k": 6375413,
+      "weight": 0.000232,
+      "shares": 158869,
+      "cusip": "311900104"
+    },
+    {
+      "issuer": "INTUITIVE SURGICAL INC",
+      "value_usd_k": 6326241,
+      "weight": 0.000231,
+      "shares": 11170,
+      "cusip": "46120E602"
+    },
+    {
+      "issuer": "POST HLDGS INC",
+      "value_usd_k": 6263130,
+      "weight": 0.000228,
+      "shares": 63232,
+      "cusip": "737446104"
+    },
+    {
+      "issuer": "LKQ CORP",
+      "value_usd_k": 6226696,
+      "weight": 0.000227,
+      "shares": 206182,
+      "cusip": "501889208"
+    },
+    {
+      "issuer": "SHERWIN WILLIAMS CO",
+      "value_usd_k": 6195130,
+      "weight": 0.000226,
+      "shares": 19119,
+      "cusip": "824348106"
+    },
+    {
+      "issuer": "INSIGHT ENTERPRISES INC",
+      "value_usd_k": 6191801,
+      "weight": 0.000226,
+      "shares": 76001,
+      "cusip": "45765U103"
+    },
+    {
+      "issuer": "VIRTU FINL INC",
+      "value_usd_k": 6187457,
+      "weight": 0.000226,
+      "shares": 185698,
+      "cusip": "928254101"
+    },
+    {
+      "issuer": "PNC FINL SVCS GROUP INC",
+      "value_usd_k": 6145220,
+      "weight": 0.000224,
+      "shares": 29441,
+      "cusip": "693475105"
+    },
+    {
+      "issuer": "FRONTDOOR INC",
+      "value_usd_k": 6114217,
+      "weight": 0.000223,
+      "shares": 105984,
+      "cusip": "35905A109"
+    },
+    {
+      "issuer": "DYCOM INDS INC",
+      "value_usd_k": 6075442,
+      "weight": 0.000222,
+      "shares": 17980,
+      "cusip": "267475101"
+    },
+    {
+      "issuer": "CONCENTRIX CORP",
+      "value_usd_k": 6062406,
+      "weight": 0.000221,
+      "shares": 145801,
+      "cusip": "20602D101"
+    },
+    {
+      "issuer": "LAS VEGAS SANDS CORP",
+      "value_usd_k": 6060660,
+      "weight": 0.000221,
+      "shares": 93112,
+      "cusip": "517834107"
+    },
+    {
+      "issuer": "ALPHA METALLURGICAL RESOUR I",
+      "value_usd_k": 6060362,
+      "weight": 0.000221,
+      "shares": 30320,
+      "cusip": "020764106"
+    },
+    {
+      "issuer": "KKR & CO INC",
+      "value_usd_k": 6046886,
+      "weight": 0.000221,
+      "shares": 47434,
+      "cusip": "48251W104"
+    },
+    {
+      "issuer": "SAREPTA THERAPEUTICS INC",
+      "value_usd_k": 6037823,
+      "weight": 0.00022,
+      "shares": 280568,
+      "cusip": "803607100"
+    },
+    {
+      "issuer": "ILLINOIS TOOL WKS INC",
+      "value_usd_k": 6035089,
+      "weight": 0.00022,
+      "shares": 24503,
+      "cusip": "452308109"
+    },
+    {
+      "issuer": "THE TRADE DESK INC",
+      "value_usd_k": 5996465,
+      "weight": 0.000219,
+      "shares": 157968,
+      "cusip": "88339J105"
+    },
+    {
+      "issuer": "QUANTA SVCS INC",
+      "value_usd_k": 5963708,
+      "weight": 0.000217,
+      "shares": 14130,
+      "cusip": "74762E102"
+    },
+    {
+      "issuer": "DILLARDS INC",
+      "value_usd_k": 5890593,
+      "weight": 0.000215,
+      "shares": 9715,
+      "cusip": "254067101"
+    },
+    {
+      "issuer": "CASEYS GEN STORES INC",
+      "value_usd_k": 5889125,
+      "weight": 0.000215,
+      "shares": 10655,
+      "cusip": "147528103"
+    },
+    {
+      "issuer": "ECOLAB INC",
+      "value_usd_k": 5884123,
+      "weight": 0.000215,
+      "shares": 22414,
+      "cusip": "278865100"
+    },
+    {
+      "issuer": "KEURIG DR PEPPER INC",
+      "value_usd_k": 5853222,
+      "weight": 0.000213,
+      "shares": 208969,
+      "cusip": "49271V100"
+    },
+    {
+      "issuer": "PARKER-HANNIFIN CORP",
+      "value_usd_k": 5852116,
+      "weight": 0.000213,
+      "shares": 6658,
+      "cusip": "701094104"
+    },
+    {
+      "issuer": "SPS COMM INC",
+      "value_usd_k": 5844432,
+      "weight": 0.000213,
+      "shares": 65572,
+      "cusip": "78463M107"
+    },
+    {
+      "issuer": "TENET HEALTHCARE CORP",
+      "value_usd_k": 5829849,
+      "weight": 0.000213,
+      "shares": 29337,
+      "cusip": "88033G407"
+    },
+    {
+      "issuer": "PAYLOCITY HLDG CORP",
+      "value_usd_k": 5827330,
+      "weight": 0.000213,
+      "shares": 38212,
+      "cusip": "70438V106"
+    },
+    {
+      "issuer": "BRUNSWICK CORP",
+      "value_usd_k": 5810616,
+      "weight": 0.000212,
+      "shares": 78268,
+      "cusip": "117043109"
+    },
+    {
+      "issuer": "ASGN INC",
+      "value_usd_k": 5750535,
+      "weight": 0.00021,
+      "shares": 119380,
+      "cusip": "00191U102"
+    },
+    {
+      "issuer": "BATH & BODY WORKS INC",
+      "value_usd_k": 5739547,
+      "weight": 0.000209,
+      "shares": 285834,
+      "cusip": "070830104"
+    },
+    {
+      "issuer": "PALANTIR TECHNOLOGIES INC",
+      "value_usd_k": 5697954,
+      "weight": 0.000208,
+      "shares": 32056,
+      "cusip": "69608A108"
+    },
+    {
+      "issuer": "STANDARDAERO INC",
+      "value_usd_k": 5637341,
+      "weight": 0.000206,
+      "shares": 196560,
+      "cusip": "85423L103"
+    },
+    {
+      "issuer": "POLARIS INC",
+      "value_usd_k": 5621344,
+      "weight": 0.000205,
+      "shares": 88875,
+      "cusip": "731068102"
+    },
+    {
+      "issuer": "BELLRING BRANDS INC",
+      "value_usd_k": 5616053,
+      "weight": 0.000205,
+      "shares": 210103,
+      "cusip": "07831C103"
+    },
+    {
+      "issuer": "SUNRUN INC",
+      "value_usd_k": 5594336,
+      "weight": 0.000204,
+      "shares": 304040,
+      "cusip": "86771W105"
+    },
+    {
+      "issuer": "WABTEC",
+      "value_usd_k": 5586627,
+      "weight": 0.000204,
+      "shares": 26173,
+      "cusip": "929740108"
+    },
+    {
+      "issuer": "MONDELEZ INTL INC",
+      "value_usd_k": 5564730,
+      "weight": 0.000203,
+      "shares": 103376,
+      "cusip": "609207105"
+    },
+    {
+      "issuer": "BLOOM ENERGY CORP",
+      "value_usd_k": 5563306,
+      "weight": 0.000203,
+      "shares": 64027,
+      "cusip": "093712107"
+    },
+    {
+      "issuer": "VERISK ANALYTICS INC",
+      "value_usd_k": 5524472,
+      "weight": 0.000201,
+      "shares": 24697,
+      "cusip": "92345Y106"
+    },
+    {
+      "issuer": "CENTRUS ENERGY CORP",
+      "value_usd_k": 5517935,
+      "weight": 0.000201,
+      "shares": 22730,
+      "cusip": "15643U104"
+    },
+    {
+      "issuer": "AMCOR PLC",
+      "value_usd_k": 5517519,
+      "weight": 0.000201,
+      "shares": 661573,
+      "cusip": "G0250X107"
+    },
+    {
+      "issuer": "API GROUP CORP",
+      "value_usd_k": 5500143,
+      "weight": 0.000201,
+      "shares": 143757,
+      "cusip": "00187Y100"
+    },
+    {
+      "issuer": "RESTAURANT BRANDS INTL INC",
+      "value_usd_k": 5470419,
+      "weight": 0.000199,
+      "shares": 80173,
+      "cusip": "76131D103"
+    },
+    {
+      "issuer": "DENTSPLY SIRONA INC",
+      "value_usd_k": 5447629,
+      "weight": 0.000199,
+      "shares": 476608,
+      "cusip": "24906P109"
+    },
+    {
+      "issuer": "BJS WHSL CLUB HLDGS INC",
+      "value_usd_k": 5437902,
+      "weight": 0.000198,
+      "shares": 60401,
+      "cusip": "05550J101"
+    },
+    {
+      "issuer": "CONSOLIDATED EDISON INC",
+      "value_usd_k": 5398837,
+      "weight": 0.000197,
+      "shares": 54358,
+      "cusip": "209115104"
+    },
+    {
+      "issuer": "XYLEM INC",
+      "value_usd_k": 5391775,
+      "weight": 0.000197,
+      "shares": 39593,
+      "cusip": "98419M100"
+    },
+    {
+      "issuer": "IONIS PHARMACEUTICALS INC",
+      "value_usd_k": 5356222,
+      "weight": 0.000195,
+      "shares": 67706,
+      "cusip": "462222100"
+    },
+    {
+      "issuer": "FLYWIRE CORPORATION",
+      "value_usd_k": 5351078,
+      "weight": 0.000195,
+      "shares": 377901,
+      "cusip": "302492103"
+    },
+    {
+      "issuer": "PAYONEER GLOBAL INC",
+      "value_usd_k": 5326895,
+      "weight": 0.000194,
+      "shares": 947846,
+      "cusip": "70451X104"
+    },
+    {
+      "issuer": "AFLAC INC",
+      "value_usd_k": 5287998,
+      "weight": 0.000193,
+      "shares": 47955,
+      "cusip": "001055102"
+    },
+    {
+      "issuer": "LIBERTY MEDIA CORP DEL",
+      "value_usd_k": 5283190,
+      "weight": 0.000193,
+      "shares": 53631,
+      "cusip": "531229755"
+    },
+    {
+      "issuer": "COPA HOLDINGS SA",
+      "value_usd_k": 5258717,
+      "weight": 0.000192,
+      "shares": 43601,
+      "cusip": "P31076105"
+    },
+    {
+      "issuer": "HUBBELL INC",
+      "value_usd_k": 5251157,
+      "weight": 0.000191,
+      "shares": 11824,
+      "cusip": "443510607"
+    },
+    {
+      "issuer": "WHIRLPOOL CORP",
+      "value_usd_k": 5230366,
+      "weight": 0.000191,
+      "shares": 72503,
+      "cusip": "963320106"
+    },
+    {
+      "issuer": "TOWNEBANK PORTSMOUTH VA",
+      "value_usd_k": 5205787,
+      "weight": 0.00019,
+      "shares": 156002,
+      "cusip": "89214P109"
+    },
+    {
+      "issuer": "DELTA AIR LINES INC DEL",
+      "value_usd_k": 5195215,
+      "weight": 0.000189,
+      "shares": 74859,
+      "cusip": "247361702"
+    },
+    {
+      "issuer": "CARGURUS INC",
+      "value_usd_k": 5186531,
+      "weight": 0.000189,
+      "shares": 135242,
+      "cusip": "141788109"
+    },
+    {
+      "issuer": "WATTS WATER TECHNOLOGIES INC",
+      "value_usd_k": 5185036,
+      "weight": 0.000189,
+      "shares": 18785,
+      "cusip": "942749102"
+    },
+    {
+      "issuer": "IVANHOE ELECTRIC INC",
+      "value_usd_k": 5184120,
+      "weight": 0.000189,
+      "shares": 324413,
+      "cusip": "46578C108"
+    },
+    {
+      "issuer": "ELEMENT SOLUTIONS INC",
+      "value_usd_k": 5182626,
+      "weight": 0.000189,
+      "shares": 207388,
+      "cusip": "28618M106"
+    },
+    {
+      "issuer": "ACCENTURE PLC IRELAND",
+      "value_usd_k": 5179800,
+      "weight": 0.000189,
+      "shares": 19306,
+      "cusip": "G1151C101"
+    },
+    {
+      "issuer": "ROBERT HALF INC.",
+      "value_usd_k": 5137776,
+      "weight": 0.000187,
+      "shares": 189167,
+      "cusip": "770323103"
+    },
+    {
+      "issuer": "MCCORMICK & CO INC",
+      "value_usd_k": 5079371,
+      "weight": 0.000185,
+      "shares": 74576,
+      "cusip": "579780206"
+    },
+    {
+      "issuer": "VERIZON COMMUNICATIONS INC",
+      "value_usd_k": 5077768,
+      "weight": 0.000185,
+      "shares": 124669,
+      "cusip": "92343V104"
+    },
+    {
+      "issuer": "INTEGER HLDGS CORP",
+      "value_usd_k": 5040775,
+      "weight": 0.000184,
+      "shares": 64271,
+      "cusip": "45826H109"
+    },
+    {
+      "issuer": "AERCAP HOLDINGS NV",
+      "value_usd_k": 4988760,
+      "weight": 0.000182,
+      "shares": 34702,
+      "cusip": "N00985106"
+    },
+    {
+      "issuer": "COLGATE PALMOLIVE CO",
+      "value_usd_k": 4986399,
+      "weight": 0.000182,
+      "shares": 63103,
+      "cusip": "194162103"
+    },
+    {
+      "issuer": "PRIVIA HEALTH GROUP INC",
+      "value_usd_k": 4979432,
+      "weight": 0.000182,
+      "shares": 210014,
+      "cusip": "74276R102"
+    },
+    {
+      "issuer": "ENERGY FUELS INC",
+      "value_usd_k": 4965890,
+      "weight": 0.000181,
+      "shares": 341533,
+      "cusip": "292671708"
+    },
+    {
+      "issuer": "VONTIER CORPORATION",
+      "value_usd_k": 4952302,
+      "weight": 0.000181,
+      "shares": 133198,
+      "cusip": "928881101"
+    },
+    {
+      "issuer": "TREX CO INC",
+      "value_usd_k": 4921899,
+      "weight": 0.000179,
+      "shares": 140305,
+      "cusip": "89531P105"
+    },
+    {
+      "issuer": "SYMBOTIC INC",
+      "value_usd_k": 4912023,
+      "weight": 0.000179,
+      "shares": 82555,
+      "cusip": "87151X101"
+    },
+    {
+      "issuer": "BLACKROCK INC",
+      "value_usd_k": 4903228,
+      "weight": 0.000179,
+      "shares": 4581,
+      "cusip": "09290D101"
+    },
+    {
+      "issuer": "INVITATION HOMES INC",
+      "value_usd_k": 4900211,
+      "weight": 0.000179,
+      "shares": 176330,
+      "cusip": "46187W107"
+    },
+    {
+      "issuer": "BRIGHT HORIZONS FAM SOL IN D",
+      "value_usd_k": 4890421,
+      "weight": 0.000178,
+      "shares": 48229,
+      "cusip": "109194100"
+    },
+    {
+      "issuer": "CREDIT ACCEP CORP MICH",
+      "value_usd_k": 4869191,
+      "weight": 0.000178,
+      "shares": 10980,
+      "cusip": "225310101"
+    },
+    {
+      "issuer": "OLLIES BARGAIN OUTLET HLDGS",
+      "value_usd_k": 4868328,
+      "weight": 0.000178,
+      "shares": 44415,
+      "cusip": "681116109"
+    },
+    {
+      "issuer": "SLM CORP",
+      "value_usd_k": 4831752,
+      "weight": 0.000176,
+      "shares": 178557,
+      "cusip": "78442P106"
+    },
+    {
+      "issuer": "WILLSCOT HLDGS CORP",
+      "value_usd_k": 4828276,
+      "weight": 0.000176,
+      "shares": 256414,
+      "cusip": "971378104"
+    },
+    {
+      "issuer": "CHEMED CORP NEW",
+      "value_usd_k": 4825833,
+      "weight": 0.000176,
+      "shares": 11279,
+      "cusip": "16359R103"
+    },
+    {
+      "issuer": "IDAHO STRATEGIC RESOURCES",
+      "value_usd_k": 4815890,
+      "weight": 0.000176,
+      "shares": 119501,
+      "cusip": "645827205"
+    },
+    {
+      "issuer": "NETSCOUT SYS INC",
+      "value_usd_k": 4794004,
+      "weight": 0.000175,
+      "shares": 177162,
+      "cusip": "64115T104"
+    },
+    {
+      "issuer": "MARSH & MCLENNAN COS INC",
+      "value_usd_k": 4782149,
+      "weight": 0.000174,
+      "shares": 25777,
+      "cusip": "571748102"
+    },
+    {
+      "issuer": "MAXIMUS INC",
+      "value_usd_k": 4775654,
+      "weight": 0.000174,
+      "shares": 55325,
+      "cusip": "577933104"
+    },
+    {
+      "issuer": "BROADRIDGE FINL SOLUTIONS IN",
+      "value_usd_k": 4765126,
+      "weight": 0.000174,
+      "shares": 21352,
+      "cusip": "11133T103"
+    },
+    {
+      "issuer": "HANOVER INS GROUP INC",
+      "value_usd_k": 4757503,
+      "weight": 0.000173,
+      "shares": 26030,
+      "cusip": "410867105"
+    },
+    {
+      "issuer": "BRINKS CO",
+      "value_usd_k": 4739705,
+      "weight": 0.000173,
+      "shares": 40604,
+      "cusip": "109696104"
+    },
+    {
+      "issuer": "MOLINA HEALTHCARE INC",
+      "value_usd_k": 4733130,
+      "weight": 0.000173,
+      "shares": 27274,
+      "cusip": "60855R100"
+    },
+    {
+      "issuer": "GAMING & LEISURE PPTYS INC",
+      "value_usd_k": 4720783,
+      "weight": 0.000172,
+      "shares": 105634,
+      "cusip": "36467J108"
+    },
+    {
+      "issuer": "AON PLC",
+      "value_usd_k": 4717300,
+      "weight": 0.000172,
+      "shares": 13368,
+      "cusip": "G0403H108"
+    },
+    {
+      "issuer": "LEMONADE INC",
+      "value_usd_k": 4703147,
+      "weight": 0.000172,
+      "shares": 66074,
+      "cusip": "52567D107"
+    },
+    {
+      "issuer": "LUMEN TECHNOLOGIES INC",
+      "value_usd_k": 4626390,
+      "weight": 0.000169,
+      "shares": 595417,
+      "cusip": "550241103"
+    },
+    {
+      "issuer": "CMS ENERGY CORP",
+      "value_usd_k": 4621604,
+      "weight": 0.000169,
+      "shares": 66089,
+      "cusip": "125896100"
+    },
+    {
+      "issuer": "VICI PPTYS INC",
+      "value_usd_k": 4610302,
+      "weight": 0.000168,
+      "shares": 163951,
+      "cusip": "925652109"
+    },
+    {
+      "issuer": "JOHNSON CTLS INTL PLC",
+      "value_usd_k": 4574570,
+      "weight": 0.000167,
+      "shares": 38201,
+      "cusip": "G51502105"
+    },
+    {
+      "issuer": "FEDERAL SIGNAL CORP",
+      "value_usd_k": 4546555,
+      "weight": 0.000166,
+      "shares": 41869,
+      "cusip": "313855108"
+    },
+    {
+      "issuer": "CINCINNATI FINL CORP",
+      "value_usd_k": 4541603,
+      "weight": 0.000166,
+      "shares": 27808,
+      "cusip": "172062101"
+    },
+    {
+      "issuer": "GEO GROUP INC NEW",
+      "value_usd_k": 4532380,
+      "weight": 0.000165,
+      "shares": 281165,
+      "cusip": "36162J106"
+    },
+    {
+      "issuer": "WIX COM LTD",
+      "value_usd_k": 4517968,
+      "weight": 0.000165,
+      "shares": 43488,
+      "cusip": "M98068105"
+    },
+    {
+      "issuer": "XPO INC",
+      "value_usd_k": 4513435,
+      "weight": 0.000165,
+      "shares": 33209,
+      "cusip": "983793100"
+    },
+    {
+      "issuer": "ADTALEM GLOBAL ED INC",
+      "value_usd_k": 4509533,
+      "weight": 0.000164,
+      "shares": 43583,
+      "cusip": "00737L103"
+    },
+    {
+      "issuer": "RIOT PLATFORMS INC",
+      "value_usd_k": 4505465,
+      "weight": 0.000164,
+      "shares": 355601,
+      "cusip": "767292105"
+    },
+    {
+      "issuer": "COLUMBIA SPORTSWEAR CO",
+      "value_usd_k": 4504930,
+      "weight": 0.000164,
+      "shares": 81774,
+      "cusip": "198516106"
+    },
+    {
+      "issuer": "CUBESMART",
+      "value_usd_k": 4503690,
+      "weight": 0.000164,
+      "shares": 124929,
+      "cusip": "229663109"
+    },
+    {
+      "issuer": "CBOE GLOBAL MKTS INC",
+      "value_usd_k": 4479095,
+      "weight": 0.000163,
+      "shares": 17845,
+      "cusip": "12503M108"
+    },
+    {
+      "issuer": "TELADOC HEALTH INC",
+      "value_usd_k": 4441353,
+      "weight": 0.000162,
+      "shares": 634479,
+      "cusip": "87918A105"
+    },
+    {
+      "issuer": "PHILIP MORRIS INTL INC",
+      "value_usd_k": 4435220,
+      "weight": 0.000162,
+      "shares": 27651,
+      "cusip": "718172109"
+    },
+    {
+      "issuer": "CIRRUS LOGIC INC",
+      "value_usd_k": 4399549,
+      "weight": 0.00016,
+      "shares": 37127,
+      "cusip": "172755100"
+    },
+    {
+      "issuer": "CHARLES RIV LABS INTL INC",
+      "value_usd_k": 4399332,
+      "weight": 0.00016,
+      "shares": 22054,
+      "cusip": "159864107"
+    },
+    {
+      "issuer": "SNOWFLAKE INC",
+      "value_usd_k": 4362193,
+      "weight": 0.000159,
+      "shares": 19886,
+      "cusip": "833445109"
+    },
+    {
+      "issuer": "LABCORP HOLDINGS INC",
+      "value_usd_k": 4356782,
+      "weight": 0.000159,
+      "shares": 17366,
+      "cusip": "504922105"
+    },
+    {
+      "issuer": "WORKIVA INC",
+      "value_usd_k": 4334407,
+      "weight": 0.000158,
+      "shares": 50254,
+      "cusip": "98139A105"
+    },
+    {
+      "issuer": "MARKEL GROUP INC",
+      "value_usd_k": 4333694,
+      "weight": 0.000158,
+      "shares": 2016,
+      "cusip": "570535104"
+    },
+    {
+      "issuer": "LIVERAMP HLDGS INC",
+      "value_usd_k": 4324057,
+      "weight": 0.000158,
+      "shares": 147227,
+      "cusip": "53815P108"
+    },
+    {
+      "issuer": "ADAPTIVE BIOTECHNOLOGIES COR",
+      "value_usd_k": 4311574,
+      "weight": 0.000157,
+      "shares": 265491,
+      "cusip": "00650F109"
+    },
+    {
+      "issuer": "INGERSOLL RAND INC",
+      "value_usd_k": 4289525,
+      "weight": 0.000156,
+      "shares": 54147,
+      "cusip": "45687V106"
+    },
+    {
+      "issuer": "DTE ENERGY CO",
+      "value_usd_k": 4289101,
+      "weight": 0.000156,
+      "shares": 33254,
+      "cusip": "233331107"
+    },
+    {
+      "issuer": "WILLIAMS COS INC",
+      "value_usd_k": 4274061,
+      "weight": 0.000156,
+      "shares": 71104,
+      "cusip": "969457100"
+    },
+    {
+      "issuer": "SNAP ON INC",
+      "value_usd_k": 4263047,
+      "weight": 0.000155,
+      "shares": 12371,
+      "cusip": "833034101"
+    },
+    {
+      "issuer": "CRITICAL METALS CORP",
+      "value_usd_k": 4236766,
+      "weight": 0.000155,
+      "shares": 610485,
+      "cusip": "G2662B103"
+    },
+    {
+      "issuer": "KBR INC",
+      "value_usd_k": 4215694,
+      "weight": 0.000154,
+      "shares": 104868,
+      "cusip": "48242W106"
+    },
+    {
+      "issuer": "VIASAT INC",
+      "value_usd_k": 4201432,
+      "weight": 0.000153,
+      "shares": 121922,
+      "cusip": "92552V100"
+    },
+    {
+      "issuer": "IDEXX LABS INC",
+      "value_usd_k": 4166072,
+      "weight": 0.000152,
+      "shares": 6158,
+      "cusip": "45168D104"
+    },
+    {
+      "issuer": "SKYWEST INC",
+      "value_usd_k": 4165208,
+      "weight": 0.000152,
+      "shares": 41482,
+      "cusip": "830879102"
+    },
+    {
+      "issuer": "CLEANSPARK INC",
+      "value_usd_k": 4150404,
+      "weight": 0.000151,
+      "shares": 410119,
+      "cusip": "18452B209"
+    },
+    {
+      "issuer": "NEWMARKET CORP",
+      "value_usd_k": 4148989,
+      "weight": 0.000151,
+      "shares": 6037,
+      "cusip": "651587107"
+    },
+    {
+      "issuer": "DXC TECHNOLOGY CO",
+      "value_usd_k": 4121089,
+      "weight": 0.00015,
+      "shares": 281303,
+      "cusip": "23355L106"
+    },
+    {
+      "issuer": "VALMONT INDS INC",
+      "value_usd_k": 4119354,
+      "weight": 0.00015,
+      "shares": 10239,
+      "cusip": "920253101"
+    },
+    {
+      "issuer": "ELECTRONIC ARTS INC",
+      "value_usd_k": 4106624,
+      "weight": 0.00015,
+      "shares": 20098,
+      "cusip": "285512109"
+    },
+    {
+      "issuer": "PIPER SANDLER COMPANIES",
+      "value_usd_k": 4097922,
+      "weight": 0.000149,
+      "shares": 12063,
+      "cusip": "724078100"
+    },
+    {
+      "issuer": "FREEPORT-MCMORAN INC",
+      "value_usd_k": 4095045,
+      "weight": 0.000149,
+      "shares": 80627,
+      "cusip": "35671D857"
+    },
+    {
+      "issuer": "PILGRIMS PRIDE CORP",
+      "value_usd_k": 4072778,
+      "weight": 0.000149,
+      "shares": 104457,
+      "cusip": "72147K108"
+    },
+    {
+      "issuer": "AECOM",
+      "value_usd_k": 4068208,
+      "weight": 0.000148,
+      "shares": 42675,
+      "cusip": "00766T100"
+    },
+    {
+      "issuer": "ALIGN TECHNOLOGY INC",
+      "value_usd_k": 4058963,
+      "weight": 0.000148,
+      "shares": 25994,
+      "cusip": "016255101"
+    },
+    {
+      "issuer": "MURPHY USA INC",
+      "value_usd_k": 4041656,
+      "weight": 0.000147,
+      "shares": 10016,
+      "cusip": "626755102"
+    },
+    {
+      "issuer": "BAXTER INTL INC",
+      "value_usd_k": 4028388,
+      "weight": 0.000147,
+      "shares": 210800,
+      "cusip": "071813109"
+    },
+    {
+      "issuer": "BREAD FINANCIAL HOLDINGS INC",
+      "value_usd_k": 4020051,
+      "weight": 0.000147,
+      "shares": 54303,
+      "cusip": "018581108"
+    },
+    {
+      "issuer": "ARROWHEAD PHARMACEUTICALS IN",
+      "value_usd_k": 3981143,
+      "weight": 0.000145,
+      "shares": 59966,
+      "cusip": "04280A100"
+    },
+    {
+      "issuer": "DAVITA INC",
+      "value_usd_k": 3978849,
+      "weight": 0.000145,
+      "shares": 35022,
+      "cusip": "23918K108"
+    },
+    {
+      "issuer": "RUBRIK INC.",
+      "value_usd_k": 3971071,
+      "weight": 0.000145,
+      "shares": 51923,
+      "cusip": "781154109"
+    },
+    {
+      "issuer": "DENISON MINES CORP",
+      "value_usd_k": 3908790,
+      "weight": 0.000143,
+      "shares": 1469470,
+      "cusip": "248356107"
+    },
+    {
+      "issuer": "CENTENE CORP DEL",
+      "value_usd_k": 3889992,
+      "weight": 0.000142,
+      "shares": 94532,
+      "cusip": "15135B101"
+    },
+    {
+      "issuer": "TARGET CORP",
+      "value_usd_k": 3860929,
+      "weight": 0.000141,
+      "shares": 39498,
+      "cusip": "87612E106"
+    },
+    {
+      "issuer": "VALARIS LTD",
+      "value_usd_k": 3827880,
+      "weight": 0.00014,
+      "shares": 75950,
+      "cusip": "G9460G101"
+    },
+    {
+      "issuer": "CRANE COMPANY",
+      "value_usd_k": 3819730,
+      "weight": 0.000139,
+      "shares": 20711,
+      "cusip": "224408104"
+    },
+    {
+      "issuer": "UNITED PARCEL SERVICE INC",
+      "value_usd_k": 3819509,
+      "weight": 0.000139,
+      "shares": 38507,
+      "cusip": "911312106"
+    },
+    {
+      "issuer": "GUIDEWIRE SOFTWARE INC",
+      "value_usd_k": 3811552,
+      "weight": 0.000139,
+      "shares": 18962,
+      "cusip": "40171V100"
+    },
+    {
+      "issuer": "AFFILIATED MANAGERS GROUP IN",
+      "value_usd_k": 3793477,
+      "weight": 0.000138,
+      "shares": 13159,
+      "cusip": "008252108"
+    },
+    {
+      "issuer": "SIBANYE STILLWATER LTD",
+      "value_usd_k": 3785940,
+      "weight": 0.000138,
+      "shares": 265680,
+      "cusip": "82575P107"
+    },
+    {
+      "issuer": "TELEFLEX INCORPORATED",
+      "value_usd_k": 3780555,
+      "weight": 0.000138,
+      "shares": 30978,
+      "cusip": "879369106"
+    },
+    {
+      "issuer": "ENCOMPASS HEALTH CORP",
+      "value_usd_k": 3756507,
+      "weight": 0.000137,
+      "shares": 35392,
+      "cusip": "29261A100"
+    },
+    {
+      "issuer": "OLIN CORP",
+      "value_usd_k": 3697450,
+      "weight": 0.000135,
+      "shares": 177506,
+      "cusip": "680665205"
+    },
+    {
+      "issuer": "ACADIA PHARMACEUTICALS INC",
+      "value_usd_k": 3690761,
+      "weight": 0.000135,
+      "shares": 138179,
+      "cusip": "004225108"
+    },
+    {
+      "issuer": "EQUINOR ASA",
+      "value_usd_k": 3661799,
+      "weight": 0.000134,
+      "shares": 154964,
+      "cusip": "29446M102"
+    },
+    {
+      "issuer": "NORTHROP GRUMMAN CORP",
+      "value_usd_k": 3660748,
+      "weight": 0.000133,
+      "shares": 6420,
+      "cusip": "666807102"
+    },
+    {
+      "issuer": "VIKING THERAPEUTICS INC",
+      "value_usd_k": 3646724,
+      "weight": 0.000133,
+      "shares": 103659,
+      "cusip": "92686J106"
+    },
+    {
+      "issuer": "APELLIS PHARMACEUTICALS INC",
+      "value_usd_k": 3612382,
+      "weight": 0.000132,
+      "shares": 143805,
+      "cusip": "03753U106"
+    },
+    {
+      "issuer": "FERMI INC",
+      "value_usd_k": 3607488,
+      "weight": 0.000132,
+      "shares": 450936,
+      "cusip": "314911108"
+    },
+    {
+      "issuer": "COLUMBIA BKG SYS INC",
+      "value_usd_k": 3606472,
+      "weight": 0.000132,
+      "shares": 129033,
+      "cusip": "197236102"
+    },
+    {
+      "issuer": "CHOICE HOTELS INTL INC",
+      "value_usd_k": 3590254,
+      "weight": 0.000131,
+      "shares": 37689,
+      "cusip": "169905106"
+    },
+    {
+      "issuer": "QNITY ELECTRONICS INC",
+      "value_usd_k": 3576515,
+      "weight": 0.00013,
+      "shares": 43803,
+      "cusip": "74743L100"
+    },
+    {
+      "issuer": "NIKE INC",
+      "value_usd_k": 3551960,
+      "weight": 0.00013,
+      "shares": 55752,
+      "cusip": "654106103"
+    },
+    {
+      "issuer": "MOOG INC",
+      "value_usd_k": 3509312,
+      "weight": 0.000128,
+      "shares": 14409,
+      "cusip": "615394202"
+    },
+    {
+      "issuer": "COTY INC",
+      "value_usd_k": 3502899,
+      "weight": 0.000128,
+      "shares": 1137305,
+      "cusip": "222070203"
+    },
+    {
+      "issuer": "QUANTUMSCAPE CORP",
+      "value_usd_k": 3502381,
+      "weight": 0.000128,
+      "shares": 336121,
+      "cusip": "74767V109"
+    },
+    {
+      "issuer": "CYBERARK SOFTWARE LTD",
+      "value_usd_k": 3474807,
+      "weight": 0.000127,
+      "shares": 7790,
+      "cusip": "M2682V108"
+    },
+    {
+      "issuer": "CALIX INC",
+      "value_usd_k": 3468820,
+      "weight": 0.000126,
+      "shares": 65536,
+      "cusip": "13100M509"
+    },
+    {
+      "issuer": "CCC INTELLIGENT SOLUTIONS HL",
+      "value_usd_k": 3455555,
+      "weight": 0.000126,
+      "shares": 434661,
+      "cusip": "12510Q100"
+    },
+    {
+      "issuer": "ONEOK INC NEW",
+      "value_usd_k": 3444210,
+      "weight": 0.000126,
+      "shares": 46860,
+      "cusip": "682680103"
+    },
+    {
+      "issuer": "FIRSTCASH HOLDINGS INC",
+      "value_usd_k": 3439102,
+      "weight": 0.000125,
+      "shares": 21578,
+      "cusip": "33768G107"
+    },
+    {
+      "issuer": "ASBURY AUTOMOTIVE GROUP INC",
+      "value_usd_k": 3429120,
+      "weight": 0.000125,
+      "shares": 14747,
+      "cusip": "043436104"
+    },
+    {
+      "issuer": "NIOCORP DEVS LTD",
+      "value_usd_k": 3423212,
+      "weight": 0.000125,
+      "shares": 645889,
+      "cusip": "654484609"
+    },
+    {
+      "issuer": "BAUSCH HEALTH COS INC",
+      "value_usd_k": 3401615,
+      "weight": 0.000124,
+      "shares": 489441,
+      "cusip": "071734107"
+    },
+    {
+      "issuer": "ADMA BIOLOGICS INC",
+      "value_usd_k": 3401231,
+      "weight": 0.000124,
+      "shares": 186471,
+      "cusip": "000899104"
+    },
+    {
+      "issuer": "KENVUE INC",
+      "value_usd_k": 3382984,
+      "weight": 0.000123,
+      "shares": 196115,
+      "cusip": "49177J102"
+    },
+    {
+      "issuer": "JONES LANG LASALLE INC",
+      "value_usd_k": 3374121,
+      "weight": 0.000123,
+      "shares": 10028,
+      "cusip": "48020Q107"
+    },
+    {
+      "issuer": "ARMSTRONG WORLD INDS INC NEW",
+      "value_usd_k": 3372915,
+      "weight": 0.000123,
+      "shares": 17650,
+      "cusip": "04247X102"
+    },
+    {
+      "issuer": "BOOZ ALLEN HAMILTON HLDG COR",
+      "value_usd_k": 3371363,
+      "weight": 0.000123,
+      "shares": 39964,
+      "cusip": "099502106"
+    },
+    {
+      "issuer": "SCOTTS MIRACLE-GRO CO",
+      "value_usd_k": 3362127,
+      "weight": 0.000123,
+      "shares": 57620,
+      "cusip": "810186106"
+    },
+    {
+      "issuer": "OKLO INC",
+      "value_usd_k": 3360951,
+      "weight": 0.000123,
+      "shares": 46836,
+      "cusip": "02156V109"
+    },
+    {
+      "issuer": "GATES INDL CORP PLC",
+      "value_usd_k": 3360313,
+      "weight": 0.000123,
+      "shares": 156512,
+      "cusip": "G39108108"
+    },
+    {
+      "issuer": "HORMEL FOODS CORP",
+      "value_usd_k": 3357579,
+      "weight": 0.000122,
+      "shares": 141670,
+      "cusip": "440452100"
+    },
+    {
+      "issuer": "LANDSTAR SYS INC",
+      "value_usd_k": 3323781,
+      "weight": 0.000121,
+      "shares": 23130,
+      "cusip": "515098101"
+    },
+    {
+      "issuer": "WD 40 CO",
+      "value_usd_k": 3312842,
+      "weight": 0.000121,
+      "shares": 16825,
+      "cusip": "929236107"
+    },
+    {
+      "issuer": "BRIDGEBIO PHARMA INC",
+      "value_usd_k": 3302226,
+      "weight": 0.00012,
+      "shares": 43172,
+      "cusip": "10806X102"
+    },
+    {
+      "issuer": "DOVER CORP",
+      "value_usd_k": 3298385,
+      "weight": 0.00012,
+      "shares": 16894,
+      "cusip": "260003108"
+    },
+    {
+      "issuer": "ALIGHT INC",
+      "value_usd_k": 3281760,
+      "weight": 0.00012,
+      "shares": 1682954,
+      "cusip": "01626W101"
+    },
+    {
+      "issuer": "VISTEON CORP",
+      "value_usd_k": 3262406,
+      "weight": 0.000119,
+      "shares": 34305,
+      "cusip": "92839U206"
+    },
+    {
+      "issuer": "USA RARE EARTH INC",
+      "value_usd_k": 3248759,
+      "weight": 0.000118,
+      "shares": 273005,
+      "cusip": "91733P107"
+    },
+    {
+      "issuer": "ABBVIE INC",
+      "value_usd_k": 3246614,
+      "weight": 0.000118,
+      "shares": 14209,
+      "cusip": "00287Y109"
+    },
+    {
+      "issuer": "COCA COLA CONS INC",
+      "value_usd_k": 3197225,
+      "weight": 0.000117,
+      "shares": 20856,
+      "cusip": "191098102"
+    },
+    {
+      "issuer": "TRACTOR SUPPLY CO",
+      "value_usd_k": 3187087,
+      "weight": 0.000116,
+      "shares": 63729,
+      "cusip": "892356106"
+    },
+    {
+      "issuer": "CNX RES CORP",
+      "value_usd_k": 3159867,
+      "weight": 0.000115,
+      "shares": 85936,
+      "cusip": "12653C108"
+    },
+    {
+      "issuer": "LIBERTY BROADBAND CORP",
+      "value_usd_k": 3157591,
+      "weight": 0.000115,
+      "shares": 64971,
+      "cusip": "530307305"
+    },
+    {
+      "issuer": "MP MATERIALS CORP",
+      "value_usd_k": 3155378,
+      "weight": 0.000115,
+      "shares": 62458,
+      "cusip": "553368101"
+    },
+    {
+      "issuer": "ON SEMICONDUCTOR CORP",
+      "value_usd_k": 3141242,
+      "weight": 0.000115,
+      "shares": 58010,
+      "cusip": "682189105"
+    },
+    {
+      "issuer": "QUALYS INC",
+      "value_usd_k": 3137237,
+      "weight": 0.000114,
+      "shares": 23606,
+      "cusip": "74758T303"
+    },
+    {
+      "issuer": "IQVIA HLDGS INC",
+      "value_usd_k": 3102769,
+      "weight": 0.000113,
+      "shares": 13765,
+      "cusip": "46266C105"
+    },
+    {
+      "issuer": "GILDAN ACTIVEWEAR INC",
+      "value_usd_k": 3091566,
+      "weight": 0.000113,
+      "shares": 49489,
+      "cusip": "375916103"
+    },
+    {
+      "issuer": "FULTON FINL CORP PA",
+      "value_usd_k": 3088238,
+      "weight": 0.000113,
+      "shares": 159764,
+      "cusip": "360271100"
+    },
+    {
+      "issuer": "YETI HLDGS INC",
+      "value_usd_k": 3061202,
+      "weight": 0.000112,
+      "shares": 69305,
+      "cusip": "98585X104"
+    },
+    {
+      "issuer": "AXALTA COATING SYS LTD",
+      "value_usd_k": 3058077,
+      "weight": 0.000112,
+      "shares": 94648,
+      "cusip": "G0750C108"
+    },
+    {
+      "issuer": "SOUTHERN CO",
+      "value_usd_k": 3049297,
+      "weight": 0.000111,
+      "shares": 34969,
+      "cusip": "842587107"
+    },
+    {
+      "issuer": "ROCKET LAB CORP",
+      "value_usd_k": 3034281,
+      "weight": 0.000111,
+      "shares": 43496,
+      "cusip": "773121108"
+    },
+    {
+      "issuer": "KONTOOR BRANDS INC",
+      "value_usd_k": 3027437,
+      "weight": 0.00011,
+      "shares": 49557,
+      "cusip": "50050N103"
+    },
+    {
+      "issuer": "ANYWHERE REAL ESTATE INC",
+      "value_usd_k": 3025865,
+      "weight": 0.00011,
+      "shares": 213691,
+      "cusip": "75605Y106"
+    },
+    {
+      "issuer": "AMKOR TECHNOLOGY INC",
+      "value_usd_k": 3005968,
+      "weight": 0.00011,
+      "shares": 76139,
+      "cusip": "031652100"
+    },
+    {
+      "issuer": "MISTER CAR WASH INC",
+      "value_usd_k": 3003417,
+      "weight": 0.00011,
+      "shares": 540183,
+      "cusip": "60646V105"
+    },
+    {
+      "issuer": "BILL HOLDINGS INC",
+      "value_usd_k": 2996482,
+      "weight": 0.000109,
+      "shares": 54941,
+      "cusip": "090043100"
+    },
+    {
+      "issuer": "AES CORP",
+      "value_usd_k": 2989804,
+      "weight": 0.000109,
+      "shares": 208494,
+      "cusip": "00130H105"
+    },
+    {
+      "issuer": "FACTSET RESH SYS INC",
+      "value_usd_k": 2981412,
+      "weight": 0.000109,
+      "shares": 10274,
+      "cusip": "303075105"
+    },
+    {
+      "issuer": "QORVO INC",
+      "value_usd_k": 2952441,
+      "weight": 0.000108,
+      "shares": 34936,
+      "cusip": "74736K101"
+    },
+    {
+      "issuer": "CHEMOURS CO",
+      "value_usd_k": 2937856,
+      "weight": 0.000107,
+      "shares": 249182,
+      "cusip": "163851108"
+    },
+    {
+      "issuer": "GLOBAL E ONLINE LTD",
+      "value_usd_k": 2934020,
+      "weight": 0.000107,
+      "shares": 74638,
+      "cusip": "M5216V106"
+    },
+    {
+      "issuer": "MACOM TECH SOLUTIONS HLDGS I",
+      "value_usd_k": 2932656,
+      "weight": 0.000107,
+      "shares": 17122,
+      "cusip": "55405Y100"
+    },
+    {
+      "issuer": "NEXGEN ENERGY LTD",
+      "value_usd_k": 2917633,
+      "weight": 0.000106,
+      "shares": 317134,
+      "cusip": "65340P106"
+    },
+    {
+      "issuer": "SOUTHWEST AIRLS CO",
+      "value_usd_k": 2915873,
+      "weight": 0.000106,
+      "shares": 70551,
+      "cusip": "844741108"
+    },
+    {
+      "issuer": "POTLATCHDELTIC CORPORATION",
+      "value_usd_k": 2899007,
+      "weight": 0.000106,
+      "shares": 72876,
+      "cusip": "737630103"
+    },
+    {
+      "issuer": "10X GENOMICS INC",
+      "value_usd_k": 2898842,
+      "weight": 0.000106,
+      "shares": 177734,
+      "cusip": "88025U109"
+    },
+    {
+      "issuer": "GUARDANT HEALTH INC",
+      "value_usd_k": 2889643,
+      "weight": 0.000105,
+      "shares": 28291,
+      "cusip": "40131M109"
+    },
+    {
+      "issuer": "TRIMBLE INC",
+      "value_usd_k": 2887041,
+      "weight": 0.000105,
+      "shares": 36848,
+      "cusip": "896239100"
+    },
+    {
+      "issuer": "HUDBAY MINERALS INC",
+      "value_usd_k": 2869604,
+      "weight": 0.000105,
+      "shares": 144349,
+      "cusip": "443628102"
+    },
+    {
+      "issuer": "AMERICAN WOODMARK CORPORATIO",
+      "value_usd_k": 2860473,
+      "weight": 0.000104,
+      "shares": 53070,
+      "cusip": "030506109"
+    },
+    {
+      "issuer": "PORTLAND GEN ELEC CO",
+      "value_usd_k": 2838417,
+      "weight": 0.000104,
+      "shares": 59146,
+      "cusip": "736508847"
+    },
+    {
+      "issuer": "CIVITAS RESOURCES INC",
+      "value_usd_k": 2832341,
+      "weight": 0.000103,
+      "shares": 104553,
+      "cusip": "17888H103"
+    },
+    {
+      "issuer": "LEGALZOOM COM INC",
+      "value_usd_k": 2824350,
+      "weight": 0.000103,
+      "shares": 284426,
+      "cusip": "52466B103"
+    },
+    {
+      "issuer": "CSW INDUSTRIALS INC",
+      "value_usd_k": 2815833,
+      "weight": 0.000103,
+      "shares": 9593,
+      "cusip": "126402106"
+    },
+    {
+      "issuer": "ZIMMER BIOMET HOLDINGS INC",
+      "value_usd_k": 2808022,
+      "weight": 0.000102,
+      "shares": 31228,
+      "cusip": "98956P102"
+    },
+    {
+      "issuer": "FMC CORP",
+      "value_usd_k": 2798938,
+      "weight": 0.000102,
+      "shares": 201798,
+      "cusip": "302491303"
+    },
+    {
+      "issuer": "ESSENTIAL UTILS INC",
+      "value_usd_k": 2796789,
+      "weight": 0.000102,
+      "shares": 72909,
+      "cusip": "29670G102"
+    },
+    {
+      "issuer": "GENERAL MLS INC",
+      "value_usd_k": 2790140,
+      "weight": 0.000102,
+      "shares": 60003,
+      "cusip": "370334104"
+    },
+    {
+      "issuer": "RAPID7 INC",
+      "value_usd_k": 2766719,
+      "weight": 0.000101,
+      "shares": 182021,
+      "cusip": "753422104"
+    },
+    {
+      "issuer": "SIX FLAGS ENTERTAINMENT CORP",
+      "value_usd_k": 2765649,
+      "weight": 0.000101,
+      "shares": 180290,
+      "cusip": "83001C108"
+    },
+    {
+      "issuer": "TKO GROUP HOLDINGS INC",
+      "value_usd_k": 2758382,
+      "weight": 0.000101,
+      "shares": 13198,
+      "cusip": "87256C101"
+    },
+    {
+      "issuer": "PEABODY ENERGY CORP",
+      "value_usd_k": 2757586,
+      "weight": 0.000101,
+      "shares": 92848,
+      "cusip": "704551100"
+    },
+    {
+      "issuer": "NORDSON CORP",
+      "value_usd_k": 2732247,
+      "weight": 0.0001,
+      "shares": 11364,
+      "cusip": "655663102"
+    },
+    {
+      "issuer": "SYNOVUS FINL CORP",
+      "value_usd_k": 2728175,
+      "weight": 9.9e-05,
+      "shares": 54509,
+      "cusip": "87161C501"
+    },
+    {
+      "issuer": "ON HLDG AG",
+      "value_usd_k": 2701743,
+      "weight": 9.9e-05,
+      "shares": 58127,
+      "cusip": "H5919C104"
+    },
+    {
+      "issuer": "ENVISTA HOLDINGS CORPORATION",
+      "value_usd_k": 2694146,
+      "weight": 9.8e-05,
+      "shares": 124097,
+      "cusip": "29415F104"
+    },
+    {
+      "issuer": "DATADOG INC",
+      "value_usd_k": 2691922,
+      "weight": 9.8e-05,
+      "shares": 19795,
+      "cusip": "23804L103"
+    },
+    {
+      "issuer": "DUOLINGO INC",
+      "value_usd_k": 2660931,
+      "weight": 9.7e-05,
+      "shares": 15162,
+      "cusip": "26603R106"
+    },
+    {
+      "issuer": "AMERICAN WTR WKS CO INC NEW",
+      "value_usd_k": 2632316,
+      "weight": 9.6e-05,
+      "shares": 20171,
+      "cusip": "030420103"
+    },
+    {
+      "issuer": "COMMERCIAL METALS CO",
+      "value_usd_k": 2603918,
+      "weight": 9.5e-05,
+      "shares": 37618,
+      "cusip": "201723103"
+    },
+    {
+      "issuer": "MONOLITHIC PWR SYS INC",
+      "value_usd_k": 2602160,
+      "weight": 9.5e-05,
+      "shares": 2871,
+      "cusip": "609839105"
+    },
+    {
+      "issuer": "ALLIENT INC",
+      "value_usd_k": 2600694,
+      "weight": 9.5e-05,
+      "shares": 48385,
+      "cusip": "019330109"
+    },
+    {
+      "issuer": "CAPRI HOLDINGS LIMITED",
+      "value_usd_k": 2599454,
+      "weight": 9.5e-05,
+      "shares": 106535,
+      "cusip": "G1890L107"
+    },
+    {
+      "issuer": "MARQETA INC",
+      "value_usd_k": 2581212,
+      "weight": 9.4e-05,
+      "shares": 543413,
+      "cusip": "57142B104"
+    },
+    {
+      "issuer": "ROYAL BK CDA",
+      "value_usd_k": 2580675,
+      "weight": 9.4e-05,
+      "shares": 15118,
+      "cusip": "780087102"
+    },
+    {
+      "issuer": "ESAB CORPORATION",
+      "value_usd_k": 2567437,
+      "weight": 9.4e-05,
+      "shares": 22981,
+      "cusip": "29605J106"
+    },
+    {
+      "issuer": "INTERDIGITAL INC",
+      "value_usd_k": 2546403,
+      "weight": 9.3e-05,
+      "shares": 7998,
+      "cusip": "45867G101"
+    },
+    {
+      "issuer": "UGI CORP NEW",
+      "value_usd_k": 2539251,
+      "weight": 9.3e-05,
+      "shares": 67840,
+      "cusip": "902681105"
+    },
+    {
+      "issuer": "INSTALLED BLDG PRODS INC",
+      "value_usd_k": 2537872,
+      "weight": 9.3e-05,
+      "shares": 9784,
+      "cusip": "45780R101"
+    },
+    {
+      "issuer": "MAGNA INTL INC",
+      "value_usd_k": 2527574,
+      "weight": 9.2e-05,
+      "shares": 47351,
+      "cusip": "559222401"
+    },
+    {
+      "issuer": "ERO COPPER CORP",
+      "value_usd_k": 2514354,
+      "weight": 9.2e-05,
+      "shares": 88760,
+      "cusip": "296006109"
+    },
+    {
+      "issuer": "CARMAX INC",
+      "value_usd_k": 2496530,
+      "weight": 9.1e-05,
+      "shares": 64610,
+      "cusip": "143130102"
+    },
+    {
+      "issuer": "SIGNET JEWELERS LIMITED",
+      "value_usd_k": 2491539,
+      "weight": 9.1e-05,
+      "shares": 30062,
+      "cusip": "G81276100"
+    },
+    {
+      "issuer": "KRYSTAL BIOTECH INC",
+      "value_usd_k": 2469098,
+      "weight": 9e-05,
+      "shares": 10015,
+      "cusip": "501147102"
+    },
+    {
+      "issuer": "NEBIUS GROUP N.V.",
+      "value_usd_k": 2456156,
+      "weight": 9e-05,
+      "shares": 29343,
+      "cusip": "N97284108"
+    },
+    {
+      "issuer": "ARCOSA INC",
+      "value_usd_k": 2441532,
+      "weight": 8.9e-05,
+      "shares": 22964,
+      "cusip": "039653100"
+    },
+    {
+      "issuer": "ACADIA HEALTHCARE COMPANY IN",
+      "value_usd_k": 2430577,
+      "weight": 8.9e-05,
+      "shares": 171288,
+      "cusip": "00404A109"
+    },
+    {
+      "issuer": "BWX TECHNOLOGIES INC",
+      "value_usd_k": 2418032,
+      "weight": 8.8e-05,
+      "shares": 13990,
+      "cusip": "05605H100"
+    },
+    {
+      "issuer": "MARKETAXESS HLDGS INC",
+      "value_usd_k": 2403556,
+      "weight": 8.8e-05,
+      "shares": 13261,
+      "cusip": "57060D108"
+    },
+    {
+      "issuer": "CAVCO INDS INC DEL",
+      "value_usd_k": 2403130,
+      "weight": 8.8e-05,
+      "shares": 4068,
+      "cusip": "149568107"
+    },
+    {
+      "issuer": "BRIXMOR PPTY GROUP INC",
+      "value_usd_k": 2388590,
+      "weight": 8.7e-05,
+      "shares": 91098,
+      "cusip": "11120U105"
+    },
+    {
+      "issuer": "CHURCH & DWIGHT CO INC",
+      "value_usd_k": 2377734,
+      "weight": 8.7e-05,
+      "shares": 28357,
+      "cusip": "171340102"
+    },
+    {
+      "issuer": "MORGAN STANLEY",
+      "value_usd_k": 2358131,
+      "weight": 8.6e-05,
+      "shares": 13283,
+      "cusip": "617446448"
+    },
+    {
+      "issuer": "MAGNITE INC",
+      "value_usd_k": 2356385,
+      "weight": 8.6e-05,
+      "shares": 145187,
+      "cusip": "55955D100"
+    },
+    {
+      "issuer": "WASTE CONNECTIONS INC",
+      "value_usd_k": 2356137,
+      "weight": 8.6e-05,
+      "shares": 13436,
+      "cusip": "94106B101"
+    },
+    {
+      "issuer": "HUNT J B TRANS SVCS INC",
+      "value_usd_k": 2344129,
+      "weight": 8.5e-05,
+      "shares": 12062,
+      "cusip": "445658107"
+    },
+    {
+      "issuer": "MASTEC INC",
+      "value_usd_k": 2331076,
+      "weight": 8.5e-05,
+      "shares": 10724,
+      "cusip": "576323109"
+    },
+    {
+      "issuer": "CF INDS HLDGS INC",
+      "value_usd_k": 2330564,
+      "weight": 8.5e-05,
+      "shares": 30134,
+      "cusip": "125269100"
+    },
+    {
+      "issuer": "SELECTIVE INS GROUP INC",
+      "value_usd_k": 2305443,
+      "weight": 8.4e-05,
+      "shares": 27554,
+      "cusip": "816300107"
+    },
+    {
+      "issuer": "APPIAN CORP",
+      "value_usd_k": 2300494,
+      "weight": 8.4e-05,
+      "shares": 64949,
+      "cusip": "03782L101"
+    },
+    {
+      "issuer": "RADIAN GROUP INC",
+      "value_usd_k": 2290728,
+      "weight": 8.4e-05,
+      "shares": 63649,
+      "cusip": "750236101"
+    },
+    {
+      "issuer": "ALARM COM HLDGS INC",
+      "value_usd_k": 2261921,
+      "weight": 8.2e-05,
+      "shares": 44334,
+      "cusip": "011642105"
+    },
+    {
+      "issuer": "GRAPHIC PACKAGING HLDG CO",
+      "value_usd_k": 2255265,
+      "weight": 8.2e-05,
+      "shares": 149752,
+      "cusip": "388689101"
+    },
+    {
+      "issuer": "ARES MANAGEMENT CORPORATION",
+      "value_usd_k": 2242940,
+      "weight": 8.2e-05,
+      "shares": 13877,
+      "cusip": "03990B101"
+    },
+    {
+      "issuer": "KINDER MORGAN INC DEL",
+      "value_usd_k": 2240792,
+      "weight": 8.2e-05,
+      "shares": 81513,
+      "cusip": "49456B101"
+    },
+    {
+      "issuer": "SOLAREDGE TECHNOLOGIES INC",
+      "value_usd_k": 2239510,
+      "weight": 8.2e-05,
+      "shares": 77626,
+      "cusip": "83417M104"
+    },
+    {
+      "issuer": "FULLER H B CO",
+      "value_usd_k": 2213398,
+      "weight": 8.1e-05,
+      "shares": 37225,
+      "cusip": "359694106"
+    },
+    {
+      "issuer": "POOL CORP",
+      "value_usd_k": 2210183,
+      "weight": 8.1e-05,
+      "shares": 9662,
+      "cusip": "73278L105"
+    },
+    {
+      "issuer": "SYSCO CORP",
+      "value_usd_k": 2181150,
+      "weight": 8e-05,
+      "shares": 29599,
+      "cusip": "871829107"
+    },
+    {
+      "issuer": "PRICE T ROWE GROUP INC",
+      "value_usd_k": 2174654,
+      "weight": 7.9e-05,
+      "shares": 21241,
+      "cusip": "74144T108"
+    },
+    {
+      "issuer": "WP CAREY INC",
+      "value_usd_k": 2169125,
+      "weight": 7.9e-05,
+      "shares": 33703,
+      "cusip": "92936U109"
+    },
+    {
+      "issuer": "TETRA TECH INC NEW",
+      "value_usd_k": 2156656,
+      "weight": 7.9e-05,
+      "shares": 64301,
+      "cusip": "88162G103"
+    },
+    {
+      "issuer": "CABOT CORP",
+      "value_usd_k": 2153702,
+      "weight": 7.9e-05,
+      "shares": 32494,
+      "cusip": "127055101"
+    },
+    {
+      "issuer": "KORN FERRY",
+      "value_usd_k": 2145188,
+      "weight": 7.8e-05,
+      "shares": 32493,
+      "cusip": "500643200"
+    },
+    {
+      "issuer": "MARRIOTT VACATIONS WORLDWIDE",
+      "value_usd_k": 2141337,
+      "weight": 7.8e-05,
+      "shares": 37118,
+      "cusip": "57164Y107"
+    },
+    {
+      "issuer": "Q2 HLDGS INC",
+      "value_usd_k": 2137091,
+      "weight": 7.8e-05,
+      "shares": 29616,
+      "cusip": "74736L109"
+    },
+    {
+      "issuer": "NCINO INC",
+      "value_usd_k": 2129658,
+      "weight": 7.8e-05,
+      "shares": 83060,
+      "cusip": "63947X101"
+    },
+    {
+      "issuer": "MOLSON COORS BEVERAGE CO",
+      "value_usd_k": 2117171,
+      "weight": 7.7e-05,
+      "shares": 45355,
+      "cusip": "60871R209"
+    },
+    {
+      "issuer": "LIBERTY ENERGY INC",
+      "value_usd_k": 2112618,
+      "weight": 7.7e-05,
+      "shares": 114443,
+      "cusip": "53115L104"
+    },
+    {
+      "issuer": "KIMBERLY-CLARK CORP",
+      "value_usd_k": 2107895,
+      "weight": 7.7e-05,
+      "shares": 20893,
+      "cusip": "494368103"
+    },
+    {
+      "issuer": "PAGERDUTY INC",
+      "value_usd_k": 2099684,
+      "weight": 7.7e-05,
+      "shares": 160159,
+      "cusip": "69553P100"
+    },
+    {
+      "issuer": "VICOR CORP",
+      "value_usd_k": 2092702,
+      "weight": 7.6e-05,
+      "shares": 19094,
+      "cusip": "925815102"
+    },
+    {
+      "issuer": "HOPE BANCORP INC",
+      "value_usd_k": 2064064,
+      "weight": 7.5e-05,
+      "shares": 188327,
+      "cusip": "43940T109"
+    },
+    {
+      "issuer": "AVERY DENNISON CORP",
+      "value_usd_k": 2050697,
+      "weight": 7.5e-05,
+      "shares": 11275,
+      "cusip": "053611109"
+    },
+    {
+      "issuer": "GARMIN LTD",
+      "value_usd_k": 2039657,
+      "weight": 7.4e-05,
+      "shares": 10055,
+      "cusip": "H2906T109"
+    },
+    {
+      "issuer": "UNITEDHEALTH GROUP INC",
+      "value_usd_k": 2036779,
+      "weight": 7.4e-05,
+      "shares": 6170,
+      "cusip": "91324P102"
+    },
+    {
+      "issuer": "CLEARWAY ENERGY INC",
+      "value_usd_k": 2016387,
+      "weight": 7.4e-05,
+      "shares": 60625,
+      "cusip": "18539C204"
+    },
+    {
+      "issuer": "KADANT INC",
+      "value_usd_k": 2013951,
+      "weight": 7.3e-05,
+      "shares": 7066,
+      "cusip": "48282T104"
+    },
+    {
+      "issuer": "IRHYTHM TECHNOLOGIES INC",
+      "value_usd_k": 2013589,
+      "weight": 7.3e-05,
+      "shares": 11348,
+      "cusip": "450056106"
+    },
+    {
+      "issuer": "HESS MIDSTREAM LP",
+      "value_usd_k": 2013489,
+      "weight": 7.3e-05,
+      "shares": 58362,
+      "cusip": "428103105"
+    },
+    {
+      "issuer": "SIMPLY GOOD FOODS CO",
+      "value_usd_k": 2011936,
+      "weight": 7.3e-05,
+      "shares": 100196,
+      "cusip": "82900L102"
+    },
+    {
+      "issuer": "INTELLIA THERAPEUTICS INC",
+      "value_usd_k": 2006262,
+      "weight": 7.3e-05,
+      "shares": 223166,
+      "cusip": "45826J105"
+    },
+    {
+      "issuer": "ANTERO MIDSTREAM CORP",
+      "value_usd_k": 1987694,
+      "weight": 7.2e-05,
+      "shares": 111731,
+      "cusip": "03676B102"
+    },
+    {
+      "issuer": "COUPANG INC",
+      "value_usd_k": 1986514,
+      "weight": 7.2e-05,
+      "shares": 84210,
+      "cusip": "22266T109"
+    },
+    {
+      "issuer": "INGEVITY CORP",
+      "value_usd_k": 1976671,
+      "weight": 7.2e-05,
+      "shares": 33401,
+      "cusip": "45688C107"
+    },
+    {
+      "issuer": "PPL CORP",
+      "value_usd_k": 1922108,
+      "weight": 7e-05,
+      "shares": 54886,
+      "cusip": "69351T106"
+    },
+    {
+      "issuer": "JFROG LTD",
+      "value_usd_k": 1919833,
+      "weight": 7e-05,
+      "shares": 30737,
+      "cusip": "M6191J100"
+    },
+    {
+      "issuer": "AMERANT BANCORP INC",
+      "value_usd_k": 1912721,
+      "weight": 7e-05,
+      "shares": 98038,
+      "cusip": "023576101"
+    },
+    {
+      "issuer": "MARRIOTT INTL INC NEW",
+      "value_usd_k": 1911389,
+      "weight": 7e-05,
+      "shares": 6161,
+      "cusip": "571903202"
+    },
+    {
+      "issuer": "GOLDMAN SACHS GROUP INC",
+      "value_usd_k": 1910946,
+      "weight": 7e-05,
+      "shares": 2174,
+      "cusip": "38141G104"
+    },
+    {
+      "issuer": "LENDINGCLUB CORP",
+      "value_usd_k": 1909247,
+      "weight": 7e-05,
+      "shares": 100805,
+      "cusip": "52603A208"
+    },
+    {
+      "issuer": "HEALTHEQUITY INC",
+      "value_usd_k": 1907961,
+      "weight": 7e-05,
+      "shares": 20827,
+      "cusip": "42226A107"
+    },
+    {
+      "issuer": "DORMAN PRODS INC",
+      "value_usd_k": 1885546,
+      "weight": 6.9e-05,
+      "shares": 15306,
+      "cusip": "258278100"
+    },
+    {
+      "issuer": "PERFORMANCE FOOD GROUP CO",
+      "value_usd_k": 1874832,
+      "weight": 6.8e-05,
+      "shares": 20850,
+      "cusip": "71377A103"
+    },
+    {
+      "issuer": "SONOS INC",
+      "value_usd_k": 1872265,
+      "weight": 6.8e-05,
+      "shares": 106621,
+      "cusip": "83570H108"
+    },
+    {
+      "issuer": "NUVALENT INC",
+      "value_usd_k": 1868761,
+      "weight": 6.8e-05,
+      "shares": 18578,
+      "cusip": "670703107"
+    },
+    {
+      "issuer": "TEREX CORP NEW",
+      "value_usd_k": 1862108,
+      "weight": 6.8e-05,
+      "shares": 34884,
+      "cusip": "880779103"
+    },
+    {
+      "issuer": "CONSTELLATION BRANDS INC",
+      "value_usd_k": 1859425,
+      "weight": 6.8e-05,
+      "shares": 13478,
+      "cusip": "21036P108"
+    },
+    {
+      "issuer": "BIOCRYST PHARMACEUTICALS INC",
+      "value_usd_k": 1837462,
+      "weight": 6.7e-05,
+      "shares": 235572,
+      "cusip": "09058V103"
+    },
+    {
+      "issuer": "BLACKLINE INC",
+      "value_usd_k": 1837342,
+      "weight": 6.7e-05,
+      "shares": 33231,
+      "cusip": "09239B109"
+    },
+    {
+      "issuer": "RANGE RES CORP",
+      "value_usd_k": 1824917,
+      "weight": 6.7e-05,
+      "shares": 51756,
+      "cusip": "75281A109"
+    },
+    {
+      "issuer": "EQT CORP",
+      "value_usd_k": 1822722,
+      "weight": 6.6e-05,
+      "shares": 34006,
+      "cusip": "26884L109"
+    },
+    {
+      "issuer": "PROG HOLDINGS INC",
+      "value_usd_k": 1794555,
+      "weight": 6.5e-05,
+      "shares": 60853,
+      "cusip": "74319R101"
+    },
+    {
+      "issuer": "AGILENT TECHNOLOGIES INC",
+      "value_usd_k": 1781565,
+      "weight": 6.5e-05,
+      "shares": 13093,
+      "cusip": "00846U101"
+    },
+    {
+      "issuer": "VEECO INSTRS INC DEL",
+      "value_usd_k": 1781363,
+      "weight": 6.5e-05,
+      "shares": 62329,
+      "cusip": "922417100"
+    },
+    {
+      "issuer": "KINSALE CAP GROUP INC",
+      "value_usd_k": 1779205,
+      "weight": 6.5e-05,
+      "shares": 4549,
+      "cusip": "49714P108"
+    },
+    {
+      "issuer": "SIRIUSXM HOLDINGS INC",
+      "value_usd_k": 1765698,
+      "weight": 6.4e-05,
+      "shares": 88307,
+      "cusip": "829933100"
+    },
+    {
+      "issuer": "BECTON DICKINSON & CO",
+      "value_usd_k": 1754199,
+      "weight": 6.4e-05,
+      "shares": 9039,
+      "cusip": "075887109"
+    },
+    {
+      "issuer": "CBRE GROUP INC",
+      "value_usd_k": 1751968,
+      "weight": 6.4e-05,
+      "shares": 10896,
+      "cusip": "12504L109"
+    },
+    {
+      "issuer": "CORNING INC",
+      "value_usd_k": 1750149,
+      "weight": 6.4e-05,
+      "shares": 19988,
+      "cusip": "219350105"
+    },
+    {
+      "issuer": "O-I GLASS INC",
+      "value_usd_k": 1712544,
+      "weight": 6.2e-05,
+      "shares": 116026,
+      "cusip": "67098H104"
+    },
+    {
+      "issuer": "L3HARRIS TECHNOLOGIES INC",
+      "value_usd_k": 1706816,
+      "weight": 6.2e-05,
+      "shares": 5814,
+      "cusip": "502431109"
+    },
+    {
+      "issuer": "BANK NOVA SCOTIA HALIFAX",
+      "value_usd_k": 1700324,
+      "weight": 6.2e-05,
+      "shares": 23024,
+      "cusip": "064149107"
+    },
+    {
+      "issuer": "FRANKLIN RESOURCES INC",
+      "value_usd_k": 1696931,
+      "weight": 6.2e-05,
+      "shares": 71031,
+      "cusip": "354613101"
+    },
+    {
+      "issuer": "OCEANFIRST FINL CORP",
+      "value_usd_k": 1691877,
+      "weight": 6.2e-05,
+      "shares": 94255,
+      "cusip": "675234108"
+    },
+    {
+      "issuer": "NNN REIT INC",
+      "value_usd_k": 1690735,
+      "weight": 6.2e-05,
+      "shares": 42663,
+      "cusip": "637417106"
+    },
+    {
+      "issuer": "NETFLIX INC",
+      "value_usd_k": 1690212,
+      "weight": 6.2e-05,
+      "shares": 18027,
+      "cusip": "64110L106"
+    },
+    {
+      "issuer": "HERSHEY CO",
+      "value_usd_k": 1687319,
+      "weight": 6.2e-05,
+      "shares": 9272,
+      "cusip": "427866108"
+    },
+    {
+      "issuer": "ROBLOX CORP",
+      "value_usd_k": 1676592,
+      "weight": 6.1e-05,
+      "shares": 20691,
+      "cusip": "771049103"
+    },
+    {
+      "issuer": "RELIANCE INC",
+      "value_usd_k": 1676313,
+      "weight": 6.1e-05,
+      "shares": 5803,
+      "cusip": "759509102"
+    },
+    {
+      "issuer": "HP INC",
+      "value_usd_k": 1666455,
+      "weight": 6.1e-05,
+      "shares": 74796,
+      "cusip": "40434L105"
+    },
+    {
+      "issuer": "THE CAMPBELLS COMPANY",
+      "value_usd_k": 1655422,
+      "weight": 6e-05,
+      "shares": 59398,
+      "cusip": "134429109"
+    },
+    {
+      "issuer": "GRAND CANYON ED INC",
+      "value_usd_k": 1643309,
+      "weight": 6e-05,
+      "shares": 9881,
+      "cusip": "38526M106"
+    },
+    {
+      "issuer": "RESIDEO TECHNOLOGIES INC",
+      "value_usd_k": 1642878,
+      "weight": 6e-05,
+      "shares": 46779,
+      "cusip": "76118Y104"
+    },
+    {
+      "issuer": "DOLBY LABORATORIES INC",
+      "value_usd_k": 1625087,
+      "weight": 5.9e-05,
+      "shares": 25305,
+      "cusip": "25659T107"
+    },
+    {
+      "issuer": "PATTERSON-UTI ENERGY INC",
+      "value_usd_k": 1614647,
+      "weight": 5.9e-05,
+      "shares": 264263,
+      "cusip": "703481101"
+    },
+    {
+      "issuer": "ARTERIS INC",
+      "value_usd_k": 1613256,
+      "weight": 5.9e-05,
+      "shares": 104081,
+      "cusip": "04302A104"
+    },
+    {
+      "issuer": "HUNTINGTON BANCSHARES INC",
+      "value_usd_k": 1610340,
+      "weight": 5.9e-05,
+      "shares": 92815,
+      "cusip": "446150104"
+    },
+    {
+      "issuer": "AZENTA INC",
+      "value_usd_k": 1592555,
+      "weight": 5.8e-05,
+      "shares": 47882,
+      "cusip": "114340102"
+    },
+    {
+      "issuer": "LAUDER ESTEE COS INC",
+      "value_usd_k": 1543154,
+      "weight": 5.6e-05,
+      "shares": 14736,
+      "cusip": "518439104"
+    },
+    {
+      "issuer": "CENOVUS ENERGY INC",
+      "value_usd_k": 1542828,
+      "weight": 5.6e-05,
+      "shares": 91078,
+      "cusip": "15135U109"
+    },
+    {
+      "issuer": "BOK FINL CORP",
+      "value_usd_k": 1541283,
+      "weight": 5.6e-05,
+      "shares": 13011,
+      "cusip": "05561Q201"
+    },
+    {
+      "issuer": "EXPAND ENERGY CORPORATION",
+      "value_usd_k": 1536873,
+      "weight": 5.6e-05,
+      "shares": 13926,
+      "cusip": "165167735"
+    },
+    {
+      "issuer": "DOLLAR TREE INC",
+      "value_usd_k": 1527046,
+      "weight": 5.6e-05,
+      "shares": 12414,
+      "cusip": "256746108"
+    },
+    {
+      "issuer": "STRATEGY INC",
+      "value_usd_k": 1518588,
+      "weight": 5.5e-05,
+      "shares": 9994,
+      "cusip": "594972408"
+    },
+    {
+      "issuer": "AMER STATES WTR CO",
+      "value_usd_k": 1499321,
+      "weight": 5.5e-05,
+      "shares": 20686,
+      "cusip": "029899101"
+    },
+    {
+      "issuer": "OLD DOMINION FREIGHT LINE IN",
+      "value_usd_k": 1495558,
+      "weight": 5.5e-05,
+      "shares": 9538,
+      "cusip": "679580100"
+    },
+    {
+      "issuer": "NORTHERN TR CORP",
+      "value_usd_k": 1489514,
+      "weight": 5.4e-05,
+      "shares": 10905,
+      "cusip": "665859104"
+    },
+    {
+      "issuer": "TYLER TECHNOLOGIES INC",
+      "value_usd_k": 1485324,
+      "weight": 5.4e-05,
+      "shares": 3272,
+      "cusip": "902252105"
+    },
+    {
+      "issuer": "JEFFERIES FINL GROUP INC",
+      "value_usd_k": 1477861,
+      "weight": 5.4e-05,
+      "shares": 23848,
+      "cusip": "47233W109"
+    },
+    {
+      "issuer": "MADDEN STEVEN LTD",
+      "value_usd_k": 1471433,
+      "weight": 5.4e-05,
+      "shares": 35337,
+      "cusip": "556269108"
+    },
+    {
+      "issuer": "AGCO CORP",
+      "value_usd_k": 1457768,
+      "weight": 5.3e-05,
+      "shares": 13974,
+      "cusip": "001084102"
+    },
+    {
+      "issuer": "FORMFACTOR INC",
+      "value_usd_k": 1449109,
+      "weight": 5.3e-05,
+      "shares": 25979,
+      "cusip": "346375108"
+    },
+    {
+      "issuer": "GENWORTH FINL INC",
+      "value_usd_k": 1447148,
+      "weight": 5.3e-05,
+      "shares": 160260,
+      "cusip": "37247D106"
+    },
+    {
+      "issuer": "OUSTER INC",
+      "value_usd_k": 1445249,
+      "weight": 5.3e-05,
+      "shares": 66786,
+      "cusip": "68989M202"
+    },
+    {
+      "issuer": "NOMAD FOODS LTD",
+      "value_usd_k": 1432995,
+      "weight": 5.2e-05,
+      "shares": 114548,
+      "cusip": "G6564A105"
+    },
+    {
+      "issuer": "BOOT BARN HLDGS INC",
+      "value_usd_k": 1418995,
+      "weight": 5.2e-05,
+      "shares": 8041,
+      "cusip": "099406100"
+    },
+    {
+      "issuer": "DARLING INGREDIENTS INC",
+      "value_usd_k": 1411344,
+      "weight": 5.1e-05,
+      "shares": 39204,
+      "cusip": "237266101"
+    },
+    {
+      "issuer": "TENABLE HLDGS INC",
+      "value_usd_k": 1407659,
+      "weight": 5.1e-05,
+      "shares": 59824,
+      "cusip": "88025T102"
+    },
+    {
+      "issuer": "IAC INC",
+      "value_usd_k": 1400523,
+      "weight": 5.1e-05,
+      "shares": 35819,
+      "cusip": "44891N208"
+    },
+    {
+      "issuer": "TIMKEN CO",
+      "value_usd_k": 1378386,
+      "weight": 5e-05,
+      "shares": 16384,
+      "cusip": "887389104"
+    },
+    {
+      "issuer": "GENUINE PARTS CO",
+      "value_usd_k": 1365717,
+      "weight": 5e-05,
+      "shares": 11107,
+      "cusip": "372460105"
+    },
+    {
+      "issuer": "M/I HOMES INC",
+      "value_usd_k": 1353327,
+      "weight": 4.9e-05,
+      "shares": 10577,
+      "cusip": "55305B101"
+    },
+    {
+      "issuer": "ROLLINS INC",
+      "value_usd_k": 1347989,
+      "weight": 4.9e-05,
+      "shares": 22459,
+      "cusip": "775711104"
+    },
+    {
+      "issuer": "TEXAS ROADHOUSE INC",
+      "value_usd_k": 1347422,
+      "weight": 4.9e-05,
+      "shares": 8117,
+      "cusip": "882681109"
+    },
+    {
+      "issuer": "XCEL ENERGY INC",
+      "value_usd_k": 1331770,
+      "weight": 4.9e-05,
+      "shares": 18031,
+      "cusip": "98389B100"
+    },
+    {
+      "issuer": "DUPONT DE NEMOURS INC",
+      "value_usd_k": 1329253,
+      "weight": 4.8e-05,
+      "shares": 33066,
+      "cusip": "26614N102"
+    },
+    {
+      "issuer": "DARDEN RESTAURANTS INC",
+      "value_usd_k": 1321816,
+      "weight": 4.8e-05,
+      "shares": 7183,
+      "cusip": "237194105"
+    },
+    {
+      "issuer": "STONECO LTD",
+      "value_usd_k": 1320481,
+      "weight": 4.8e-05,
+      "shares": 89282,
+      "cusip": "G85158106"
+    },
+    {
+      "issuer": "REPLIGEN CORP",
+      "value_usd_k": 1290234,
+      "weight": 4.7e-05,
+      "shares": 7874,
+      "cusip": "759916109"
+    },
+    {
+      "issuer": "KRAFT HEINZ CO",
+      "value_usd_k": 1281200,
+      "weight": 4.7e-05,
+      "shares": 52833,
+      "cusip": "500754106"
+    },
+    {
+      "issuer": "WARRIOR MET COAL INC",
+      "value_usd_k": 1270177,
+      "weight": 4.6e-05,
+      "shares": 14406,
+      "cusip": "93627C101"
+    },
+    {
+      "issuer": "SHAKE SHACK INC",
+      "value_usd_k": 1258947,
+      "weight": 4.6e-05,
+      "shares": 15510,
+      "cusip": "819047101"
+    },
+    {
+      "issuer": "ZSCALER INC",
+      "value_usd_k": 1241109,
+      "weight": 4.5e-05,
+      "shares": 5518,
+      "cusip": "98980G102"
+    },
+    {
+      "issuer": "DIGITALOCEAN HLDGS INC",
+      "value_usd_k": 1240149,
+      "weight": 4.5e-05,
+      "shares": 25772,
+      "cusip": "25402D102"
+    },
+    {
+      "issuer": "PTC THERAPEUTICS INC",
+      "value_usd_k": 1232755,
+      "weight": 4.5e-05,
+      "shares": 16229,
+      "cusip": "69366J200"
+    },
+    {
+      "issuer": "MCGRATH RENTCORP",
+      "value_usd_k": 1231144,
+      "weight": 4.5e-05,
+      "shares": 11733,
+      "cusip": "580589109"
+    },
+    {
+      "issuer": "FRANKLIN ELEC INC",
+      "value_usd_k": 1210747,
+      "weight": 4.4e-05,
+      "shares": 12674,
+      "cusip": "353514102"
+    },
+    {
+      "issuer": "PENTAIR PLC",
+      "value_usd_k": 1196464,
+      "weight": 4.4e-05,
+      "shares": 11489,
+      "cusip": "G7S00T104"
+    },
+    {
+      "issuer": "VERACYTE INC",
+      "value_usd_k": 1195387,
+      "weight": 4.4e-05,
+      "shares": 28394,
+      "cusip": "92337F107"
+    },
+    {
+      "issuer": "GE HEALTHCARE TECHNOLOGIES I",
+      "value_usd_k": 1187814,
+      "weight": 4.3e-05,
+      "shares": 14482,
+      "cusip": "36266G107"
+    },
+    {
+      "issuer": "MOHAWK INDS INC",
+      "value_usd_k": 1178801,
+      "weight": 4.3e-05,
+      "shares": 10785,
+      "cusip": "608190104"
+    },
+    {
+      "issuer": "ADVANCE AUTO PARTS INC",
+      "value_usd_k": 1178214,
+      "weight": 4.3e-05,
+      "shares": 29980,
+      "cusip": "00751Y106"
+    },
+    {
+      "issuer": "ICL GROUP LTD",
+      "value_usd_k": 1176454,
+      "weight": 4.3e-05,
+      "shares": 206034,
+      "cusip": "M53213100"
+    },
+    {
+      "issuer": "TRIPADVISOR INC",
+      "value_usd_k": 1173259,
+      "weight": 4.3e-05,
+      "shares": 80581,
+      "cusip": "896945201"
+    },
+    {
+      "issuer": "TTM TECHNOLOGIES INC",
+      "value_usd_k": 1149678,
+      "weight": 4.2e-05,
+      "shares": 16662,
+      "cusip": "87305R109"
+    },
+    {
+      "issuer": "AVNET INC",
+      "value_usd_k": 1146996,
+      "weight": 4.2e-05,
+      "shares": 23856,
+      "cusip": "053807103"
+    },
+    {
+      "issuer": "MANPOWERGROUP INC WIS",
+      "value_usd_k": 1141662,
+      "weight": 4.2e-05,
+      "shares": 38401,
+      "cusip": "56418H100"
+    },
+    {
+      "issuer": "RUSH ENTERPRISES INC",
+      "value_usd_k": 1138512,
+      "weight": 4.2e-05,
+      "shares": 21107,
+      "cusip": "781846209"
+    },
+    {
+      "issuer": "UNDER ARMOUR INC",
+      "value_usd_k": 1134914,
+      "weight": 4.1e-05,
+      "shares": 228353,
+      "cusip": "904311107"
+    },
+    {
+      "issuer": "MERCURY SYS INC",
+      "value_usd_k": 1129392,
+      "weight": 4.1e-05,
+      "shares": 15469,
+      "cusip": "589378108"
+    },
+    {
+      "issuer": "WEST PHARMACEUTICAL SVSC INC",
+      "value_usd_k": 1120645,
+      "weight": 4.1e-05,
+      "shares": 4073,
+      "cusip": "955306105"
+    },
+    {
+      "issuer": "MARZETTI COMPANY",
+      "value_usd_k": 1113617,
+      "weight": 4.1e-05,
+      "shares": 6773,
+      "cusip": "513847103"
+    },
+    {
+      "issuer": "MUELLER WTR PRODS INC",
+      "value_usd_k": 1075640,
+      "weight": 3.9e-05,
+      "shares": 45157,
+      "cusip": "624758108"
+    },
+    {
+      "issuer": "FRONTIER COMMUNICATIONS PARE",
+      "value_usd_k": 1061772,
+      "weight": 3.9e-05,
+      "shares": 27890,
+      "cusip": "35909D109"
+    },
+    {
+      "issuer": "PBF ENERGY INC",
+      "value_usd_k": 1056134,
+      "weight": 3.9e-05,
+      "shares": 38943,
+      "cusip": "69318G106"
+    },
+    {
+      "issuer": "SOLVENTUM CORP",
+      "value_usd_k": 1054684,
+      "weight": 3.8e-05,
+      "shares": 13310,
+      "cusip": "83444M101"
+    },
+    {
+      "issuer": "HAFNIA LTD",
+      "value_usd_k": 1028829,
+      "weight": 3.8e-05,
+      "shares": 193026,
+      "cusip": "Y2990R101"
+    },
+    {
+      "issuer": "FIRST AMERN FINL CORP",
+      "value_usd_k": 1024143,
+      "weight": 3.7e-05,
+      "shares": 16669,
+      "cusip": "31847R102"
+    },
+    {
+      "issuer": "COPART INC",
+      "value_usd_k": 1020171,
+      "weight": 3.7e-05,
+      "shares": 26058,
+      "cusip": "217204106"
+    },
+    {
+      "issuer": "CLARIVATE PLC",
+      "value_usd_k": 1017327,
+      "weight": 3.7e-05,
+      "shares": 304589,
+      "cusip": "G21810109"
+    },
+    {
+      "issuer": "FLOWERS FOODS INC",
+      "value_usd_k": 1017062,
+      "weight": 3.7e-05,
+      "shares": 93480,
+      "cusip": "343498101"
+    },
+    {
+      "issuer": "ADVANCED ENERGY INDS",
+      "value_usd_k": 1015235,
+      "weight": 3.7e-05,
+      "shares": 4849,
+      "cusip": "007973100"
+    },
+    {
+      "issuer": "INSPERITY INC",
+      "value_usd_k": 1014851,
+      "weight": 3.7e-05,
+      "shares": 26210,
+      "cusip": "45778Q107"
+    },
+    {
+      "issuer": "PERRIGO CO PLC",
+      "value_usd_k": 1010801,
+      "weight": 3.7e-05,
+      "shares": 72615,
+      "cusip": "G97822103"
+    },
+    {
+      "issuer": "BOSTON BEER INC",
+      "value_usd_k": 1007456,
+      "weight": 3.7e-05,
+      "shares": 5163,
+      "cusip": "100557107"
+    },
+    {
+      "issuer": "NVR INC",
+      "value_usd_k": 1006402,
+      "weight": 3.7e-05,
+      "shares": 138,
+      "cusip": "62944T105"
+    },
+    {
+      "issuer": "INTERPARFUMS INC",
+      "value_usd_k": 1005320,
+      "weight": 3.7e-05,
+      "shares": 11851,
+      "cusip": "458334109"
+    },
+    {
+      "issuer": "TYSON FOODS INC",
+      "value_usd_k": 1003457,
+      "weight": 3.7e-05,
+      "shares": 17118,
+      "cusip": "902494103"
+    },
+    {
+      "issuer": "HOLOGIC INC",
+      "value_usd_k": 1001742,
+      "weight": 3.7e-05,
+      "shares": 13448,
+      "cusip": "436440101"
+    },
+    {
+      "issuer": "CALIFORNIA RES CORP",
+      "value_usd_k": 1000923,
+      "weight": 3.7e-05,
+      "shares": 22387,
+      "cusip": "13057Q305"
+    },
+    {
+      "issuer": "DOXIMITY INC",
+      "value_usd_k": 1000241,
+      "weight": 3.6e-05,
+      "shares": 22589,
+      "cusip": "26622P107"
+    },
+    {
+      "issuer": "LATAM AIRLINES GROUP SA",
+      "value_usd_k": 996268,
+      "weight": 3.6e-05,
+      "shares": 18446,
+      "cusip": "51817R205"
+    },
+    {
+      "issuer": "FIRSTENERGY CORP",
+      "value_usd_k": 989641,
+      "weight": 3.6e-05,
+      "shares": 22105,
+      "cusip": "337932107"
+    },
+    {
+      "issuer": "AMGEN INC",
+      "value_usd_k": 988476,
+      "weight": 3.6e-05,
+      "shares": 3020,
+      "cusip": "031162100"
+    },
+    {
+      "issuer": "ZURN ELKAY WATER SOLNS CORP",
+      "value_usd_k": 984333,
+      "weight": 3.6e-05,
+      "shares": 21173,
+      "cusip": "98983L108"
+    },
+    {
+      "issuer": "FRESHPET INC",
+      "value_usd_k": 979511,
+      "weight": 3.6e-05,
+      "shares": 16076,
+      "cusip": "358039105"
+    },
+    {
+      "issuer": "THERMO FISHER SCIENTIFIC INC",
+      "value_usd_k": 976953,
+      "weight": 3.6e-05,
+      "shares": 1686,
+      "cusip": "883556102"
+    },
+    {
+      "issuer": "ERIE INDTY CO",
+      "value_usd_k": 973750,
+      "weight": 3.6e-05,
+      "shares": 3397,
+      "cusip": "29530P102"
+    },
+    {
+      "issuer": "SELECT MED HLDGS CORP",
+      "value_usd_k": 967819,
+      "weight": 3.5e-05,
+      "shares": 65173,
+      "cusip": "81619Q105"
+    },
+    {
+      "issuer": "ARTISAN PARTNERS ASSET MGMT",
+      "value_usd_k": 953764,
+      "weight": 3.5e-05,
+      "shares": 23411,
+      "cusip": "04316A108"
+    },
+    {
+      "issuer": "AMETEK INC",
+      "value_usd_k": 946068,
+      "weight": 3.5e-05,
+      "shares": 4608,
+      "cusip": "031100100"
+    },
+    {
+      "issuer": "RYDER SYS INC",
+      "value_usd_k": 941830,
+      "weight": 3.4e-05,
+      "shares": 4921,
+      "cusip": "783549108"
+    },
+    {
+      "issuer": "MGIC INVT CORP WIS",
+      "value_usd_k": 937144,
+      "weight": 3.4e-05,
+      "shares": 32072,
+      "cusip": "552848103"
+    },
+    {
+      "issuer": "FIRST MAJESTIC SILVER CORP",
+      "value_usd_k": 913601,
+      "weight": 3.3e-05,
+      "shares": 54838,
+      "cusip": "32076V103"
+    },
+    {
+      "issuer": "SILICON LABORATORIES INC",
+      "value_usd_k": 903398,
+      "weight": 3.3e-05,
+      "shares": 6912,
+      "cusip": "826919102"
+    },
+    {
+      "issuer": "CACI INTL INC",
+      "value_usd_k": 899916,
+      "weight": 3.3e-05,
+      "shares": 1689,
+      "cusip": "127190304"
+    },
+    {
+      "issuer": "AVIS BUDGET GROUP",
+      "value_usd_k": 895674,
+      "weight": 3.3e-05,
+      "shares": 6980,
+      "cusip": "053774105"
+    },
+    {
+      "issuer": "WORTHINGTON ENTERPRISES INC",
+      "value_usd_k": 895461,
+      "weight": 3.3e-05,
+      "shares": 17364,
+      "cusip": "981811102"
+    },
+    {
+      "issuer": "SM ENERGY CO",
+      "value_usd_k": 888512,
+      "weight": 3.2e-05,
+      "shares": 47514,
+      "cusip": "78454L100"
+    },
+    {
+      "issuer": "AVIENT CORPORATION",
+      "value_usd_k": 877719,
+      "weight": 3.2e-05,
+      "shares": 28096,
+      "cusip": "05368V106"
+    },
+    {
+      "issuer": "VERRA MOBILITY CORP",
+      "value_usd_k": 868925,
+      "weight": 3.2e-05,
+      "shares": 38774,
+      "cusip": "92511U102"
+    },
+    {
+      "issuer": "EXELON CORP",
+      "value_usd_k": 860946,
+      "weight": 3.1e-05,
+      "shares": 19751,
+      "cusip": "30161N101"
+    },
+    {
+      "issuer": "EATON CORP PLC",
+      "value_usd_k": 857110,
+      "weight": 3.1e-05,
+      "shares": 2691,
+      "cusip": "G29183103"
+    },
+    {
+      "issuer": "STERIS PLC",
+      "value_usd_k": 852081,
+      "weight": 3.1e-05,
+      "shares": 3361,
+      "cusip": "G8473T100"
+    },
+    {
+      "issuer": "ESCO TECHNOLOGIES INC",
+      "value_usd_k": 851900,
+      "weight": 3.1e-05,
+      "shares": 4360,
+      "cusip": "296315104"
+    },
+    {
+      "issuer": "ABM INDS INC",
+      "value_usd_k": 833775,
+      "weight": 3e-05,
+      "shares": 19711,
+      "cusip": "000957100"
+    },
+    {
+      "issuer": "LEGGETT & PLATT INC",
+      "value_usd_k": 820908,
+      "weight": 3e-05,
+      "shares": 74628,
+      "cusip": "524660107"
+    },
+    {
+      "issuer": "SPORTRADAR GROUP AG",
+      "value_usd_k": 808109,
+      "weight": 2.9e-05,
+      "shares": 33997,
+      "cusip": "H8088L103"
+    },
+    {
+      "issuer": "MSC INDL DIRECT INC",
+      "value_usd_k": 798025,
+      "weight": 2.9e-05,
+      "shares": 9489,
+      "cusip": "553530106"
+    },
+    {
+      "issuer": "PRICESMART INC",
+      "value_usd_k": 797232,
+      "weight": 2.9e-05,
+      "shares": 6499,
+      "cusip": "741511109"
+    },
+    {
+      "issuer": "LIGAND PHARMACEUTICALS INC",
+      "value_usd_k": 795418,
+      "weight": 2.9e-05,
+      "shares": 4207,
+      "cusip": "53220K504"
+    },
+    {
+      "issuer": "HERTZ GLOBAL HLDGS INC",
+      "value_usd_k": 782467,
+      "weight": 2.9e-05,
+      "shares": 152231,
+      "cusip": "42806J700"
+    },
+    {
+      "issuer": "UNITED NAT FOODS INC",
+      "value_usd_k": 770269,
+      "weight": 2.8e-05,
+      "shares": 22877,
+      "cusip": "911163103"
+    },
+    {
+      "issuer": "PALOMAR HLDGS INC",
+      "value_usd_k": 762876,
+      "weight": 2.8e-05,
+      "shares": 5661,
+      "cusip": "69753M105"
+    },
+    {
+      "issuer": "CLOROX CO DEL",
+      "value_usd_k": 760157,
+      "weight": 2.8e-05,
+      "shares": 7539,
+      "cusip": "189054109"
+    },
+    {
+      "issuer": "RIO TINTO PLC",
+      "value_usd_k": 757244,
+      "weight": 2.8e-05,
+      "shares": 9462,
+      "cusip": "767204100"
+    },
+    {
+      "issuer": "PLANET FITNESS INC",
+      "value_usd_k": 745840,
+      "weight": 2.7e-05,
+      "shares": 6876,
+      "cusip": "72703H101"
+    },
+    {
+      "issuer": "PLUG POWER INC",
+      "value_usd_k": 743777,
+      "weight": 2.7e-05,
+      "shares": 377552,
+      "cusip": "72919P202"
+    },
+    {
+      "issuer": "BALCHEM CORP",
+      "value_usd_k": 737048,
+      "weight": 2.7e-05,
+      "shares": 4806,
+      "cusip": "057665200"
+    },
+    {
+      "issuer": "INVESCO LTD",
+      "value_usd_k": 735954,
+      "weight": 2.7e-05,
+      "shares": 28015,
+      "cusip": "G491BT108"
+    },
+    {
+      "issuer": "WENDYS CO",
+      "value_usd_k": 729133,
+      "weight": 2.7e-05,
+      "shares": 87531,
+      "cusip": "95058W100"
+    },
+    {
+      "issuer": "ANALOG DEVICES INC",
+      "value_usd_k": 723562,
+      "weight": 2.6e-05,
+      "shares": 2668,
+      "cusip": "032654105"
+    },
+    {
+      "issuer": "TRANSALTA CORP",
+      "value_usd_k": 711143,
+      "weight": 2.6e-05,
+      "shares": 56152,
+      "cusip": "89346D107"
+    },
+    {
+      "issuer": "FORTUNE BRANDS INNOVATIONS I",
+      "value_usd_k": 696428,
+      "weight": 2.5e-05,
+      "shares": 13923,
+      "cusip": "34964C106"
+    },
+    {
+      "issuer": "HAMILTON LANE INC",
+      "value_usd_k": 695591,
+      "weight": 2.5e-05,
+      "shares": 5179,
+      "cusip": "407497106"
+    },
+    {
+      "issuer": "CHART INDS INC",
+      "value_usd_k": 694583,
+      "weight": 2.5e-05,
+      "shares": 3368,
+      "cusip": "16115Q308"
+    },
+    {
+      "issuer": "PENNYMAC FINL SVCS INC NEW",
+      "value_usd_k": 694533,
+      "weight": 2.5e-05,
+      "shares": 5268,
+      "cusip": "70932M107"
+    },
+    {
+      "issuer": "EVERUS CONSTR GROUP",
+      "value_usd_k": 686876,
+      "weight": 2.5e-05,
+      "shares": 8028,
+      "cusip": "300426103"
+    },
+    {
+      "issuer": "MOSAIC CO NEW",
+      "value_usd_k": 685746,
+      "weight": 2.5e-05,
+      "shares": 28466,
+      "cusip": "61945C103"
+    },
+    {
+      "issuer": "CANADIAN IMPERIAL BANK OF CO",
+      "value_usd_k": 672825,
+      "weight": 2.5e-05,
+      "shares": 7412,
+      "cusip": "136069101"
+    },
+    {
+      "issuer": "AIR LEASE CORP",
+      "value_usd_k": 668763,
+      "weight": 2.4e-05,
+      "shares": 10412,
+      "cusip": "00912X302"
+    },
+    {
+      "issuer": "METTLER TOLEDO INTERNATIONAL",
+      "value_usd_k": 666423,
+      "weight": 2.4e-05,
+      "shares": 478,
+      "cusip": "592688105"
+    },
+    {
+      "issuer": "BCE INC",
+      "value_usd_k": 664426,
+      "weight": 2.4e-05,
+      "shares": 27818,
+      "cusip": "05534B760"
+    },
+    {
+      "issuer": "PROLOGIS INC.",
+      "value_usd_k": 653747,
+      "weight": 2.4e-05,
+      "shares": 5121,
+      "cusip": "74340W103"
+    },
+    {
+      "issuer": "NEWELL BRANDS INC",
+      "value_usd_k": 642388,
+      "weight": 2.3e-05,
+      "shares": 172685,
+      "cusip": "651229106"
+    },
+    {
+      "issuer": "GRAHAM HLDGS CO",
+      "value_usd_k": 637188,
+      "weight": 2.3e-05,
+      "shares": 580,
+      "cusip": "384637104"
+    },
+    {
+      "issuer": "BLACKBAUD INC",
+      "value_usd_k": 629084,
+      "weight": 2.3e-05,
+      "shares": 9935,
+      "cusip": "09227Q100"
+    },
+    {
+      "issuer": "HOULIHAN LOKEY INC",
+      "value_usd_k": 626736,
+      "weight": 2.3e-05,
+      "shares": 3598,
+      "cusip": "441593100"
+    },
+    {
+      "issuer": "BANK MONTREAL QUE",
+      "value_usd_k": 618852,
+      "weight": 2.3e-05,
+      "shares": 4759,
+      "cusip": "063671101"
+    },
+    {
+      "issuer": "TELEPHONE & DATA SYS INC",
+      "value_usd_k": 613647,
+      "weight": 2.2e-05,
+      "shares": 14967,
+      "cusip": "879433829"
+    },
+    {
+      "issuer": "QUEST DIAGNOSTICS INC",
+      "value_usd_k": 610479,
+      "weight": 2.2e-05,
+      "shares": 3518,
+      "cusip": "74834L100"
+    },
+    {
+      "issuer": "COSTAR GROUP INC",
+      "value_usd_k": 606505,
+      "weight": 2.2e-05,
+      "shares": 9020,
+      "cusip": "22160N109"
+    },
+    {
+      "issuer": "CLEVELAND-CLIFFS INC NEW",
+      "value_usd_k": 603496,
+      "weight": 2.2e-05,
+      "shares": 45444,
+      "cusip": "185899101"
+    },
+    {
+      "issuer": "KENON HLDGS LTD",
+      "value_usd_k": 599840,
+      "weight": 2.2e-05,
+      "shares": 9046,
+      "cusip": "Y46717107"
+    },
+    {
+      "issuer": "ITRON INC",
+      "value_usd_k": 599411,
+      "weight": 2.2e-05,
+      "shares": 6455,
+      "cusip": "465741106"
+    },
+    {
+      "issuer": "LAZARD INC",
+      "value_usd_k": 597628,
+      "weight": 2.2e-05,
+      "shares": 12307,
+      "cusip": "52110M109"
+    },
+    {
+      "issuer": "ISHARES TR",
+      "value_usd_k": 591340,
+      "weight": 2.2e-05,
+      "shares": 7334,
+      "cusip": "464288513"
+    },
+    {
+      "issuer": "MICROCHIP TECHNOLOGY INC.",
+      "value_usd_k": 590047,
+      "weight": 2.2e-05,
+      "shares": 9260,
+      "cusip": "595017104"
+    },
+    {
+      "issuer": "NEXTERA ENERGY INC",
+      "value_usd_k": 585803,
+      "weight": 2.1e-05,
+      "shares": 7297,
+      "cusip": "65339F101"
+    },
+    {
+      "issuer": "LULULEMON ATHLETICA INC",
+      "value_usd_k": 585609,
+      "weight": 2.1e-05,
+      "shares": 2818,
+      "cusip": "550021109"
+    },
+    {
+      "issuer": "DONALDSON INC",
+      "value_usd_k": 581432,
+      "weight": 2.1e-05,
+      "shares": 6558,
+      "cusip": "257651109"
+    },
+    {
+      "issuer": "HENRY SCHEIN INC",
+      "value_usd_k": 560275,
+      "weight": 2e-05,
+      "shares": 7413,
+      "cusip": "806407102"
+    },
+    {
+      "issuer": "MSCI INC",
+      "value_usd_k": 557092,
+      "weight": 2e-05,
+      "shares": 971,
+      "cusip": "55354G100"
+    },
+    {
+      "issuer": "DOMINION ENERGY INC",
+      "value_usd_k": 553148,
+      "weight": 2e-05,
+      "shares": 9441,
+      "cusip": "25746U109"
+    },
+    {
+      "issuer": "D R HORTON INC",
+      "value_usd_k": 549042,
+      "weight": 2e-05,
+      "shares": 3812,
+      "cusip": "23331A109"
+    },
+    {
+      "issuer": "EAGLE MATLS INC",
+      "value_usd_k": 548735,
+      "weight": 2e-05,
+      "shares": 2655,
+      "cusip": "26969P108"
+    },
+    {
+      "issuer": "SEALED AIR CORP NEW",
+      "value_usd_k": 547166,
+      "weight": 2e-05,
+      "shares": 13207,
+      "cusip": "81211K100"
+    },
+    {
+      "issuer": "BROWN FORMAN CORP",
+      "value_usd_k": 545696,
+      "weight": 2e-05,
+      "shares": 20940,
+      "cusip": "115637209"
+    },
+    {
+      "issuer": "AMENTUM HOLDINGS INC",
+      "value_usd_k": 529279,
+      "weight": 1.9e-05,
+      "shares": 18251,
+      "cusip": "023939101"
+    },
+    {
+      "issuer": "WILEY JOHN & SONS INC",
+      "value_usd_k": 520159,
+      "weight": 1.9e-05,
+      "shares": 16982,
+      "cusip": "968223206"
+    },
+    {
+      "issuer": "PACKAGING CORP AMER",
+      "value_usd_k": 518875,
+      "weight": 1.9e-05,
+      "shares": 2516,
+      "cusip": "695156109"
+    },
+    {
+      "issuer": "SHOALS TECHNOLOGIES GROUP IN",
+      "value_usd_k": 514998,
+      "weight": 1.9e-05,
+      "shares": 60588,
+      "cusip": "82489W107"
+    },
+    {
+      "issuer": "COOPER COS INC",
+      "value_usd_k": 512742,
+      "weight": 1.9e-05,
+      "shares": 6256,
+      "cusip": "216648501"
+    },
+    {
+      "issuer": "EQUIFAX INC",
+      "value_usd_k": 510120,
+      "weight": 1.9e-05,
+      "shares": 2351,
+      "cusip": "294429105"
+    },
+    {
+      "issuer": "CONAGRA BRANDS INC",
+      "value_usd_k": 505902,
+      "weight": 1.8e-05,
+      "shares": 29226,
+      "cusip": "205887102"
+    },
+    {
+      "issuer": "ELANCO ANIMAL HEALTH INC",
+      "value_usd_k": 501436,
+      "weight": 1.8e-05,
+      "shares": 22158,
+      "cusip": "28414H103"
+    },
+    {
+      "issuer": "BEST BUY INC",
+      "value_usd_k": 499030,
+      "weight": 1.8e-05,
+      "shares": 7456,
+      "cusip": "086516101"
+    },
+    {
+      "issuer": "TFI INTL INC",
+      "value_usd_k": 492547,
+      "weight": 1.8e-05,
+      "shares": 4759,
+      "cusip": "87241L109"
+    },
+    {
+      "issuer": "TIDEWATER INC NEW",
+      "value_usd_k": 484946,
+      "weight": 1.8e-05,
+      "shares": 9601,
+      "cusip": "88642R109"
+    },
+    {
+      "issuer": "LCI INDS",
+      "value_usd_k": 483297,
+      "weight": 1.8e-05,
+      "shares": 3983,
+      "cusip": "50189K103"
+    },
+    {
+      "issuer": "WILLIAMS SONOMA INC",
+      "value_usd_k": 475585,
+      "weight": 1.7e-05,
+      "shares": 2663,
+      "cusip": "969904101"
+    },
+    {
+      "issuer": "INTEL CORP",
+      "value_usd_k": 474497,
+      "weight": 1.7e-05,
+      "shares": 12859,
+      "cusip": "458140100"
+    },
+    {
+      "issuer": "BIONTECH SE",
+      "value_usd_k": 469050,
+      "weight": 1.7e-05,
+      "shares": 4927,
+      "cusip": "09075V102"
+    },
+    {
+      "issuer": "AMICUS THERAPEUTICS INC",
+      "value_usd_k": 459582,
+      "weight": 1.7e-05,
+      "shares": 32274,
+      "cusip": "03152W109"
+    },
+    {
+      "issuer": "MODERNA INC",
+      "value_usd_k": 447688,
+      "weight": 1.6e-05,
+      "shares": 15181,
+      "cusip": "60770K107"
+    },
+    {
+      "issuer": "ENERGIZER HLDGS INC NEW",
+      "value_usd_k": 440742,
+      "weight": 1.6e-05,
+      "shares": 22159,
+      "cusip": "29272W109"
+    },
+    {
+      "issuer": "ZETA GLOBAL HOLDINGS CORP",
+      "value_usd_k": 419495,
+      "weight": 1.5e-05,
+      "shares": 20614,
+      "cusip": "98956A105"
+    },
+    {
+      "issuer": "WINGSTOP INC",
+      "value_usd_k": 416642,
+      "weight": 1.5e-05,
+      "shares": 1747,
+      "cusip": "974155103"
+    },
+    {
+      "issuer": "ROCKWELL AUTOMATION INC",
+      "value_usd_k": 404633,
+      "weight": 1.5e-05,
+      "shares": 1040,
+      "cusip": "773903109"
+    },
+    {
+      "issuer": "C H ROBINSON WORLDWIDE INC",
+      "value_usd_k": 403829,
+      "weight": 1.5e-05,
+      "shares": 2512,
+      "cusip": "12541W209"
+    },
+    {
+      "issuer": "CAVA GROUP INC",
+      "value_usd_k": 400677,
+      "weight": 1.5e-05,
+      "shares": 6827,
+      "cusip": "148929102"
+    },
+    {
+      "issuer": "ESSENT GROUP LTD",
+      "value_usd_k": 399096,
+      "weight": 1.5e-05,
+      "shares": 6139,
+      "cusip": "G3198U102"
+    },
+    {
+      "issuer": "NATIONAL VISION HLDGS INC",
+      "value_usd_k": 396466,
+      "weight": 1.4e-05,
+      "shares": 15355,
+      "cusip": "63845R107"
+    },
+    {
+      "issuer": "TRANSOCEAN LTD",
+      "value_usd_k": 391557,
+      "weight": 1.4e-05,
+      "shares": 94808,
+      "cusip": "H8817H100"
+    },
+    {
+      "issuer": "PRIMO BRANDS CORPORATION",
+      "value_usd_k": 376099,
+      "weight": 1.4e-05,
+      "shares": 23003,
+      "cusip": "741623102"
+    },
+    {
+      "issuer": "URBAN OUTFITTERS INC",
+      "value_usd_k": 371559,
+      "weight": 1.4e-05,
+      "shares": 4937,
+      "cusip": "917047102"
+    },
+    {
+      "issuer": "PENUMBRA INC",
+      "value_usd_k": 370294,
+      "weight": 1.4e-05,
+      "shares": 1191,
+      "cusip": "70975L107"
+    },
+    {
+      "issuer": "PJT PARTNERS INC",
+      "value_usd_k": 354966,
+      "weight": 1.3e-05,
+      "shares": 2123,
+      "cusip": "69343T107"
+    },
+    {
+      "issuer": "OPENLANE INC",
+      "value_usd_k": 347890,
+      "weight": 1.3e-05,
+      "shares": 11682,
+      "cusip": "48238T109"
+    },
+    {
+      "issuer": "TRUPANION INC",
+      "value_usd_k": 347877,
+      "weight": 1.3e-05,
+      "shares": 9309,
+      "cusip": "898202106"
+    },
+    {
+      "issuer": "LAMB WESTON HLDGS INC",
+      "value_usd_k": 347436,
+      "weight": 1.3e-05,
+      "shares": 8294,
+      "cusip": "513272104"
+    },
+    {
+      "issuer": "IMMUNOCORE HLDGS PLC",
+      "value_usd_k": 345434,
+      "weight": 1.3e-05,
+      "shares": 9952,
+      "cusip": "45258D105"
+    },
+    {
+      "issuer": "BUNGE GLOBAL SA",
+      "value_usd_k": 336099,
+      "weight": 1.2e-05,
+      "shares": 3773,
+      "cusip": "H11356104"
+    },
+    {
+      "issuer": "WAYSTAR HLDG CORP",
+      "value_usd_k": 335884,
+      "weight": 1.2e-05,
+      "shares": 10256,
+      "cusip": "946784105"
+    },
+    {
+      "issuer": "TMC THE METALS COMPANY INC",
+      "value_usd_k": 335087,
+      "weight": 1.2e-05,
+      "shares": 54309,
+      "cusip": "87261Y106"
+    },
+    {
+      "issuer": "ROCKET COS INC",
+      "value_usd_k": 328268,
+      "weight": 1.2e-05,
+      "shares": 16956,
+      "cusip": "77311W101"
+    },
+    {
+      "issuer": "RED ROCK RESORTS INC",
+      "value_usd_k": 317989,
+      "weight": 1.2e-05,
+      "shares": 5133,
+      "cusip": "75700L108"
+    },
+    {
+      "issuer": "REALTY INCOME CORP",
+      "value_usd_k": 315728,
+      "weight": 1.2e-05,
+      "shares": 5601,
+      "cusip": "756109104"
+    },
+    {
+      "issuer": "ENSIGN GROUP INC",
+      "value_usd_k": 308682,
+      "weight": 1.1e-05,
+      "shares": 1772,
+      "cusip": "29358P101"
+    },
+    {
+      "issuer": "VERICEL CORP",
+      "value_usd_k": 307633,
+      "weight": 1.1e-05,
+      "shares": 8543,
+      "cusip": "92346J108"
+    },
+    {
+      "issuer": "GIBRALTAR INDS INC",
+      "value_usd_k": 305045,
+      "weight": 1.1e-05,
+      "shares": 6170,
+      "cusip": "374689107"
+    },
+    {
+      "issuer": "SERVICETITAN INC",
+      "value_usd_k": 305016,
+      "weight": 1.1e-05,
+      "shares": 2864,
+      "cusip": "81764X103"
+    },
+    {
+      "issuer": "EXLSERVICE HOLDINGS INC",
+      "value_usd_k": 302427,
+      "weight": 1.1e-05,
+      "shares": 7126,
+      "cusip": "302081104"
+    },
+    {
+      "issuer": "DUTCH BROS INC",
+      "value_usd_k": 301386,
+      "weight": 1.1e-05,
+      "shares": 4923,
+      "cusip": "26701L100"
+    },
+    {
+      "issuer": "DIGITAL RLTY TR INC",
+      "value_usd_k": 297198,
+      "weight": 1.1e-05,
+      "shares": 1921,
+      "cusip": "253868103"
+    },
+    {
+      "issuer": "MINERALS TECHNOLOGIES INC",
+      "value_usd_k": 297009,
+      "weight": 1.1e-05,
+      "shares": 4873,
+      "cusip": "603158106"
+    },
+    {
+      "issuer": "B2GOLD CORP",
+      "value_usd_k": 292028,
+      "weight": 1.1e-05,
+      "shares": 64773,
+      "cusip": "11777Q209"
+    },
+    {
+      "issuer": "COGENT COMMUNICATIONS HLDGS",
+      "value_usd_k": 279482,
+      "weight": 1e-05,
+      "shares": 12963,
+      "cusip": "19239V302"
+    },
+    {
+      "issuer": "SHIFT4 PMTS INC",
+      "value_usd_k": 278831,
+      "weight": 1e-05,
+      "shares": 4428,
+      "cusip": "82452J109"
+    },
+    {
+      "issuer": "E L F BEAUTY INC",
+      "value_usd_k": 278458,
+      "weight": 1e-05,
+      "shares": 3662,
+      "cusip": "26856L103"
+    },
+    {
+      "issuer": "DOUGLAS EMMETT INC",
+      "value_usd_k": 275003,
+      "weight": 1e-05,
+      "shares": 25023,
+      "cusip": "25960P109"
+    },
+    {
+      "issuer": "CROWN CASTLE INC",
+      "value_usd_k": 271498,
+      "weight": 1e-05,
+      "shares": 3055,
+      "cusip": "22822V101"
+    },
+    {
+      "issuer": "J & J SNACK FOODS CORP",
+      "value_usd_k": 270839,
+      "weight": 1e-05,
+      "shares": 2997,
+      "cusip": "466032109"
+    },
+    {
+      "issuer": "BLACKSTONE INC",
+      "value_usd_k": 264196,
+      "weight": 1e-05,
+      "shares": 1714,
+      "cusip": "09260D107"
+    },
+    {
+      "issuer": "GOLAR LNG LTD",
+      "value_usd_k": 264005,
+      "weight": 1e-05,
+      "shares": 7095,
+      "cusip": "G9456A100"
+    },
+    {
+      "issuer": "ACI WORLDWIDE INC",
+      "value_usd_k": 262333,
+      "weight": 1e-05,
+      "shares": 5487,
+      "cusip": "004498101"
+    },
+    {
+      "issuer": "SPDR SERIES TRUST",
+      "value_usd_k": 252552,
+      "weight": 9e-06,
+      "shares": 2598,
+      "cusip": "78468R622"
+    },
+    {
+      "issuer": "GXO LOGISTICS INCORPORATED",
+      "value_usd_k": 246618,
+      "weight": 9e-06,
+      "shares": 4685,
+      "cusip": "36262G101"
+    },
+    {
+      "issuer": "SIMON PPTY GROUP INC NEW",
+      "value_usd_k": 244715,
+      "weight": 9e-06,
+      "shares": 1322,
+      "cusip": "828806109"
+    },
+    {
+      "issuer": "FTI CONSULTING INC",
+      "value_usd_k": 242408,
+      "weight": 9e-06,
+      "shares": 1419,
+      "cusip": "302941109"
+    },
+    {
+      "issuer": "BRADY CORP",
+      "value_usd_k": 235267,
+      "weight": 9e-06,
+      "shares": 3002,
+      "cusip": "104674106"
+    },
+    {
+      "issuer": "MONGODB INC",
+      "value_usd_k": 235026,
+      "weight": 9e-06,
+      "shares": 560,
+      "cusip": "60937P106"
+    },
+    {
+      "issuer": "ULTRA CLEAN HLDGS INC",
+      "value_usd_k": 231440,
+      "weight": 8e-06,
+      "shares": 9137,
+      "cusip": "90385V107"
+    },
+    {
+      "issuer": "F5 INC",
+      "value_usd_k": 222587,
+      "weight": 8e-06,
+      "shares": 872,
+      "cusip": "315616102"
+    },
+    {
+      "issuer": "VENTAS INC",
+      "value_usd_k": 219914,
+      "weight": 8e-06,
+      "shares": 2842,
+      "cusip": "92276F100"
+    },
+    {
+      "issuer": "PHREESIA INC",
+      "value_usd_k": 216661,
+      "weight": 8e-06,
+      "shares": 12805,
+      "cusip": "71944F106"
+    },
+    {
+      "issuer": "HANCOCK WHITNEY CORPORATION",
+      "value_usd_k": 212691,
+      "weight": 8e-06,
+      "shares": 3340,
+      "cusip": "410120109"
+    },
+    {
+      "issuer": "ST JOE CO",
+      "value_usd_k": 210645,
+      "weight": 8e-06,
+      "shares": 3548,
+      "cusip": "790148100"
+    },
+    {
+      "issuer": "MASIMO CORP",
+      "value_usd_k": 210567,
+      "weight": 8e-06,
+      "shares": 1619,
+      "cusip": "574795100"
+    },
+    {
+      "issuer": "HIMS & HERS HEALTH INC",
+      "value_usd_k": 209821,
+      "weight": 8e-06,
+      "shares": 6462,
+      "cusip": "433000106"
+    },
+    {
+      "issuer": "PUBLIC STORAGE OPER CO",
+      "value_usd_k": 200853,
+      "weight": 7e-06,
+      "shares": 774,
+      "cusip": "74460D109"
+    },
+    {
+      "issuer": "STELLANTIS N.V",
+      "value_usd_k": 190640,
+      "weight": 7e-06,
+      "shares": 17506,
+      "cusip": "N82405106"
+    },
+    {
+      "issuer": "TRONOX HOLDINGS PLC",
+      "value_usd_k": 126451,
+      "weight": 5e-06,
+      "shares": 30324,
+      "cusip": "G9087Q102"
+    },
+    {
+      "issuer": "UDEMY INC",
+      "value_usd_k": 60331,
+      "weight": 2e-06,
+      "shares": 10313,
+      "cusip": "902685106"
+    }
+  ],
+  "updated_at": "2026-02-23T10:41:54.532120Z"
+}
