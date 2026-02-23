@@ -19,9 +19,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Run updater
+      - name: Run fetcher
         run: |
-          bash scripts/update-13f.sh
+          python scripts/fetch_13f.py
 
       - name: Commit & push if changed
         run: |
