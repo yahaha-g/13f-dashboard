@@ -3,7 +3,7 @@ name: Update 13F Data
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "30 1 * * *" # 每天 UTC 01:30（新加坡/中国=09:30）
+    - cron: "30 1 * * *"  # 每天 UTC 01:30
 
 permissions:
   contents: write
@@ -15,12 +15,19 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Run fetcher
         run: |
+          python --version
           python scripts/fetch_13f.py
 
       - name: Commit & push if changed
