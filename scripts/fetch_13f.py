@@ -3,6 +3,8 @@ import time
 import gzip
 import urllib.request
 import urllib.error
+import os
+import shutil
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -19,7 +21,7 @@ CIKS = {
 SUBMISSIONS = "https://data.sec.gov/submissions/CIK{}.json"
 
 USER_AGENT = "13f-dashboard (greatzoom69@gmail.com)"
-MIN_DELAY_SEC = 0.25
+MIN_DELAY_SEC = 1.0
 TIMEOUT_SEC = 30
 
 
@@ -29,8 +31,11 @@ def _sleep_polite():
 
 def fetch_bytes(url: str) -> Tuple[bytes, Dict[str, str]]:
     headers = {
-        "User-Agent": USER_AGENT,
-        "Accept-Encoding": "identity",
+    "User-Agent": "13f-dashboard/1.0 (Contact: greatzoom69@gmail.com)",
+    "Accept": "application/json,text/plain,*/*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Connection": "keep-alive",
+    "Accept-Encoding": "identity",
     }
 
     last_err: Optional[Exception] = None
@@ -324,7 +329,22 @@ def parse_13f_holdings_from_html(html: str) -> List[Dict[str, Any]]:
     return holdings
 
 
+
 def main():
+    print("START main()")
+    import os
+    import shutil
+
+    TMP_DIR = "data_tmp"
+    OUT_DIR = "data/13f"
+
+    # 清理并创建临时目录
+    if os.path.exists(TMP_DIR):
+        shutil.rmtree(TMP_DIR)
+    os.makedirs(os.path.join(TMP_DIR, "13f"), exist_ok=True)
+
+    staged_slugs = []
+
     for slug, cik in CIKS.items():
         sub = fetch_json(SUBMISSIONS.format(cik.zfill(10)))
         recent = sub.get("filings", {}).get("recent", {})
@@ -344,10 +364,8 @@ def main():
 
         xml_bytes, _ = fetch_bytes(infotable_url)
         holdings = parse_infotable_xml(xml_bytes)
-        if not holdings:
-            print(f"[{slug}] WARNING: Could not parse holdings table from HTML. holdings=0")
-        total_value = sum(h["value_usd_k"] for h in holdings) or 1
 
+        total_value = sum(h["value_usd_k"] for h in holdings) or 1
         for h in holdings:
             h["weight"] = round(h["value_usd_k"] / total_value, 6)
 
@@ -359,7 +377,7 @@ def main():
             "latest": {
                 "quarter": quarter,
                 "filing_date": filing_date,
-                "infotable_url": infotable_url,  # now points to primary html
+                "infotable_url": infotable_url,
             },
             "stats": {
                 "holdings": len(holdings_sorted),
@@ -379,10 +397,41 @@ def main():
             "updated_at": datetime.utcnow().isoformat() + "Z",
         }
 
-        with open(f"data/13f/{slug}.json", "w", encoding="utf-8") as f:
+        # ---- 验证 ----
+        if not out.get("latest", {}).get("quarter"):
+            raise RuntimeError(f"[{slug}] validation failed: missing latest.quarter")
+
+        if not isinstance(out.get("holdings"), list):
+            raise RuntimeError(f"[{slug}] validation failed: holdings is not a list")
+
+        for i, h in enumerate(out["holdings"][:50]):
+            if not h.get("issuer"):
+                raise RuntimeError(f"[{slug}] validation failed: holdings[{i}] missing issuer")
+
+            v = h.get("value_usd_k")
+            if not isinstance(v, (int, float)) or v < 0:
+                raise RuntimeError(f"[{slug}] validation failed: holdings[{i}] invalid value_usd_k={v}")
+
+        # ---- 写入临时目录 ----
+        tmp_path = os.path.join(TMP_DIR, "13f", f"{slug}.json")
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(out, f, ensure_ascii=False, indent=2)
 
-        print(f"[{slug}] Updated holdings={len(holdings_sorted)} filing={acc} infotable={infotable_fname}")
+        staged_slugs.append(slug)
+        print(f"[{slug}] Staged successfully")
 
+    # ---- 所有成功后再覆盖 data ----
+    os.makedirs(OUT_DIR, exist_ok=True)
+
+    for slug in staged_slugs:
+        src = os.path.join(TMP_DIR, "13f", f"{slug}.json")
+        dst = os.path.join(OUT_DIR, f"{slug}.json")
+        tmp_dst = dst + ".tmp"
+
+        shutil.copyfile(src, tmp_dst)
+        os.replace(tmp_dst, dst)
+
+    shutil.rmtree(TMP_DIR, ignore_errors=True)
+    print(f"Promoted {len(staged_slugs)} files to data/13f")
 if __name__ == "__main__":
     main()
