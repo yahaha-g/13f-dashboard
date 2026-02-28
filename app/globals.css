@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0B1220;
+    --foreground: #F9FAFB;
+    --card: #111827;
+    --card-foreground: #F9FAFB;
+    --border: #1F2937;
+    --new: #22C55E;
+    --add: #4ADE80;
+    --trim: #F59E0B;
+    --exit: #EF4444;
+  }
+  body {
+    @apply bg-[#0B1220] text-[#F9FAFB] antialiased;
+  }
+}
