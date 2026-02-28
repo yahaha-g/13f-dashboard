@@ -79,36 +79,60 @@ def quarter_from_date(yyyy_mm_dd: str) -> str:
 
 
 def pick_latest_13f_with_reportdate(recent: Dict[str, List[Any]]) -> Optional[Dict[str, Any]]:
+    pair = pick_latest_and_previous_13f(recent)
+    return pair[0] if pair else None
+
+
+def _quarter_from_filing(filing: Dict[str, Any]) -> str:
+    """Quarter from reportDate if present, else from filingDate."""
+    report_date = filing.get("reportDate") or ""
+    if report_date:
+        return quarter_from_date(report_date)
+    filing_date = filing.get("filingDate") or ""
+    if filing_date:
+        return quarter_from_date(filing_date)
+    return ""
+
+
+def pick_latest_and_previous_13f(recent: Dict[str, List[Any]]) -> Tuple[Optional[Dict[str, Any]], Optional[Dict[str, Any]]]:
+    """
+    From filings list (by filingDate desc), return (latest, previous).
+    Both 13F-HR or 13F-HR/A with primaryDocument; previous = second in list.
+    """
     forms = recent.get("form", [])
     accs = recent.get("accessionNumber", [])
     filing_dates = recent.get("filingDate", [])
     report_dates = recent.get("reportDate", [])
     primary_docs = recent.get("primaryDocument", [])
 
+    candidates: List[Dict[str, Any]] = []
     for i in range(len(forms)):
         form = forms[i]
         if form not in ("13F-HR", "13F-HR/A"):
             continue
-        if i >= len(report_dates) or not report_dates[i]:
-            continue
         acc = accs[i] if i < len(accs) else None
         if not acc:
             continue
-
-        # must have a primary document (usually .htm)
         primary = primary_docs[i] if i < len(primary_docs) else None
         if not primary:
             continue
-
-        return {
+        filing_date = filing_dates[i] if i < len(filing_dates) else ""
+        report_date = report_dates[i] if i < len(report_dates) else ""
+        candidates.append({
             "form": form,
             "accessionNumber": acc,
-            "filingDate": filing_dates[i] if i < len(filing_dates) else None,
-            "reportDate": report_dates[i],
+            "filingDate": filing_date,
+            "reportDate": report_date,
             "primaryDocument": primary,
-        }
+        })
 
-    return None
+    if not candidates:
+        return (None, None)
+    # Sort by filingDate descending (most recent first)
+    candidates.sort(key=lambda x: (x.get("filingDate") or ""), reverse=True)
+    latest = candidates[0]
+    previous: Optional[Dict[str, Any]] = candidates[1] if len(candidates) >= 2 else None
+    return (latest, previous)
 
 
 def build_primary_doc_url(cik: str, accession_with_dash: str, primary_doc: str) -> str:
@@ -367,11 +391,228 @@ def aggregate_holdings_by_cusip(holdings: List[Dict[str, Any]]) -> Dict[str, Dic
         except (TypeError, ValueError):
             pass
         if key not in agg:
-            agg[key] = {"issuer": issuer, "value_usd_k": v_k, "shares": sh}
+            agg[key] = {"issuer": issuer, "value_usd_k": v_k, "shares": sh, "cusip": cusip if (cusip and str(cusip).strip()) else None}
         else:
             agg[key]["value_usd_k"] += v_k
             agg[key]["shares"] += sh
     return agg
+
+
+def aggregate_holdings(holdings: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Aggregate raw holdings by CUSIP (or NO_CUSIP:{issuer} when missing).
+    Returns a list of one row per key with summed value_usd_k and shares, for use before weight/sort/write.
+    """
+    agg = aggregate_holdings_by_cusip(holdings)
+    result: List[Dict[str, Any]] = []
+    for key, v in agg.items():
+        cusip_out = v.get("cusip") if not key.startswith("NO_CUSIP:") else None
+        result.append({
+            "issuer": v["issuer"],
+            "cusip": cusip_out,
+            "value_usd_k": v["value_usd_k"],
+            "shares": v["shares"],
+        })
+    return result
+
+
+def _quarter_sort_key(q: str) -> Tuple[int, int]:
+    """Parse 2025Q4 -> (2025, 4) for sorting."""
+    import re
+    m = re.match(r"^(\d{4})Q([1-4])$", (q or "").strip())
+    if not m:
+        return (0, 0)
+    return (int(m.group(1)), int(m.group(2)))
+
+
+def get_prev_quarter_from_history(slug: str, quarter_now: str, out_dir: str) -> Optional[str]:
+    """From data/13f/history/{slug}/ find the most recent quarter that is not quarter_now."""
+    history_dir = os.path.join(out_dir, "history", slug)
+    if not os.path.isdir(history_dir):
+        return None
+    quarters = []
+    for f in os.listdir(history_dir):
+        if f.endswith(".json"):
+            q = f[:-5]
+            if q and q != quarter_now:
+                quarters.append(q)
+    if not quarters:
+        return None
+    quarters.sort(key=_quarter_sort_key)
+    return quarters[-1]
+
+
+def _diff_item(key: str, issuer: str, cusip_val: Any, value_prev: int, value_now: int, weight_prev: float, weight_now: float, shares_prev: int, shares_now: int, action: str) -> Dict[str, Any]:
+    return {
+        "issuer": issuer,
+        "cusip": cusip_val,
+        "value_prev": value_prev,
+        "value_now": value_now,
+        "value_delta": value_now - value_prev,
+        "weight_prev": round(weight_prev, 6),
+        "weight_now": round(weight_now, 6),
+        "weight_delta": round(weight_now - weight_prev, 6),
+        "shares_prev": shares_prev,
+        "shares_now": shares_now,
+        "shares_delta": shares_now - shares_prev,
+        "action": action,
+    }
+
+
+def build_movers_diff_payload(
+    slug: str,
+    name: str,
+    quarter_now: str,
+    filing_date_now: str,
+    curr_data: Dict[str, Any],
+    prev_data: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Build data/13f/diff/{slug}.json payload: counts + top_new, top_add, top_trim, top_exit."""
+    prev_holdings = prev_data.get("holdings") or []
+    curr_holdings = curr_data.get("holdings") or []
+    prev_agg = aggregate_holdings_by_cusip(prev_holdings)
+    curr_agg = aggregate_holdings_by_cusip(curr_holdings)
+    total_prev = sum(v["value_usd_k"] for v in prev_agg.values()) or 1
+    total_curr = sum(v["value_usd_k"] for v in curr_agg.values()) or 1
+
+    counts: Dict[str, int] = {"new": 0, "add": 0, "trim": 0, "exit": 0}
+    list_new: List[Dict[str, Any]] = []
+    list_add: List[Dict[str, Any]] = []
+    list_trim: List[Dict[str, Any]] = []
+    list_exit: List[Dict[str, Any]] = []
+
+    for key, curr in curr_agg.items():
+        cusip_val = curr.get("cusip") if not key.startswith("NO_CUSIP:") else None
+        v_curr = curr["value_usd_k"]
+        s_curr = curr["shares"]
+        w_curr = v_curr / total_curr
+        if key not in prev_agg:
+            counts["new"] += 1
+            list_new.append(_diff_item(key, curr["issuer"], cusip_val, 0, v_curr, 0.0, w_curr, 0, s_curr, "NEW"))
+        else:
+            prev = prev_agg[key]
+            v_prev = prev["value_usd_k"]
+            s_prev = prev["shares"]
+            w_prev = v_prev / total_prev
+            delta_v = v_curr - v_prev
+            if (s_curr > s_prev) or (v_curr > v_prev):
+                counts["add"] += 1
+                list_add.append(_diff_item(key, curr["issuer"], cusip_val, v_prev, v_curr, w_prev, w_curr, s_prev, s_curr, "ADD"))
+            elif (s_curr < s_prev) or (v_curr < v_prev):
+                counts["trim"] += 1
+                list_trim.append(_diff_item(key, curr["issuer"], cusip_val, v_prev, v_curr, w_prev, w_curr, s_prev, s_curr, "TRIM"))
+
+    for key, prev in prev_agg.items():
+        if key not in curr_agg:
+            counts["exit"] += 1
+            cusip_val = prev.get("cusip") if not key.startswith("NO_CUSIP:") else None
+            v_prev = prev["value_usd_k"]
+            w_prev = v_prev / total_prev
+            list_exit.append(_diff_item(key, prev["issuer"], cusip_val, v_prev, 0, w_prev, 0.0, prev["shares"], 0, "EXIT"))
+
+    TOP_N = 20
+    list_new.sort(key=lambda x: x["value_now"], reverse=True)
+    list_add.sort(key=lambda x: x["value_delta"], reverse=True)
+    list_trim.sort(key=lambda x: x["value_delta"], reverse=False)
+    list_exit.sort(key=lambda x: x["value_prev"], reverse=True)
+
+    return {
+        "slug": slug,
+        "name": name,
+        "quarter_now": quarter_now,
+        "quarter_prev": (prev_data.get("latest") or {}).get("quarter") or "",
+        "filing_date_now": filing_date_now,
+        "counts": counts,
+        "lists": {
+            "top_new": list_new[:TOP_N],
+            "top_add": list_add[:TOP_N],
+            "top_trim": list_trim[:TOP_N],
+            "top_exit": list_exit[:TOP_N],
+        },
+    }
+
+
+def write_history_snapshot(slug: str, out_dir: str) -> None:
+    """Copy data/13f/{slug}.json to data/13f/history/{slug}/{quarter}.json (quarter from file)."""
+    src = os.path.join(out_dir, f"{slug}.json")
+    if not os.path.isfile(src):
+        return
+    try:
+        with open(src, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return
+    quarter = (data.get("latest") or {}).get("quarter") or ""
+    if not quarter:
+        return
+    dest_dir = os.path.join(out_dir, "history", slug)
+    os.makedirs(dest_dir, exist_ok=True)
+    dest = os.path.join(dest_dir, f"{quarter}.json")
+    try:
+        with open(dest, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f"[history] {slug}/{quarter}.json")
+    except OSError as e:
+        print(f"[history] Failed {slug}/{quarter}: {e}")
+
+
+def write_diff_for_slug(slug: str, out_dir: str) -> None:
+    """Load current + prev from history, build diff payload, write data/13f/diff/{slug}.json."""
+    curr_path = os.path.join(out_dir, f"{slug}.json")
+    try:
+        with open(curr_path, "r", encoding="utf-8") as f:
+            curr_data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return
+    quarter_now = (curr_data.get("latest") or {}).get("quarter") or ""
+    if not quarter_now:
+        return
+    prev_quarter = get_prev_quarter_from_history(slug, quarter_now, out_dir)
+    if not prev_quarter:
+        payload = {
+            "slug": slug,
+            "name": curr_data.get("name") or slug,
+            "quarter_now": quarter_now,
+            "quarter_prev": "",
+            "filing_date_now": (curr_data.get("latest") or {}).get("filing_date") or "",
+            "counts": {"new": 0, "add": 0, "trim": 0, "exit": 0},
+            "lists": {"top_new": [], "top_add": [], "top_trim": [], "top_exit": []},
+        }
+    else:
+        prev_path = os.path.join(out_dir, "history", slug, f"{prev_quarter}.json")
+        try:
+            with open(prev_path, "r", encoding="utf-8") as f:
+                prev_data = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            payload = {
+                "slug": slug,
+                "name": curr_data.get("name") or slug,
+                "quarter_now": quarter_now,
+                "quarter_prev": "",
+                "filing_date_now": (curr_data.get("latest") or {}).get("filing_date") or "",
+                "counts": {"new": 0, "add": 0, "trim": 0, "exit": 0},
+                "lists": {"top_new": [], "top_add": [], "top_trim": [], "top_exit": []},
+            }
+        else:
+            payload = build_movers_diff_payload(
+                slug,
+                curr_data.get("name") or slug,
+                quarter_now,
+                (curr_data.get("latest") or {}).get("filing_date") or "",
+                curr_data,
+                prev_data,
+            )
+    diff_dir = os.path.join(out_dir, "diff")
+    os.makedirs(diff_dir, exist_ok=True)
+    diff_path = os.path.join(diff_dir, f"{slug}.json")
+    tmp_path = diff_path + ".tmp"
+    try:
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        os.replace(tmp_path, diff_path)
+        print(f"[diff] {slug}.json")
+    except OSError as e:
+        print(f"[diff] Failed {slug}: {e}")
 
 
 def compute_quarter_diff(
@@ -496,21 +737,22 @@ def main():
         sub = fetch_json(SUBMISSIONS.format(cik.zfill(10)))
         recent = sub.get("filings", {}).get("recent", {})
 
-        latest = pick_latest_13f_with_reportdate(recent)
+        latest, previous_filing = pick_latest_and_previous_13f(recent)
         if not latest:
-            print(f"[{slug}] No 13F-HR found with reportDate + primaryDocument.")
+            print(f"[{slug}] No 13F-HR found with primaryDocument.")
             continue
 
         acc = latest["accessionNumber"]
         filing_date = latest.get("filingDate") or ""
         report_date = latest.get("reportDate") or ""
-        quarter = quarter_from_date(report_date) if report_date else ""
+        quarter = _quarter_from_filing(latest)
 
         infotable_url, infotable_fname = find_infotable_from_index(cik, acc)
-        print(f"[{slug}] Fetching infotable: {infotable_url}")
+        print(f"[{slug}] Fetching infotable (latest): {infotable_url}")
 
         xml_bytes, _ = fetch_bytes(infotable_url)
-        holdings = parse_infotable_xml(xml_bytes)
+        raw_holdings = parse_infotable_xml(xml_bytes)
+        holdings = aggregate_holdings(raw_holdings)
 
         total_value = sum(h["value_usd_k"] for h in holdings) or 1
         for h in holdings:
@@ -518,6 +760,54 @@ def main():
 
         holdings_sorted = sorted(holdings, key=lambda x: x["value_usd_k"], reverse=True)
         top1 = holdings_sorted[0]["issuer"] if holdings_sorted else None
+
+        if previous_filing:
+            quarter_prev = _quarter_from_filing(previous_filing)
+            if quarter_prev and quarter_prev != quarter:
+                prev_history_dir = os.path.join(OUT_DIR, "history", slug)
+                prev_history_path = os.path.join(prev_history_dir, f"{quarter_prev}.json")
+                skip_prev = os.path.isfile(prev_history_path)
+                if not skip_prev:
+                    acc_prev = previous_filing["accessionNumber"]
+                    try:
+                        infotable_url_prev, _ = find_infotable_from_index(cik, acc_prev)
+                        print(f"[{slug}] Fetching infotable (previous {quarter_prev}): {infotable_url_prev}")
+                        xml_bytes_prev, _ = fetch_bytes(infotable_url_prev)
+                        raw_prev = parse_infotable_xml(xml_bytes_prev)
+                        holdings_prev = aggregate_holdings(raw_prev)
+                        total_prev = sum(h["value_usd_k"] for h in holdings_prev) or 1
+                        for h in holdings_prev:
+                            h["weight"] = round(h["value_usd_k"] / total_prev, 6)
+                        holdings_prev_sorted = sorted(holdings_prev, key=lambda x: x["value_usd_k"], reverse=True)
+                        top1_prev = holdings_prev_sorted[0]["issuer"] if holdings_prev_sorted else None
+                        prev_out = {
+                            "name": sub.get("name") or slug,
+                            "latest": {
+                                "quarter": quarter_prev,
+                                "filing_date": previous_filing.get("filingDate") or "",
+                                "infotable_url": infotable_url_prev,
+                            },
+                            "stats": {
+                                "holdings": len(holdings_prev_sorted),
+                                "top1": top1_prev,
+                                "changes": {"new": 0, "add": 0, "trim": 0, "exit": 0},
+                            },
+                            "holdings": [
+                                {"issuer": h["issuer"], "value_usd_k": h["value_usd_k"], "weight": h["weight"], "shares": h["shares"], "cusip": h.get("cusip")}
+                                for h in holdings_prev_sorted
+                            ],
+                            "updated_at": datetime.utcnow().isoformat() + "Z",
+                        }
+                        os.makedirs(prev_history_dir, exist_ok=True)
+                        tmp_path = prev_history_path + ".tmp"
+                        with open(tmp_path, "w", encoding="utf-8") as f:
+                            json.dump(prev_out, f, ensure_ascii=False, indent=2)
+                        os.replace(tmp_path, prev_history_path)
+                        print(f"[history] {slug}/{quarter_prev}.json (previous)")
+                    except Exception as e:
+                        print(f"[{slug}] Failed to fetch/write previous {quarter_prev}: {e}")
+                else:
+                    print(f"[{slug}] Skipping previous {quarter_prev} (already exists)")
 
         changes_counts: Dict[str, int] = {"new": 0, "add": 0, "trim": 0, "exit": 0}
         diffs_list: List[Dict[str, Any]] = []
@@ -589,7 +879,13 @@ def main():
 
         shutil.copyfile(src, tmp_dst)
         os.replace(tmp_dst, dst)
-        # ---- Generate & write data/13f/index.json (atomic), only if we staged something ----
+
+    for slug in staged_slugs:
+        write_history_snapshot(slug, OUT_DIR)
+
+    for slug in staged_slugs:
+        write_diff_for_slug(slug, OUT_DIR)
+
     if staged_slugs:
         try:
             payload = build_index_payload(staged_slugs, OUT_DIR)
