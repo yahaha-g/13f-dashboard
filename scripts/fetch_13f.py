@@ -429,6 +429,41 @@ def compute_quarter_diff(
     diffs.sort(key=lambda x: abs(x.get("value_delta_k") or 0), reverse=True)
     return changes, diffs
 
+def build_index_payload(staged_slugs: List[str], out_dir: str) -> Dict[str, Any]:
+    """
+    Build data/13f/index.json payload from the just-promoted per-slug JSON files.
+    Keeps list stable: one entry per staged slug (placeholder on read failure).
+    """
+    now_utc = datetime.utcnow().isoformat() + "Z"
+    managers: List[Dict[str, str]] = []
+
+    for slug in staged_slugs:
+        name = slug
+        latest_quarter = ""
+        filing_date = ""
+
+        p = os.path.join(out_dir, f"{slug}.json")
+        try:
+            with open(p, "r", encoding="utf-8") as f:
+                d = json.load(f)
+            name = d.get("name") or slug
+            latest = d.get("latest") or {}
+            latest_quarter = latest.get("quarter") or ""
+            filing_date = latest.get("filing_date") or ""
+        except (OSError, json.JSONDecodeError):
+            # Keep placeholders to avoid breaking list length/order
+            pass
+
+        managers.append(
+            {
+                "slug": slug,
+                "name": name,
+                "latest_quarter": latest_quarter,
+                "filing_date": filing_date,
+            }
+        )
+
+    return {"updated_at_utc": now_utc, "managers": managers}
 
 def main():
     print("START main()")
@@ -554,7 +589,18 @@ def main():
 
         shutil.copyfile(src, tmp_dst)
         os.replace(tmp_dst, dst)
-
+        # ---- Generate & write data/13f/index.json (atomic), only if we staged something ----
+    if staged_slugs:
+        try:
+            payload = build_index_payload(staged_slugs, OUT_DIR)
+            index_path = os.path.join(OUT_DIR, "index.json")
+            tmp_index_path = index_path + ".tmp"
+            with open(tmp_index_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            os.replace(tmp_index_path, index_path)
+            print(f"[index] Wrote {index_path} ({len(payload.get('managers') or [])} managers)")
+        except OSError as e:
+            print(f"[index] Failed to write index.json: {e}")
     shutil.rmtree(TMP_DIR, ignore_errors=True)
     print(f"Promoted {len(staged_slugs)} files to data/13f")
 if __name__ == "__main__":
