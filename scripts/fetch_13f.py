@@ -329,6 +329,106 @@ def parse_13f_holdings_from_html(html: str) -> List[Dict[str, Any]]:
     return holdings
 
 
+def is_previous_quarter(prev_q: str, curr_q: str) -> bool:
+    """Return True iff prev_q is the quarter immediately before curr_q (e.g. 2025Q3 before 2025Q4)."""
+    import re
+    m_curr = re.match(r"^(\d{4})Q([1-4])$", (curr_q or "").strip())
+    m_prev = re.match(r"^(\d{4})Q([1-4])$", (prev_q or "").strip())
+    if not m_curr or not m_prev:
+        return False
+    y, q = int(m_curr.group(1)), int(m_curr.group(2))
+    if q >= 2:
+        expected_prev = f"{y}Q{q - 1}"
+    else:
+        expected_prev = f"{y - 1}Q4"
+    return (prev_q or "").strip() == expected_prev
+
+
+def aggregate_holdings_by_cusip(holdings: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+    """
+    Aggregate holdings by CUSIP (or NO_CUSIP:{issuer} when CUSIP missing).
+    Returns dict: key -> {issuer, value_usd_k, shares}.
+    """
+    agg: Dict[str, Dict[str, Any]] = {}
+    for h in holdings:
+        issuer = (h.get("issuer") or "").strip()
+        if not issuer:
+            continue
+        cusip = h.get("cusip")
+        key = (cusip and str(cusip).strip()) or f"NO_CUSIP:{issuer}"
+        v_k = 0
+        try:
+            v_k = int(h.get("value_usd_k") or 0)
+        except (TypeError, ValueError):
+            pass
+        sh = 0
+        try:
+            sh = int(h.get("shares") or 0)
+        except (TypeError, ValueError):
+            pass
+        if key not in agg:
+            agg[key] = {"issuer": issuer, "value_usd_k": v_k, "shares": sh}
+        else:
+            agg[key]["value_usd_k"] += v_k
+            agg[key]["shares"] += sh
+    return agg
+
+
+def compute_quarter_diff(
+    prev_agg: Dict[str, Dict[str, Any]],
+    curr_agg: Dict[str, Dict[str, Any]],
+) -> Tuple[Dict[str, int], List[Dict[str, Any]]]:
+    """
+    Compare aggregated prev vs current holdings by key (CUSIP-based).
+    Returns (stats.changes dict, diffs list). change values: "NEW", "ADD", "TRIM", "EXIT" (uppercase).
+    """
+    changes: Dict[str, int] = {"new": 0, "add": 0, "trim": 0, "exit": 0}
+    diffs: List[Dict[str, Any]] = []
+
+    for key, curr in curr_agg.items():
+        if key not in prev_agg:
+            changes["new"] += 1
+            diffs.append({
+                "change": "NEW",
+                "issuer": curr["issuer"],
+                "value_delta_k": curr["value_usd_k"],
+                "shares_delta": curr["shares"],
+            })
+        else:
+            prev = prev_agg[key]
+            delta_v = curr["value_usd_k"] - prev["value_usd_k"]
+            delta_s = curr["shares"] - prev["shares"]
+            if curr["shares"] > prev["shares"]:
+                changes["add"] += 1
+                diffs.append({
+                    "change": "ADD",
+                    "issuer": curr["issuer"],
+                    "value_delta_k": delta_v,
+                    "shares_delta": delta_s,
+                })
+            elif curr["shares"] < prev["shares"]:
+                changes["trim"] += 1
+                diffs.append({
+                    "change": "TRIM",
+                    "issuer": curr["issuer"],
+                    "value_delta_k": delta_v,
+                    "shares_delta": delta_s,
+                })
+            # else: equal shares, skip (no diff entry)
+
+    for key, prev in prev_agg.items():
+        if key not in curr_agg:
+            changes["exit"] += 1
+            diffs.append({
+                "change": "EXIT",
+                "issuer": prev["issuer"],
+                "value_delta_k": -prev["value_usd_k"],
+                "shares_delta": -prev["shares"],
+            })
+
+    diffs.sort(key=lambda x: abs(x.get("value_delta_k") or 0), reverse=True)
+    return changes, diffs
+
 
 def main():
     print("START main()")
@@ -346,6 +446,18 @@ def main():
     staged_slugs = []
 
     for slug, cik in CIKS.items():
+        prev_data: Optional[Dict[str, Any]] = None
+        prev_path = os.path.join(OUT_DIR, f"{slug}.json")
+        if os.path.isfile(prev_path):
+            try:
+                with open(prev_path, "r", encoding="utf-8") as f:
+                    prev_data = json.load(f)
+            except (json.JSONDecodeError, OSError):
+                prev_data = None
+        if prev_data is not None:
+            if not isinstance(prev_data.get("holdings"), list) or not (prev_data.get("latest") or {}).get("quarter"):
+                prev_data = None
+
         sub = fetch_json(SUBMISSIONS.format(cik.zfill(10)))
         recent = sub.get("filings", {}).get("recent", {})
 
@@ -372,6 +484,16 @@ def main():
         holdings_sorted = sorted(holdings, key=lambda x: x["value_usd_k"], reverse=True)
         top1 = holdings_sorted[0]["issuer"] if holdings_sorted else None
 
+        changes_counts: Dict[str, int] = {"new": 0, "add": 0, "trim": 0, "exit": 0}
+        diffs_list: List[Dict[str, Any]] = []
+        if prev_data is not None:
+            prev_quarter = (prev_data.get("latest") or {}).get("quarter")
+            if prev_quarter and is_previous_quarter(prev_quarter, quarter):
+                prev_holdings = prev_data.get("holdings") or []
+                prev_agg = aggregate_holdings_by_cusip(prev_holdings)
+                curr_agg = aggregate_holdings_by_cusip(holdings_sorted)
+                changes_counts, diffs_list = compute_quarter_diff(prev_agg, curr_agg)
+
         out = {
             "name": sub.get("name") or slug,
             "latest": {
@@ -382,7 +504,7 @@ def main():
             "stats": {
                 "holdings": len(holdings_sorted),
                 "top1": top1,
-                "changes": {"new": 0, "add": 0, "trim": 0, "exit": 0},
+                "changes": changes_counts,
             },
             "holdings": [
                 {
@@ -396,6 +518,8 @@ def main():
             ],
             "updated_at": datetime.utcnow().isoformat() + "Z",
         }
+        if diffs_list:
+            out["diffs"] = diffs_list
 
         # ---- 验证 ----
         if not out.get("latest", {}).get("quarter"):
