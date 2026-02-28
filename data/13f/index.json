@@ -1,9 +1,23 @@
 {
-  "updated_at_utc": "demo",
+  "updated_at_utc": "2026-02-28T10:35:45.039311Z",
   "managers": [
-    { "slug": "berkshire", "name": "Berkshire Hathaway", "latest_quarter": "DEMO", "filing_date": "DEMO" },
-    { "slug": "bridgewater", "name": "Bridgewater Associates", "latest_quarter": "DEMO", "filing_date": "DEMO" },
-    { "slug": "himalaya", "name": "Himalaya Capital (Li Lu)", "latest_quarter": "DEMO", "filing_date": "DEMO" },
-    { "slug": "hh", "name": "H&H International (Duan)", "latest_quarter": "DEMO", "filing_date": "DEMO" }
+    {
+      "slug": "berkshire",
+      "name": "BERKSHIRE HATHAWAY INC",
+      "latest_quarter": "2025Q4",
+      "filing_date": "2026-02-17"
+    },
+    {
+      "slug": "bridgewater",
+      "name": "Bridgewater Associates, LP",
+      "latest_quarter": "2025Q4",
+      "filing_date": "2026-02-13"
+    },
+    {
+      "slug": "himalaya",
+      "name": "Point72 Asset Management, L.P.",
+      "latest_quarter": "2025Q4",
+      "filing_date": "2026-02-17"
+    }
   ]
 }
