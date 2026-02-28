@@ -1,9 +1,4 @@
-# dependencies
 node_modules/
-
-# next build output
 .next/
 out/
-
-# env
 .env*
