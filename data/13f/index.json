@@ -1,23 +1,23 @@
 {
-  "updated_at_utc": "2026-08-14T03:38:50.109601Z",
+  "updated_at_utc": "2026-08-15T02:32:54.472785Z",
   "managers": [
     {
       "slug": "berkshire",
       "name": "BERKSHIRE HATHAWAY INC",
-      "latest_quarter": "2026Q1",
-      "filing_date": "2026-05-15"
+      "latest_quarter": "2026Q2",
+      "filing_date": "2026-08-14"
     },
     {
       "slug": "bridgewater",
       "name": "Bridgewater Associates, LP",
-      "latest_quarter": "2026Q1",
-      "filing_date": "2026-05-15"
+      "latest_quarter": "2026Q2",
+      "filing_date": "2026-08-14"
     },
     {
       "slug": "himalaya",
       "name": "Point72 Asset Management, L.P.",
-      "latest_quarter": "2026Q1",
-      "filing_date": "2026-05-15"
+      "latest_quarter": "2026Q2",
+      "filing_date": "2026-08-14"
     }
   ]
 }
