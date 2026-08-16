@@ -9,10 +9,10 @@
     "holdings": 29,
     "top1": "APPLE INC",
     "changes": {
-      "new": 1,
-      "add": 7,
-      "trim": 6,
-      "exit": 1
+      "new": 0,
+      "add": 0,
+      "trim": 0,
+      "exit": 0
     }
   },
   "holdings": [
@@ -220,97 +220,5 @@
       "cusip": "23331A109"
     }
   ],
-  "updated_at": "2026-08-15T02:32:46.233992Z",
-  "diffs": [
-    {
-      "change": "ADD",
-      "issuer": "ALPHABET INC",
-      "value_delta_k": 12557527438,
-      "shares_delta": 24541369
-    },
-    {
-      "change": "ADD",
-      "issuer": "ALPHABET INC",
-      "value_delta_k": 8578034257,
-      "shares_delta": 23603218
-    },
-    {
-      "change": "ADD",
-      "issuer": "DELTA AIR LINES INC",
-      "value_delta_k": 2722058565,
-      "shares_delta": 17510544
-    },
-    {
-      "change": "TRIM",
-      "issuer": "BANK OF AMER CORP",
-      "value_delta_k": 2504612931,
-      "shares_delta": -30230150
-    },
-    {
-      "change": "TRIM",
-      "issuer": "DAVITA INC",
-      "value_delta_k": 1799109989,
-      "shares_delta": -1220376
-    },
-    {
-      "change": "TRIM",
-      "issuer": "KROGER CO",
-      "value_delta_k": -1452330000,
-      "shares_delta": -11000000
-    },
-    {
-      "change": "TRIM",
-      "issuer": "CAPITAL ONE FINL CORP",
-      "value_delta_k": -702514500,
-      "shares_delta": -4150000
-    },
-    {
-      "change": "ADD",
-      "issuer": "LENNAR CORP",
-      "value_delta_k": 309428532,
-      "shares_delta": 3012099
-    },
-    {
-      "change": "TRIM",
-      "issuer": "NUCOR CORP",
-      "value_delta_k": -246872125,
-      "shares_delta": -2049323
-    },
-    {
-      "change": "ADD",
-      "issuer": "NEW YORK TIMES CO MTN BE",
-      "value_delta_k": -169533376,
-      "shares_delta": 553465
-    },
-    {
-      "change": "ADD",
-      "issuer": "MACYS INC",
-      "value_delta_k": 118068040,
-      "shares_delta": 4309071
-    },
-    {
-      "change": "TRIM",
-      "issuer": "ALLY FINL INC",
-      "value_delta_k": 102980000,
-      "shares_delta": -2000000
-    },
-    {
-      "change": "EXIT",
-      "issuer": "CONSTELLATION BRANDS INC",
-      "value_delta_k": -94933500,
-      "shares_delta": -632890
-    },
-    {
-      "change": "ADD",
-      "issuer": "LENNAR CORP",
-      "value_delta_k": 6450383,
-      "shares_delta": 60414
-    },
-    {
-      "change": "NEW",
-      "issuer": "D R HORTON INC",
-      "value_delta_k": 580504,
-      "shares_delta": 3564
-    }
-  ]
+  "updated_at": "2026-08-16T02:42:02.327435Z"
 }
