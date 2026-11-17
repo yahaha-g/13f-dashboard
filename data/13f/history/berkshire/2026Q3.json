@@ -1,0 +1,299 @@
+{
+  "name": "BERKSHIRE HATHAWAY INC",
+  "latest": {
+    "quarter": "2026Q3",
+    "filing_date": "2026-11-16",
+    "infotable_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526463399/60471.xml"
+  },
+  "stats": {
+    "holdings": 30,
+    "top1": "APPLE INC",
+    "changes": {
+      "new": 1,
+      "add": 4,
+      "trim": 6,
+      "exit": 0
+    }
+  },
+  "holdings": [
+    {
+      "issuer": "APPLE INC",
+      "value_usd_k": 75901188420,
+      "weight": 0.249514,
+      "shares": 227917808,
+      "cusip": "037833100"
+    },
+    {
+      "issuer": "AMERICAN EXPRESS CO",
+      "value_usd_k": 46104813870,
+      "weight": 0.151563,
+      "shares": 151610700,
+      "cusip": "025816109"
+    },
+    {
+      "issuer": "COCA COLA CO",
+      "value_usd_k": 34432000000,
+      "weight": 0.11319,
+      "shares": 400000000,
+      "cusip": "191216100"
+    },
+    {
+      "issuer": "ALPHABET INC",
+      "value_usd_k": 27110464741,
+      "weight": 0.089122,
+      "shares": 78791167,
+      "cusip": "02079K305"
+    },
+    {
+      "issuer": "BANK OF AMER CORP",
+      "value_usd_k": 24812509222,
+      "weight": 0.081567,
+      "shares": 455860908,
+      "cusip": "060505104"
+    },
+    {
+      "issuer": "CHEVRON CORPORATION",
+      "value_usd_k": 17230393553,
+      "weight": 0.056642,
+      "shares": 84375856,
+      "cusip": "166764100"
+    },
+    {
+      "issuer": "OCCIDENTAL PETE CORP",
+      "value_usd_k": 14656559963,
+      "weight": 0.048181,
+      "shares": 264941431,
+      "cusip": "674599105"
+    },
+    {
+      "issuer": "MOODYS CORP",
+      "value_usd_k": 11203286284,
+      "weight": 0.036829,
+      "shares": 24669778,
+      "cusip": "615369105"
+    },
+    {
+      "issuer": "CHUBB LIMITED",
+      "value_usd_k": 11139546771,
+      "weight": 0.03662,
+      "shares": 34249183,
+      "cusip": "H1467J104"
+    },
+    {
+      "issuer": "ALPHABET INC",
+      "value_usd_k": 9264186660,
+      "weight": 0.030455,
+      "shares": 27188433,
+      "cusip": "02079K107"
+    },
+    {
+      "issuer": "KRAFT HEINZ CO",
+      "value_usd_k": 7398423065,
+      "weight": 0.024321,
+      "shares": 325634818,
+      "cusip": "500754106"
+    },
+    {
+      "issuer": "DELTA AIR LINES INC",
+      "value_usd_k": 5378997000,
+      "weight": 0.017683,
+      "shares": 64450000,
+      "cusip": "247361702"
+    },
+    {
+      "issuer": "DAVITA INC",
+      "value_usd_k": 5019719296,
+      "weight": 0.016502,
+      "shares": 28697229,
+      "cusip": "23918K108"
+    },
+    {
+      "issuer": "SIRIUSXM HOLDINGS INC",
+      "value_usd_k": 3230008188,
+      "weight": 0.010618,
+      "shares": 124807117,
+      "cusip": "829933100"
+    },
+    {
+      "issuer": "LENNAR CORP",
+      "value_usd_k": 2124149633,
+      "weight": 0.006983,
+      "shares": 26034436,
+      "cusip": "526057104"
+    },
+    {
+      "issuer": "KROGER CO",
+      "value_usd_k": 2051700000,
+      "weight": 0.006745,
+      "shares": 35000000,
+      "cusip": "501044101"
+    },
+    {
+      "issuer": "VERISIGN INC",
+      "value_usd_k": 1670101573,
+      "weight": 0.00549,
+      "shares": 5922136,
+      "cusip": "92343E102"
+    },
+    {
+      "issuer": "LIBERTY LIVE HOLDINGS INC",
+      "value_usd_k": 1029599657,
+      "weight": 0.003385,
+      "shares": 10587143,
+      "cusip": "530909308"
+    },
+    {
+      "issuer": "ALLY FINL INC",
+      "value_usd_k": 1015740001,
+      "weight": 0.003339,
+      "shares": 27000000,
+      "cusip": "02005N100"
+    },
+    {
+      "issuer": "NEW YORK TIMES CO MTN BE",
+      "value_usd_k": 1000090000,
+      "weight": 0.003288,
+      "shares": 15700000,
+      "cusip": "650111107"
+    },
+    {
+      "issuer": "BENDING SPOONS SPA",
+      "value_usd_k": 689379305,
+      "weight": 0.002266,
+      "shares": 20689655,
+      "cusip": "T19377109"
+    },
+    {
+      "issuer": "LIBERTY LIVE HOLDINGS INC",
+      "value_usd_k": 471930689,
+      "weight": 0.001551,
+      "shares": 4986588,
+      "cusip": "530909100"
+    },
+    {
+      "issuer": "NUCOR CORP",
+      "value_usd_k": 369506390,
+      "weight": 0.001215,
+      "shares": 1580776,
+      "cusip": "670346105"
+    },
+    {
+      "issuer": "LOUISIANA PAC CORP",
+      "value_usd_k": 365662388,
+      "weight": 0.001202,
+      "shares": 5664793,
+      "cusip": "546347105"
+    },
+    {
+      "issuer": "CAPITAL ONE FINL CORP",
+      "value_usd_k": 222030500,
+      "weight": 0.00073,
+      "shares": 1150000,
+      "cusip": "14040H105"
+    },
+    {
+      "issuer": "MACYS INC",
+      "value_usd_k": 171658476,
+      "weight": 0.000564,
+      "shares": 7538800,
+      "cusip": "55616P104"
+    },
+    {
+      "issuer": "NVR INC",
+      "value_usd_k": 68387582,
+      "weight": 0.000225,
+      "shares": 11112,
+      "cusip": "62944T105"
+    },
+    {
+      "issuer": "LENNAR CORP",
+      "value_usd_k": 44234470,
+      "weight": 0.000145,
+      "shares": 553000,
+      "cusip": "526057302"
+    },
+    {
+      "issuer": "JEFFERIES FINANCIAL GROUP IN",
+      "value_usd_k": 19826607,
+      "weight": 6.5e-05,
+      "shares": 433558,
+      "cusip": "47233W109"
+    },
+    {
+      "issuer": "D R HORTON INC",
+      "value_usd_k": 487021,
+      "weight": 2e-06,
+      "shares": 3564,
+      "cusip": "23331A109"
+    }
+  ],
+  "updated_at": "2026-11-17T09:35:33.223286Z",
+  "diffs": [
+    {
+      "change": "TRIM",
+      "issuer": "BANK OF AMER CORP",
+      "value_delta_k": -2731281753,
+      "shares_delta": -27533107
+    },
+    {
+      "change": "TRIM",
+      "issuer": "DAVITA INC",
+      "value_delta_k": -1405549602,
+      "shares_delta": -182980
+    },
+    {
+      "change": "ADD",
+      "issuer": "LENNAR CORP",
+      "value_delta_k": 937668190,
+      "shares_delta": 12922695
+    },
+    {
+      "change": "NEW",
+      "issuer": "BENDING SPOONS SPA",
+      "value_delta_k": 689379305,
+      "shares_delta": 20689655
+    },
+    {
+      "change": "TRIM",
+      "issuer": "VERISIGN INC",
+      "value_delta_k": -591392639,
+      "shares_delta": -3067744
+    },
+    {
+      "change": "TRIM",
+      "issuer": "CAPITAL ONE FINL CORP",
+      "value_delta_k": -379829500,
+      "shares_delta": -1850000
+    },
+    {
+      "change": "TRIM",
+      "issuer": "KROGER CO",
+      "value_delta_k": -113970000,
+      "shares_delta": -4000000
+    },
+    {
+      "change": "TRIM",
+      "issuer": "NUCOR CORP",
+      "value_delta_k": -44307868,
+      "shares_delta": -276976
+    },
+    {
+      "change": "ADD",
+      "issuer": "LENNAR CORP",
+      "value_delta_k": 17788511,
+      "shares_delta": 254883
+    },
+    {
+      "change": "ADD",
+      "issuer": "DELTA AIR LINES INC",
+      "value_delta_k": 10405800,
+      "shares_delta": 7130000
+    },
+    {
+      "change": "ADD",
+      "issuer": "MACYS INC",
+      "value_delta_k": -1373406,
+      "shares_delta": 191374
+    }
+  ]
+}
