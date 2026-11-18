@@ -9,9 +9,9 @@
     "holdings": 30,
     "top1": "APPLE INC",
     "changes": {
-      "new": 1,
-      "add": 4,
-      "trim": 6,
+      "new": 0,
+      "add": 0,
+      "trim": 0,
       "exit": 0
     }
   },
@@ -227,73 +227,5 @@
       "cusip": "23331A109"
     }
   ],
-  "updated_at": "2026-11-17T09:35:33.223286Z",
-  "diffs": [
-    {
-      "change": "TRIM",
-      "issuer": "BANK OF AMER CORP",
-      "value_delta_k": -2731281753,
-      "shares_delta": -27533107
-    },
-    {
-      "change": "TRIM",
-      "issuer": "DAVITA INC",
-      "value_delta_k": -1405549602,
-      "shares_delta": -182980
-    },
-    {
-      "change": "ADD",
-      "issuer": "LENNAR CORP",
-      "value_delta_k": 937668190,
-      "shares_delta": 12922695
-    },
-    {
-      "change": "NEW",
-      "issuer": "BENDING SPOONS SPA",
-      "value_delta_k": 689379305,
-      "shares_delta": 20689655
-    },
-    {
-      "change": "TRIM",
-      "issuer": "VERISIGN INC",
-      "value_delta_k": -591392639,
-      "shares_delta": -3067744
-    },
-    {
-      "change": "TRIM",
-      "issuer": "CAPITAL ONE FINL CORP",
-      "value_delta_k": -379829500,
-      "shares_delta": -1850000
-    },
-    {
-      "change": "TRIM",
-      "issuer": "KROGER CO",
-      "value_delta_k": -113970000,
-      "shares_delta": -4000000
-    },
-    {
-      "change": "TRIM",
-      "issuer": "NUCOR CORP",
-      "value_delta_k": -44307868,
-      "shares_delta": -276976
-    },
-    {
-      "change": "ADD",
-      "issuer": "LENNAR CORP",
-      "value_delta_k": 17788511,
-      "shares_delta": 254883
-    },
-    {
-      "change": "ADD",
-      "issuer": "DELTA AIR LINES INC",
-      "value_delta_k": 10405800,
-      "shares_delta": 7130000
-    },
-    {
-      "change": "ADD",
-      "issuer": "MACYS INC",
-      "value_delta_k": -1373406,
-      "shares_delta": 191374
-    }
-  ]
+  "updated_at": "2026-11-18T08:55:23.056464Z"
 }
